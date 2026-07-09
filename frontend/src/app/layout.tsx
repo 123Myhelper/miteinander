@@ -21,9 +21,10 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.myhelper.me"),
   title: "MyHelper | Fürsorge, die verbindet",
-  description: "Finden Sie die perfekte Unterstützung für Ihre Liebsten. Direkt, persönlich, menschlich. Die deutsche Plattform für Pflege.",
-  keywords: "Pflege, Seniorenbetreuung, Pflegekräfte, Deutschland, häusliche Pflege, Betreuung",
+  description: "MyHelper verbindet Menschen mit passender Alltagsbegleitung, Betreuung und Unterstützung im Alltag. Direkt, persönlich, menschlich.",
+  keywords: "Alltagsbegleitung, Betreuung, Unterstützung im Alltag, Entlastungsleistungen, Alltagsbegleiter",
   authors: [{ name: "MyHelper" }],
   icons: {
     icon: "/favicon.svg",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "MyHelper | Die Plattform, die verbindet",
-    description: "Finden Sie die perfekte Unterstützung für Ihre Liebsten. Direkt, persönlich, menschlich.",
+    description: "MyHelper verbindet Menschen mit passender Alltagsbegleitung und Betreuung. Direkt, persönlich, menschlich.",
     type: "website",
     images: [
       {
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "MyHelper | Die Plattform, die verbindet",
-    description: "Finden Sie die perfekte Unterstützung für Ihre Liebsten. Direkt, persönlich, menschlich.",
+    description: "MyHelper verbindet Menschen mit passender Alltagsbegleitung und Betreuung. Direkt, persönlich, menschlich.",
     images: ["/logo.svg"],
   },
 };

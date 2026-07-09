@@ -150,7 +150,7 @@ export default function AppSection() {
                       {/* Search */}
                       <div className="glass rounded-2xl p-4 mb-6">
                         <p className="text-muted text-sm">
-                          🔍 Pflegekraft suchen...
+                          🔍 Alltagsbegleitung suchen...
                         </p>
                       </div>
 
@@ -170,8 +170,8 @@ export default function AppSection() {
                             </p>
                             <p className="text-muted text-xs">
                               {i === 1
-                                ? "Pfleger • 5 Jahre"
-                                : "Pflegehelfer • 3 Jahre"}
+                                ? "Alltagsbegleiter • 5 Jahre"
+                                : "Begleiter • 3 Jahre"}
                             </p>
                           </div>
                           <div className="flex items-center gap-1">
