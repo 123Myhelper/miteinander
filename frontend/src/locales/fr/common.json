@@ -270,7 +270,16 @@
     "euDisputeResolutionText": "La Commission européenne met à disposition une plateforme de règlement en ligne des litiges (RLL) :",
     "emailInImprint": "Vous trouverez notre adresse e-mail dans les mentions légales ci-dessus.",
     "consumerDispute": "Règlement des litiges de consommation / Commission de conciliation universelle",
-    "consumerDisputeText": "Nous ne sommes ni disposés ni obligés de participer à des procédures de règlement des litiges devant une commission de conciliation des consommateurs."
+    "consumerDisputeText": "Nous ne sommes ni disposés ni obligés de participer à des procédures de règlement des litiges devant une commission de conciliation des consommateurs.",
+    "companyPurpose": "Objet de l'entreprise",
+    "companyPurposeText": "MyHelper exploite une plateforme numérique de mise en relation et d'organisation de services d'aide au quotidien. La plateforme met en relation des personnes ayant besoin d'aide avec des accompagnateurs et accompagnatrices du quotidien exerçant à leur compte.",
+    "projectDevelopment": "Développement du projet",
+    "liabilityNotice": "Avis de responsabilité",
+    "liabilityNoticeText": "Le contenu de ce site est élaboré avec le plus grand soin. Nous ne pouvons toutefois garantir son exactitude, son exhaustivité ni son actualité. Si nous avons connaissance de violations concrètes de la loi, nous retirerons sans délai le contenu concerné.",
+    "legalNotice": "Mentions juridiques",
+    "legalNoticeText": "Les textes, graphiques, logos et la conception publiés sur ce site sont protégés par le droit d'auteur, sauf indication contraire. Toute utilisation, reproduction ou diffusion au-delà des limites prévues par la loi requiert l'accord préalable des titulaires de droits concernés.",
+    "imageCredits": "Crédits images",
+    "imageCreditsText": "Les images, graphiques et éléments de conception utilisés sur ce site proviennent en partie de sources Envato Elements dûment licenciées ainsi que de nos propres productions."
   },
   "privacy": {
     "title": "Politique de confidentialité",

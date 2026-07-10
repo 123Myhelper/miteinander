@@ -270,7 +270,16 @@
     "euDisputeResolutionText": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:",
     "emailInImprint": "Unsere E-Mail-Adresse finden Sie oben im Impressum.",
     "consumerDispute": "Verbraucherstreitbeilegung/Universalschlichtungsstelle",
-    "consumerDisputeText": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+    "consumerDisputeText": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+    "companyPurpose": "Unternehmensgegenstand",
+    "companyPurposeText": "MyHelper betreibt eine digitale Vermittlungsplattform zur Vermittlung und Organisation von Unterstützungsleistungen im Alltag. Die Plattform bringt hilfesuchende Personen mit selbstständig tätigen Alltagsbegleiterinnen und Alltagsbegleitern zusammen.",
+    "projectDevelopment": "Projektentwicklung",
+    "liabilityNotice": "Haftungshinweis",
+    "liabilityNoticeText": "Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Für Richtigkeit, Vollständigkeit und Aktualität können wir jedoch keine Gewähr übernehmen. Bei Bekanntwerden konkreter Rechtsverletzungen entfernen wir betroffene Inhalte unverzüglich.",
+    "legalNotice": "Rechtliche Hinweise",
+    "legalNoticeText": "Die auf dieser Website veröffentlichten Texte, Grafiken, Logos und die Gestaltung sind urheberrechtlich geschützt, soweit nicht anders gekennzeichnet. Eine Nutzung, Vervielfältigung oder Weitergabe außerhalb der gesetzlichen Grenzen bedarf der vorherigen Zustimmung der jeweiligen Rechteinhaber.",
+    "imageCredits": "Bildnachweis",
+    "imageCreditsText": "Auf dieser Website verwendete Bilder, Grafiken und Design-Elemente stammen teilweise aus ordnungsgemäß lizenzierten Quellen von Envato Elements sowie aus eigenen Produktionen."
   },
   "privacy": {
     "title": "Datenschutzerklärung",

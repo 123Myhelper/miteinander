@@ -270,7 +270,16 @@
     "euDisputeResolutionText": "The European Commission provides a platform for online dispute resolution (ODR):",
     "emailInImprint": "You can find our email address in the imprint above.",
     "consumerDispute": "Consumer Dispute Resolution / Universal Arbitration Board",
-    "consumerDisputeText": "We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board."
+    "consumerDisputeText": "We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.",
+    "companyPurpose": "Purpose of the Company",
+    "companyPurposeText": "MyHelper operates a digital platform for arranging and organizing everyday support services. The platform connects people seeking help with self-employed everyday companions.",
+    "projectDevelopment": "Project Development",
+    "liabilityNotice": "Liability Notice",
+    "liabilityNoticeText": "The content of this website is prepared with the greatest possible care. However, we cannot guarantee its accuracy, completeness or timeliness. If we become aware of specific legal violations, we will remove the affected content without delay.",
+    "legalNotice": "Legal Notices",
+    "legalNoticeText": "The texts, graphics, logos and design published on this website are protected by copyright unless otherwise indicated. Any use, reproduction or distribution beyond the limits permitted by law requires the prior consent of the respective rights holders.",
+    "imageCredits": "Image Credits",
+    "imageCreditsText": "Images, graphics and design elements used on this website are derived in part from properly licensed Envato Elements sources and from our own productions."
   },
   "privacy": {
     "title": "Privacy Policy",

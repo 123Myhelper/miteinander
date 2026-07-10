@@ -53,19 +53,10 @@ export default function Impressum() {
           </p>
 
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
-            {t('imprint.designAndDevelopment')}
+            {t('imprint.companyPurpose')}
           </h2>
           <p>
-            Made with ❤️ from Atika Solutions
-            <br />
-            <a
-              href="https://atika.solutions"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent hover:text-accent-light transition-colors"
-            >
-              www.atika.solutions
-            </a>
+            {t('imprint.companyPurposeText')}
           </p>
 
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
@@ -73,6 +64,36 @@ export default function Impressum() {
           </h2>
           <p>
             {t('imprint.consumerDisputeText')}
+          </p>
+
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
+            {t('imprint.projectDevelopment')}
+          </h2>
+          <p>
+            Atika Solutions
+            <br />
+            Visions-Architect
+          </p>
+
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
+            {t('imprint.liabilityNotice')}
+          </h2>
+          <p>
+            {t('imprint.liabilityNoticeText')}
+          </p>
+
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
+            {t('imprint.legalNotice')}
+          </h2>
+          <p>
+            {t('imprint.legalNoticeText')}
+          </p>
+
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
+            {t('imprint.imageCredits')}
+          </h2>
+          <p>
+            {t('imprint.imageCreditsText')}
           </p>
         </div>
       </div>
