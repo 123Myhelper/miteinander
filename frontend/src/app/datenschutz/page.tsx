@@ -71,13 +71,6 @@ export default function Datenschutz() {
           <p>
             {t('privacy.cookiesText')}
           </p>
-
-          <h3 className="text-xl font-serif text-primary mt-6 mb-3">
-            {t('privacy.contactForm')}
-          </h3>
-          <p>
-            {t('privacy.contactFormText')}
-          </p>
         </div>
       </div>
     </main>
