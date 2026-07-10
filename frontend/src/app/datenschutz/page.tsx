@@ -48,9 +48,9 @@ export default function Datenschutz() {
             {t('privacy.responsiblePartyText')}
           </p>
           <p>
-            Rhoda Mutheu Fideler
+            Rhoda Fideler
             <br />
-            MeritaCare
+            MyHelper
             <br />
             Im Hof 16
             <br />
@@ -59,7 +59,7 @@ export default function Datenschutz() {
           <p>
             {t('imprint.phone')}: +49 152/09465369
             <br />
-            {t('imprint.email')}: info@merita.care
+            {t('imprint.email')}: info@myhelper.me
           </p>
 
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">

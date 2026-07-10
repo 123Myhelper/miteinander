@@ -25,9 +25,9 @@ export default function Impressum() {
             {t('imprint.accordingTo')}
           </h2>
           <p>
-            Rhoda Mutheu Fideler
+            Rhoda Fideler
             <br />
-            MeritaCare
+            MyHelper
             <br />
             Im Hof 16
             <br />
@@ -40,7 +40,7 @@ export default function Impressum() {
           <p>
             {t('imprint.phone')}: +49 152/09465369
             <br />
-            {t('imprint.email')}: info@merita.care
+            {t('imprint.email')}: info@myhelper.me
           </p>
 
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
