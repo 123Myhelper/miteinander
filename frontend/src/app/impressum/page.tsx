@@ -53,11 +53,6 @@ export default function Impressum() {
           </p>
 
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
-            {t('imprint.editoriallyResponsible')}
-          </h2>
-          <p>Rhoda Mutheu Fideler</p>
-
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
             {t('imprint.designAndDevelopment')}
           </h2>
           <p>
