@@ -74,24 +74,6 @@ export default function Impressum() {
           </p>
 
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
-            {t('imprint.euDisputeResolution')}
-          </h2>
-          <p>
-            {t('imprint.euDisputeResolutionText')}{' '}
-            <a
-              href="https://ec.europa.eu/consumers/odr/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent hover:text-accent-light transition-colors"
-            >
-              https://ec.europa.eu/consumers/odr/
-            </a>
-            .
-            <br />
-            {t('imprint.emailInImprint')}
-          </p>
-
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
             {t('imprint.consumerDispute')}
           </h2>
           <p>
