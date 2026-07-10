@@ -5,6 +5,40 @@ import { useTranslation } from "@/context/LanguageContext";
 
 export default function Datenschutz() {
   const { t } = useTranslation();
+
+  const sections = [
+    'scope',
+    'dataCategories',
+    'legalBases',
+    'hosting',
+    'serverLogs',
+    'accounts',
+    'sensitiveData',
+    'authentication',
+    'profiles',
+    'communication',
+    'emailDelivery',
+    'payments',
+    'cookiesAndStorage',
+    'localStorage',
+    'fonts',
+    'thirdPartyServices',
+    'googleAnalytics',
+    'googleAds',
+    'metaPixel',
+    'hotjar',
+    'googleMaps',
+    'youtube',
+    'recipients',
+    'internationalTransfers',
+    'retention',
+    'security',
+    'rights',
+    'withdrawalAndObjection',
+    'complaint',
+    'automatedDecisionMaking',
+    'policyUpdates',
+  ] as const;
   
   return (
     <main className="min-h-screen bg-background py-20">
@@ -22,30 +56,10 @@ export default function Datenschutz() {
 
         <div className="prose prose-lg text-muted space-y-6">
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
-            {t('privacy.overview')}
+            {t('privacy.controller')}
           </h2>
-          <h3 className="text-xl font-serif text-primary mt-6 mb-3">
-            {t('privacy.generalInfo')}
-          </h3>
           <p>
-            {t('privacy.generalInfoText')}
-          </p>
-
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
-            {t('privacy.generalAndMandatory')}
-          </h2>
-          <h3 className="text-xl font-serif text-primary mt-6 mb-3">
-            {t('privacy.dataProtection')}
-          </h3>
-          <p>
-            {t('privacy.dataProtectionText')}
-          </p>
-
-          <h3 className="text-xl font-serif text-primary mt-6 mb-3">
-            {t('privacy.responsibleParty')}
-          </h3>
-          <p>
-            {t('privacy.responsiblePartyText')}
+            {t('privacy.controllerText')}
           </p>
           <p>
             Rhoda Fideler
@@ -57,19 +71,24 @@ export default function Datenschutz() {
             88069 Tettnang
           </p>
           <p>
-            {t('imprint.phone')}: +49 152/09465369
+            {t('imprint.phone')}: +49 152 09465369
             <br />
             {t('imprint.email')}: info@myhelper.me
           </p>
 
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
-            {t('privacy.dataCollection')}
-          </h2>
-          <h3 className="text-xl font-serif text-primary mt-6 mb-3">
-            {t('privacy.cookies')}
-          </h3>
+          {sections.map((section) => (
+            <section key={section}>
+              <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
+                {t(`privacy.${section}`)}
+              </h2>
+              <p>
+                {t(`privacy.${section}Text`)}
+              </p>
+            </section>
+          ))}
+
           <p>
-            {t('privacy.cookiesText')}
+            {t('privacy.lastUpdated')}
           </p>
         </div>
       </div>
