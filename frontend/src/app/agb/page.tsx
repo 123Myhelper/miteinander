@@ -35,9 +35,9 @@ export default function AGB() {
             {t('terms.contractPartnerText')}
             <br />
             <br />
-            Rhoda Mutheu Fideler
+            Rhoda Fideler
             <br />
-            MeritaCare
+            MyHelper
             <br />
             Im Hof 16
             <br />
@@ -56,6 +56,13 @@ export default function AGB() {
           </h2>
           <p>
             {t('terms.registrationText')}
+          </p>
+
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
+            {t('terms.subscription')}
+          </h2>
+          <p>
+            {t('terms.subscriptionText')}
           </p>
 
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">

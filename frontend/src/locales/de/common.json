@@ -352,15 +352,17 @@
   "terms": {
     "title": "Allgemeine Geschäftsbedingungen",
     "scope": "§ 1 Geltungsbereich",
-    "scopeText": "Diese Allgemeinen Geschäftsbedingungen gelten für alle Geschäftsbeziehungen zwischen MeritaCare (Rhoda Mutheu Fideler) und ihren Nutzern. Maßgeblich ist die jeweils bei Vertragsschluss gültige Fassung.",
+    "scopeText": "Diese Allgemeinen Geschäftsbedingungen gelten für die Nutzung der digitalen Plattform MyHelper und für darüber abgeschlossene Plattformabonnements, soweit sie wirksam in den jeweiligen Vertrag einbezogen wurden.",
     "contractPartner": "§ 2 Vertragspartner",
     "contractPartnerText": "Der Vertrag kommt zustande mit:",
     "serviceDescription": "§ 3 Leistungsbeschreibung",
-    "serviceDescriptionText": "Die Plattform MyHelper ermöglicht die Vermittlung zwischen pflegebedürftigen Personen bzw. deren Angehörigen und unabhängigen Pflegekräften. MyHelper tritt dabei lediglich als Vermittlungsplattform auf und ist nicht Vertragspartner der zwischen Nutzern geschlossenen Pflegevereinbarungen.",
+    "serviceDescriptionText": "MyHelper betreibt eine digitale Plattform zur Vermittlung und Organisation von Unterstützungsleistungen im Alltag. Registrierte hilfesuchende Personen und selbstständig tätige Alltagsbegleiterinnen und Alltagsbegleiter können Profile erstellen und finden, Nachrichten austauschen, Vermittlungsanfragen bearbeiten und Bewertungen abgeben. MyHelper erbringt die zwischen Nutzerinnen und Nutzern vereinbarten Unterstützungsleistungen nicht selbst und wird nicht Vertragspartner solcher individuellen Leistungsvereinbarungen.",
     "registration": "§ 4 Registrierung",
-    "registrationText": "Für die Nutzung bestimmter Funktionen ist eine Registrierung erforderlich. Der Nutzer ist verpflichtet, bei der Registrierung wahrheitsgemäße Angaben zu machen und diese aktuell zu halten.",
-    "liability": "§ 5 Haftung",
-    "liabilityText": "MyHelper haftet nicht für die Qualität der über die Plattform vermittelten Pflegeleistungen. Die Verantwortung für die ordnungsgemäße Erbringung der Pflegeleistungen liegt allein bei den jeweiligen Pflegekräften."
+    "registrationText": "Für die Nutzung der geschützten Plattformfunktionen wird ein Konto als hilfesuchende Person oder als Alltagsbegleiterin bzw. Alltagsbegleiter angelegt. Die Registrierung umfasst die Eingabe rollenbezogener Profildaten und eine E-Mail-Verifizierung. Nutzerinnen und Nutzer sind für richtige und aktuelle Angaben verantwortlich. Die Anwendung zeigt bei der Registrierung Links zu den AGB und zur Datenschutzerklärung an; eine gesonderte technische Erfassung der Zustimmung zu einer bestimmten AGB-Fassung findet derzeit nicht statt.",
+    "subscription": "§ 5 Jahresabonnement und Stripe",
+    "subscriptionText": "Für den Zugriff auf kostenpflichtige Plattformfunktionen ist technisch ein Jahresabonnement vorgesehen. Die Anwendung erstellt hierfür eine Stripe-Checkout-Sitzung im Abonnementmodus und aktiviert den Abonnementstatus, nachdem Stripe eine bezahlte Checkout-Sitzung bestätigt. Die Verwaltung des Abonnements erfolgt über das Stripe-Kundenportal. Wird dort eine Beendigung zum Periodenende hinterlegt, bleibt der technische Zugang bis zum gespeicherten Endzeitpunkt aktiv. Ein nicht durch die Produktionskonfiguration bestätigter Preis wird in diesen AGB nicht festgelegt.",
+    "liability": "§ 6 Haftung",
+    "liabilityText": "MyHelper haftet für eigenes Verhalten nach den gesetzlichen Vorschriften. Soweit Unterstützungsleistungen unmittelbar zwischen Nutzerinnen und Nutzern vereinbart und erbracht werden, ist MyHelper nicht deren Leistungserbringer. Die gesetzliche Haftung von MyHelper, insbesondere in Fällen zwingender Haftung, wird dadurch weder ausgeschlossen noch beschränkt."
   },
   "admin": {
     "logout": "Abmelden",

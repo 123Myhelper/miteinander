@@ -352,15 +352,17 @@
   "terms": {
     "title": "Terms and Conditions",
     "scope": "§ 1 Scope",
-    "scopeText": "These General Terms and Conditions apply to all business relationships between MeritaCare (Rhoda Mutheu Fideler) and its users. The version valid at the time of contract conclusion shall apply.",
+    "scopeText": "These Terms and Conditions apply to use of the MyHelper digital platform and to platform subscriptions concluded through it, insofar as they have been validly incorporated into the relevant agreement.",
     "contractPartner": "§ 2 Contracting Partner",
     "contractPartnerText": "The contract is concluded with:",
     "serviceDescription": "§ 3 Service Description",
-    "serviceDescriptionText": "The MyHelper platform enables the matching of people in need of care or their relatives with independent caregivers. MyHelper acts solely as a matching platform and is not a contracting party to the care agreements concluded between users.",
+    "serviceDescriptionText": "MyHelper operates a digital platform for arranging and organising everyday support services. Registered people seeking support and self-employed everyday companions can create and find profiles, exchange messages, process matching requests and submit reviews. MyHelper does not itself provide the support services agreed between users and does not become a party to those individual service agreements.",
     "registration": "§ 4 Registration",
-    "registrationText": "Registration is required for the use of certain functions. The user is obliged to provide truthful information during registration and to keep it up to date.",
-    "liability": "§ 5 Liability",
-    "liabilityText": "MyHelper is not liable for the quality of care services arranged through the platform. The responsibility for the proper provision of care services lies solely with the respective caregivers."
+    "registrationText": "An account is created as a person seeking support or as an everyday companion in order to use protected platform functions. Registration includes role-specific profile data and email verification. Users are responsible for keeping their information accurate and current. The application displays links to the Terms and Conditions and Privacy Policy during registration; it does not currently record separate acceptance of a specific version of these Terms and Conditions.",
+    "subscription": "§ 5 Annual Subscription and Stripe",
+    "subscriptionText": "An annual subscription is technically provided for access to paid platform functions. The application creates a Stripe Checkout session in subscription mode and activates subscription status after Stripe confirms a paid Checkout session. The subscription is managed through the Stripe customer portal. If an end at the close of the billing period is recorded there, technical access remains active until the stored end date. These Terms and Conditions do not specify a price that has not been confirmed by the production configuration.",
+    "liability": "§ 6 Liability",
+    "liabilityText": "MyHelper is liable for its own conduct in accordance with applicable law. Where support services are agreed and provided directly between users, MyHelper is not the provider of those services. MyHelper's statutory liability, particularly in cases where liability is mandatory, is neither excluded nor limited by this distinction."
   },
   "admin": {
     "logout": "Logout",

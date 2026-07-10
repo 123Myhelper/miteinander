@@ -352,15 +352,17 @@
   "terms": {
     "title": "Conditions générales",
     "scope": "§ 1 Champ d'application",
-    "scopeText": "Ces conditions générales s'appliquent à toutes les relations commerciales entre MeritaCare (Rhoda Mutheu Fideler) et ses utilisateurs. La version valide au moment de la conclusion du contrat s'applique.",
+    "scopeText": "Les présentes conditions générales s'appliquent à l'utilisation de la plateforme numérique MyHelper et aux abonnements à la plateforme conclus par son intermédiaire, dans la mesure où elles ont été valablement intégrées au contrat concerné.",
     "contractPartner": "§ 2 Partenaire contractuel",
     "contractPartnerText": "Le contrat est conclu avec:",
     "serviceDescription": "§ 3 Description du service",
-    "serviceDescriptionText": "La plateforme MyHelper permet la mise en relation de personnes ayant besoin de soins ou de leurs proches avec des soignants indépendants. MyHelper agit uniquement en tant que plateforme de mise en relation et n'est pas partie contractante aux accords de soins conclus entre les utilisateurs.",
+    "serviceDescriptionText": "MyHelper exploite une plateforme numérique de mise en relation et d'organisation de services d'aide au quotidien. Les personnes inscrites recherchant une aide et les accompagnatrices et accompagnateurs du quotidien exerçant à leur compte peuvent créer et trouver des profils, échanger des messages, traiter des demandes de mise en relation et publier des avis. MyHelper ne fournit pas lui-même les services d'aide convenus entre les utilisateurs et ne devient pas partie à ces accords individuels de prestation.",
     "registration": "§ 4 Inscription",
-    "registrationText": "L'inscription est requise pour l'utilisation de certaines fonctions. L'utilisateur est tenu de fournir des informations véridiques lors de l'inscription et de les maintenir à jour.",
-    "liability": "§ 5 Responsabilité",
-    "liabilityText": "MyHelper n'est pas responsable de la qualité des services de soins organisés via la plateforme. La responsabilité de la fourniture correcte des services de soins incombe uniquement aux soignants respectifs."
+    "registrationText": "Un compte est créé en tant que personne recherchant une aide ou en tant qu'accompagnatrice ou accompagnateur du quotidien afin d'utiliser les fonctions protégées de la plateforme. L'inscription comprend des données de profil propres au rôle et une vérification de l'adresse e-mail. Les utilisateurs sont responsables de l'exactitude et de l'actualisation de leurs informations. L'application affiche des liens vers les conditions générales et la politique de confidentialité pendant l'inscription ; elle n'enregistre actuellement aucune acceptation distincte d'une version déterminée de ces conditions générales.",
+    "subscription": "§ 5 Abonnement annuel et Stripe",
+    "subscriptionText": "Un abonnement annuel est techniquement prévu pour accéder aux fonctions payantes de la plateforme. L'application crée une session Stripe Checkout en mode abonnement et active le statut d'abonnement après confirmation par Stripe d'une session Checkout payée. L'abonnement est géré via le portail client Stripe. Lorsqu'une fin à l'échéance de la période y est enregistrée, l'accès technique reste actif jusqu'à la date de fin enregistrée. Les présentes conditions générales ne fixent aucun prix qui n'a pas été confirmé par la configuration de production.",
+    "liability": "§ 6 Responsabilité",
+    "liabilityText": "MyHelper répond de son propre comportement conformément aux dispositions légales applicables. Lorsque des services d'aide sont convenus et fournis directement entre les utilisateurs, MyHelper n'est pas le prestataire de ces services. La responsabilité légale de MyHelper, notamment dans les cas où elle est impérative, n'est ni exclue ni limitée par cette distinction."
   },
   "admin": {
     "logout": "Déconnexion",
