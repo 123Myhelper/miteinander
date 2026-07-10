@@ -1,20 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Instagram, Facebook, Linkedin, Twitter, Heart, Phone, Mail } from "lucide-react";
+import { Heart, Phone, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "@/context/LanguageContext";
+import { socialLinks } from "@/config/social";
 
 export default function Footer() {
   const { t } = useTranslation();
-  
-  const socialLinks = [
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-  ];
 
   const footerLinks = [
     { name: t("footer.imprint"), href: "/impressum" },
@@ -47,7 +41,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-white/70 text-sm leading-relaxed max-w-xs">
-              MeritaCare
+              MyHelper
               <br />
               Rhoda Fideler
               <br />
@@ -86,6 +80,8 @@ export default function Footer() {
                   <motion.a
                     key={social.label}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={social.label}
                     className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white/70 hover:text-white hover:border-white transition-colors"
                     whileHover={{ scale: 1.1, y: -2 }}
