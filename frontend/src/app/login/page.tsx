@@ -252,6 +252,7 @@ export default function LoginPage() {
             <Link href="/agb" className="text-amber-600 hover:underline">{t('footer.terms')}</Link>
             {' '}{t('register.and')}{' '}
             <Link href="/datenschutz" className="text-amber-600 hover:underline">{t('footer.privacy')}</Link>
+            {t('register.termsSuffix')}
           </p>
 
           {/* Disclaimer */}

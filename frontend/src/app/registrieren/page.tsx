@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { useTranslation } from '@/context/LanguageContext';
 import { useAuth } from '@/context/AuthContext';
 import { API_URL } from '@/lib/api';
@@ -446,10 +447,10 @@ export default function RegisterPage() {
           {/* Terms */}
           <p className="mt-6 text-center text-xs text-gray-500 px-4">
             {t('register.termsAgree')}{' '}
-            <a href="/agb" className="text-amber-600 hover:underline">{t('footer.terms')}</a>
+            <Link href="/agb" className="text-amber-600 hover:underline">{t('footer.terms')}</Link>
             {' '}{t('register.and')}{' '}
-            <a href="/datenschutz" className="text-amber-600 hover:underline">{t('footer.privacy')}</a>
-            {' '}zu.
+            <Link href="/datenschutz" className="text-amber-600 hover:underline">{t('footer.privacy')}</Link>
+            {t('register.termsSuffix')}
           </p>
 
           {/* Disclaimer */}
