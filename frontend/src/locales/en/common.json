@@ -40,13 +40,15 @@
     "card1Item1": "Matching with everyday companions",
     "card1Item2": "Support in everyday life",
     "card1Item3": "Companionship and relief",
-    "card1Price": "Monthly membership fee: €8.99",
+    "card1Price": "Monthly membership fee",
+    "card1PriceValue": "€8.99 / month",
     "card1Cancellation": "Cancel monthly",
     "card2Title": "For everyday companions / freelancers",
     "card2Item1": "Registration from 18 years of age",
     "card2Item2": "Flexible working hours – work when and where you want",
     "card2Item3": "No nursing qualification or certificates required",
-    "card2Price": "Monthly membership fee: €8.99",
+    "card2Price": "Monthly membership fee",
+    "card2PriceValue": "€8.99 / month",
     "card2Cancellation": "Cancel monthly"
   },
   "difference": {

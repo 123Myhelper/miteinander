@@ -15,9 +15,10 @@ export default function TargetGroupsSection() {
         t("targetGroups.card1Item1"),
         t("targetGroups.card1Item2"),
         t("targetGroups.card1Item3"),
+        t("targetGroups.card1Cancellation"),
       ],
       price: t("targetGroups.card1Price"),
-      cancellation: t("targetGroups.card1Cancellation"),
+      priceValue: t("targetGroups.card1PriceValue"),
     },
     {
       id: 2,
@@ -26,9 +27,10 @@ export default function TargetGroupsSection() {
         t("targetGroups.card2Item1"),
         t("targetGroups.card2Item2"),
         t("targetGroups.card2Item3"),
+        t("targetGroups.card2Cancellation"),
       ],
       price: t("targetGroups.card2Price"),
-      cancellation: t("targetGroups.card2Cancellation"),
+      priceValue: t("targetGroups.card2PriceValue"),
     },
   ];
 
@@ -64,7 +66,7 @@ export default function TargetGroupsSection() {
               <h3 className="text-2xl font-serif text-primary mb-4 break-words">
                 {group.title}
               </h3>
-              <ul className="flex flex-1 flex-col gap-4">
+              <ul className="flex flex-1 flex-col gap-4 pb-8">
                 {group.items.map((item) => (
                   <li key={item} className="flex items-start gap-3 min-w-0">
                     <span className="shrink-0 mt-0.5 w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center">
@@ -75,20 +77,15 @@ export default function TargetGroupsSection() {
                     </span>
                   </li>
                 ))}
-                <li className="mt-auto pt-2">
-                  <span className="inline-flex max-w-full items-center px-4 py-2 rounded-full bg-accent/10 text-primary font-medium break-words">
-                    {group.price}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3 min-w-0">
-                  <span className="shrink-0 mt-0.5 w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center">
-                    <Check className="w-4 h-4 text-accent" aria-hidden="true" />
-                  </span>
-                  <span className="text-muted leading-relaxed break-words min-w-0">
-                    {group.cancellation}
-                  </span>
-                </li>
               </ul>
+              <div className="rounded-2xl border border-accent/20 bg-accent/10 px-6 py-5 text-center">
+                <p className="text-sm font-medium text-primary/75 break-words">
+                  {group.price}
+                </p>
+                <p className="mt-2 font-serif text-3xl md:text-4xl font-semibold text-primary break-words">
+                  {group.priceValue}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>

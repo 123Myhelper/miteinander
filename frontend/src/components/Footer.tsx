@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart, Phone, Mail } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "@/context/LanguageContext";
@@ -140,7 +140,7 @@ export default function Footer() {
         >
           <p>{t("footer.copyright")}</p>
           <p className="flex items-center gap-1">
-            Mit <Heart size={14} className="text-accent fill-accent" /> in Deutschland gemacht
+            Gemeinsam mehr Lebensqualität.
           </p>
         </motion.div>
       </div>
