@@ -170,6 +170,8 @@
     "bio": "À propos de moi",
     "bioPlaceholder": "Parlez-nous de vous...",
     "careNeeds": "Besoins de soins",
+    "careNeedsLoading": "Chargement des options...",
+    "careNeedsEmpty": "Les options n'ont pas pu être chargées. Veuillez réessayer plus tard.",
     "careNeedsPlaceholder": "Décrivez vos besoins de soins...",
     "emergencyContactName": "Nom du contact d'urgence",
     "emergencyContactPhone": "Téléphone du contact d'urgence",

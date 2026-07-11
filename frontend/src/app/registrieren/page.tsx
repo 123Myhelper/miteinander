@@ -201,7 +201,7 @@ export default function RegisterPage() {
         } else if (errorCode === 'PHONE_EXISTS') {
           throw new Error(t('register.phoneExists'));
         }
-        throw new Error(data.error?.message || t('register.registrationFailed'));
+        throw new Error(t('register.registrationFailed'));
       }
       
       // Registration successful - redirect to email verification

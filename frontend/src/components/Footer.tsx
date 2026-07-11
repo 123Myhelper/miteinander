@@ -40,6 +40,9 @@ export default function Footer() {
                 MyHelper
               </span>
             </div>
+            <p className="text-white/70 text-sm leading-relaxed max-w-xs mb-4">
+              {t("footer.description")}
+            </p>
             <p className="text-white/70 text-sm leading-relaxed max-w-xs">
               MyHelper
               <br />

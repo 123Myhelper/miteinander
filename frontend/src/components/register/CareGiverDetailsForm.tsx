@@ -77,11 +77,16 @@ const CareGiverDetailsForm: FC<CareGiverDetailsFormProps> = ({
             {t('register.skills')}
           </label>
           {isLoading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {[...Array(6)].map((_, i) => (
-                <div key={i} className="h-12 bg-gray-100 rounded-xl animate-pulse" />
-              ))}
-            </div>
+            <>
+              <p className="text-sm text-gray-600">{t('register.careNeedsLoading')}</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {[...Array(6)].map((_, i) => (
+                  <div key={i} className="h-12 bg-gray-100 rounded-xl animate-pulse" />
+                ))}
+              </div>
+            </>
+          ) : skillOptions.length === 0 ? (
+            <p className="text-sm text-gray-600">{t('register.careNeedsEmpty')}</p>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {skillOptions.map((skill) => (

@@ -170,6 +170,8 @@
     "bio": "About me",
     "bioPlaceholder": "Tell us about yourself...",
     "careNeeds": "Care needs",
+    "careNeedsLoading": "Loading options...",
+    "careNeedsEmpty": "The options could not be loaded. Please try again later.",
     "careNeedsPlaceholder": "Describe your care needs...",
     "emergencyContactName": "Emergency contact name",
     "emergencyContactPhone": "Emergency contact phone",
