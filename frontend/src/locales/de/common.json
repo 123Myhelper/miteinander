@@ -33,6 +33,20 @@
     "step4Title": "Begleitung starten",
     "step4Desc": "Starten Sie Ihre Begleitung mit der passenden Alltagsbegleitung."
   },
+  "targetGroups": {
+    "title": "Für wen ist MyHelper?",
+    "subtitle": "MyHelper verbindet Menschen, die Unterstützung im Alltag suchen, mit passenden Alltagsbegleiter:innen.",
+    "card1Title": "Für Pflegebedürftige",
+    "card1Item1": "Vermittlung von Alltagsbegleitern",
+    "card1Item2": "Unterstützung im Alltag",
+    "card1Item3": "Betreuung und Entlastung",
+    "card1Price": "Monatliche Mitgliedschaft: 8,99 €",
+    "card2Title": "Für Alltagsbegleiter / Freiberufler",
+    "card2Item1": "Registrierung ab 18 Jahren",
+    "card2Item2": "Flexible Arbeitszeiten – arbeiten, wann und wo man möchte",
+    "card2Item3": "Keine pflegerische Ausbildung oder Zeugnisse erforderlich",
+    "card2Price": "Monatliche Mitgliedschaft: 8,99 €"
+  },
   "difference": {
     "badge": "Unser Unterschied",
     "title": "Warum MyHelper?",

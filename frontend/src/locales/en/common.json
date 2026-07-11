@@ -33,6 +33,20 @@
     "step4Title": "Start care",
     "step4Desc": "Start your care relationship with the perfect caregiver."
   },
+  "targetGroups": {
+    "title": "Who is MyHelper for?",
+    "subtitle": "MyHelper connects people looking for everyday support with suitable everyday companions.",
+    "card1Title": "For people in need of care",
+    "card1Item1": "Matching with everyday companions",
+    "card1Item2": "Support in everyday life",
+    "card1Item3": "Companionship and relief",
+    "card1Price": "Monthly membership: 8,99 €",
+    "card2Title": "For everyday companions / freelancers",
+    "card2Item1": "Registration from 18 years of age",
+    "card2Item2": "Flexible working hours – work when and where you want",
+    "card2Item3": "No nursing qualification or certificates required",
+    "card2Price": "Monthly membership: 8,99 €"
+  },
   "difference": {
     "badge": "Our difference",
     "title": "Why MyHelper?",

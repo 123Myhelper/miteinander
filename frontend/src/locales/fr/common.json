@@ -33,6 +33,20 @@
     "step4Title": "Commencer les soins",
     "step4Desc": "Commencez votre relation de soins avec le soignant parfait."
   },
+  "targetGroups": {
+    "title": "À qui s'adresse MyHelper ?",
+    "subtitle": "MyHelper met en relation les personnes recherchant un soutien au quotidien avec des accompagnateurs du quotidien adaptés.",
+    "card1Title": "Pour les personnes ayant besoin d'accompagnement au quotidien",
+    "card1Item1": "Mise en relation avec des accompagnateurs du quotidien",
+    "card1Item2": "Soutien dans la vie quotidienne",
+    "card1Item3": "Accompagnement et soulagement au quotidien",
+    "card1Price": "Adhésion mensuelle : 8,99 €",
+    "card2Title": "Pour les accompagnateurs du quotidien / indépendants",
+    "card2Item1": "Inscription à partir de 18 ans",
+    "card2Item2": "Horaires flexibles – travaillez quand et où vous voulez",
+    "card2Item3": "Aucune formation en soins ni certificat requis",
+    "card2Price": "Adhésion mensuelle : 8,99 €"
+  },
   "difference": {
     "badge": "Notre différence",
     "title": "Pourquoi MyHelper?",
