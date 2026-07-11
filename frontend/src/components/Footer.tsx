@@ -14,6 +14,7 @@ export default function Footer() {
     { name: t("footer.imprint"), href: "/impressum" },
     { name: t("footer.privacy"), href: "/datenschutz" },
     { name: t("footer.terms"), href: "/agb" },
+    { name: t("footer.faq"), href: "/faq" },
   ];
   return (
     <footer id="footer" className="bg-primary text-white py-16 md:py-20">
@@ -30,21 +31,21 @@ export default function Footer() {
               <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center p-1.5">
                 <Image
                   src="/logo.svg"
-                  alt="MyHelper Logo"
+                  alt="MyHelper.me Logo"
                   width={48}
                   height={40}
                   className="w-full h-full"
                 />
               </div>
               <span className="font-serif text-xl font-semibold">
-                MyHelper
+                MyHelper.me
               </span>
             </div>
             <p className="text-white/70 text-sm leading-relaxed max-w-xs mb-4">
               {t("footer.description")}
             </p>
             <p className="text-white/70 text-sm leading-relaxed max-w-xs">
-              MyHelper
+              MyHelper.me
               <br />
               Rhoda Fideler
               <br />

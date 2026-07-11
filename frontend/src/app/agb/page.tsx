@@ -25,7 +25,7 @@ export default function AGB() {
           <br />
           Rhoda Fideler
           <br />
-          MyHelper
+          MyHelper.me
           <br />
           Im Hof 16
           <br />

@@ -52,7 +52,7 @@ export default function Datenschutz() {
         <p>
           Rhoda Fideler
           <br />
-          MyHelper
+          MyHelper.me
           <br />
           Im Hof 16
           <br />
