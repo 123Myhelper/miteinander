@@ -120,7 +120,7 @@ export default function DifferenceSection() {
             return (
               <motion.div
                 key={item.id}
-                className="col-span-1 row-span-1 relative group cursor-pointer shimmer-effect"
+                className="col-span-2 sm:col-span-1 row-span-1 relative group cursor-pointer shimmer-effect"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -142,7 +142,7 @@ export default function DifferenceSection() {
                   <h3 className="text-xl font-serif text-white mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-white/70 text-sm line-clamp-2">
+                  <p className="text-white/70 text-sm leading-relaxed">
                     {item.description}
                   </p>
                 </div>

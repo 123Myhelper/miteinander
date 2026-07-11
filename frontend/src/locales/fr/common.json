@@ -40,12 +40,14 @@
     "card1Item1": "Mise en relation avec des accompagnateurs du quotidien",
     "card1Item2": "Soutien dans la vie quotidienne",
     "card1Item3": "Accompagnement et soulagement au quotidien",
-    "card1Price": "Adhésion mensuelle : 8,99 €",
+    "card1Price": "Cotisation mensuelle : 8,99 €",
+    "card1Cancellation": "Résiliable chaque mois",
     "card2Title": "Pour les accompagnateurs du quotidien / indépendants",
     "card2Item1": "Inscription à partir de 18 ans",
     "card2Item2": "Horaires flexibles – travaillez quand et où vous voulez",
     "card2Item3": "Aucune formation en soins ni certificat requis",
-    "card2Price": "Adhésion mensuelle : 8,99 €"
+    "card2Price": "Cotisation mensuelle : 8,99 €",
+    "card2Cancellation": "Résiliable chaque mois"
   },
   "difference": {
     "badge": "Notre différence",
