@@ -30,8 +30,9 @@
 
 - Repository: `/Users/stan/Desktop/miteinander`
 - Branch: `phase1a-client-review-v2`
-- Frontend application baseline and `origin/phase1a-client-review-v2`: `4353eec5a2bdcc98805954febbfb4e3c8120c55b`. The local governance-only commit containing this snapshot may be newer than the pushed application baseline.
+- Frontend application baseline (last pure frontend-code commit): `4353eec5a2bdcc98805954febbfb4e3c8120c55b`. Current `origin/phase1a-client-review-v2` tip: `6a97c2c` (adds the EN/FR registration wording commit on top of the frontend baseline; push range `4353eec..6a97c2c`). The local governance-only commit containing this snapshot may be newer than the pushed tip.
 - Pushed commits:
+  - `6a97c2c` — `feat(i18n): update EN and FR registration terminology`
   - `8180199` — `feat(frontend): add FAQ and align MyHelper.me branding`
   - `a414997` — `fix(frontend): refine membership cards and mobile copy`
   - `4be46a3` — `fix(frontend): separate pricing and refine footer tagline`
@@ -89,6 +90,17 @@
 - Do not hide API, environment, or database failures with invented static frontend options.
 - Registration questionnaire and validation review remains pending.
 - Any execution plan must isolate `20260710000001_align_care_needs_taxonomy.js` and ensure the protected untracked `20260711` legal candidates cannot be discovered or auto-executed by the migration runner.
+
+### Registration wording alignment increment — 2026-07-12 (commit `6a97c2c`)
+
+- Committed and pushed to `origin/phase1a-client-review-v2`: `6a97c2c` — `feat(i18n): update EN and FR registration terminology`. Push range `4353eec..6a97c2c`.
+- Changed only `frontend/src/locales/en/common.json` and `frontend/src/locales/fr/common.json` (8 `register` namespace keys each).
+- German registration wording was **not** changed — it was already aligned with Alltagsbegleitung terminology.
+- EN and FR registration-flow wording was updated from nursing/clinical terminology (e.g. "caregiver", "Nurse", "Medical Assistant", "soignant") toward everyday-support/companion terminology, matching the existing German wording.
+- Wording-only change: all translation keys, role values, field names, IDs, API contracts, component logic, and form behavior were preserved unchanged.
+- Validation passed: JSON parsing (EN/FR), DE/EN/FR locale-key parity, `register.careNeed`/`register.skill` sub-objects confirmed byte-identical to prior HEAD, `git diff --check`. No tracked working-tree changes remained after commit and push.
+- **Unresolved, separate issue — not addressed by this commit:** the live `GET /api/care-needs` response still returns `medication` (`Medikamentengabe`) and `personalHygiene` (`Körperpflege`) as active selectable options in both registration roles; `mealPreparation` (`Mahlzeitenzubereitung`) is not currently returned. This wording patch does not hide, filter, rename, or deactivate any API-supplied option — resolving the active taxonomy remains gated on the separately-tracked `20260710000001_align_care_needs_taxonomy.js` migration execution approval (see above).
+- This increment does **not** change the status of: Production deployment (still NOT APPROVED), browser/Preview QA (still NOT COMPLETE), registration overall (still BLOCKED), taxonomy migration (still REVIEWED, NOT EXECUTED), legal pages, the P0 security checklist, or client final acceptance.
 
 ### Protected untracked candidate artifacts
 

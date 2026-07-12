@@ -19,6 +19,7 @@
 ## Current release decision snapshot — 2026-07-12
 
 - Homepage headline change: **COMMITTED, PUSHED, PREVIEW DEPLOYED** as `4353eec5a2bdcc98805954febbfb4e3c8120c55b`.
+- Registration EN/FR wording alignment: **COMMITTED, PUSHED** as `6a97c2c` (push range `4353eec..6a97c2c`). Wording-only — no keys/roles/fields/IDs/API/component/form-behavior changes; German unchanged (already aligned); relates to the terminology-glossary direction in CA-09. Does not resolve CA-01b/CA-20 — the live API-supplied `medication`/`personalHygiene` options remain active and unchanged (`mealPreparation` not currently returned); that remains gated on taxonomy migration execution approval.
 - Frontend release candidate: **DEPLOYED TO PREVIEW; BROWSER QA NOT COMPLETE**. Exact generated URL: `https://miteinander-1efdncyw2-info-39415777s-projects.vercel.app`.
 - Taxonomy migration: **REVIEWED, NOT EXECUTED**.
 - Preview QA: **BLOCKED BY DASHBOARD ACCESS/API/CORS CONFIGURATION**. Deployment Protection, signed-in project access, and Preview `NEXT_PUBLIC_API_URL` remain unverified because authenticated Chrome control could not connect; prior SSO status was not reconfirmed.

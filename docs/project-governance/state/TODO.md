@@ -27,6 +27,7 @@ Status: ☐ open · ◐ in progress · ☑ done.
 ### Registration release blockers
 
 - ☑ Commit and push the three locale changes; exact-SHA Preview deployment completed successfully.
+- ☑ EN/FR registration-flow wording aligned to Alltagsbegleitung/everyday-support terminology (commit `6a97c2c`, pushed to `origin/phase1a-client-review-v2`, push range `4353eec..6a97c2c`); German was already aligned and left unchanged. Wording-only — no keys/IDs/API/behavior changed. Does not resolve the still-open item below (questionnaire/validation review) or the live API-supplied `medication`/`personalHygiene` options, which remain active and unchanged.
 - ☐ Restore the ChatGPT Chrome Extension connection and complete authenticated inspection of the exact generated deployment; do not substitute an unauthenticated session or stale alias.
 - ☐ Verify Deployment Protection, signed-in project access, and the exact Preview `NEXT_PUBLIC_API_URL` in the Vercel dashboard.
 - ☐ Add only the exact commit-specific Preview origin to backend CORS through an explicitly approved backend/environment change.

@@ -6,8 +6,8 @@
 
 - Canonical repository: `/Users/stan/Desktop/miteinander`
 - Branch: `phase1a-client-review-v2`
-- Frontend application baseline: `4353eec5a2bdcc98805954febbfb4e3c8120c55b`
-- Origin tip: `4353eec5a2bdcc98805954febbfb4e3c8120c55b`
+- Frontend application baseline (last pure frontend-code commit): `4353eec5a2bdcc98805954febbfb4e3c8120c55b`
+- Origin tip: `6a97c2c` (adds the EN/FR registration wording commit on top of the frontend baseline; push range `4353eec..6a97c2c`)
 - Local HEAD may be newer only by the governance-document commit containing this handoff; no newer application change is implied.
 - Local tracked worktree: clean.
 - Staging area: empty.
@@ -15,6 +15,7 @@
 
 ## Latest Pushed Commits
 
+- `6a97c2c` — `feat(i18n): update EN and FR registration terminology`
 - `8180199` — `feat(frontend): add FAQ and align MyHelper.me branding`
 - `a414997` — `fix(frontend): refine membership cards and mobile copy`
 - `4be46a3` — `fix(frontend): separate pricing and refine footer tagline`
@@ -73,6 +74,7 @@ Registration is **BLOCKED** and is not Production-ready.
 - No frontend hard-coded fallback service options were added.
 - Registration questionnaire wording and validation still require review.
 - Never hide an API, environment, or database failure with invented static frontend options.
+- On 2026-07-12, EN/FR registration-flow wording was aligned to everyday-support/companion terminology as commit `6a97c2c` (pushed; push range `4353eec..6a97c2c`); German was already aligned and left unchanged. This was wording-only (locale JSON values only, no keys/roles/fields/IDs/API/behavior changed) — it does not resolve any blocker above and does not touch the live API-supplied `medication`/`personalHygiene` options (still active) or `mealPreparation` (not currently returned).
 
 These blockers were intentionally not fixed in the completed frontend presentation increment.
 

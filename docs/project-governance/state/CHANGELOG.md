@@ -4,6 +4,25 @@
 
 ---
 
+## [2026-07-12] — Registration EN/FR terminology wording aligned (commit `6a97c2c`, pushed)
+
+### Commit and push
+
+- Committed and pushed `frontend/src/locales/en/common.json` and `frontend/src/locales/fr/common.json` as `6a97c2c` — `feat(i18n): update EN and FR registration terminology`.
+- Pushed to `origin/phase1a-client-review-v2`; push range `4353eec..6a97c2c`.
+- German registration wording was unchanged — it was already aligned with Alltagsbegleitung terminology; only EN and FR were updated, from nursing/clinical wording toward everyday-support/companion wording.
+
+### Scope and preservation
+
+- Wording-only: translation keys, role values, field names, IDs, API contracts, component logic, and form behavior were all preserved.
+- No `register.careNeed`/`register.skill` sub-object values changed (confirmed byte-identical to prior HEAD).
+- Validation passed: JSON parsing (EN/FR), DE/EN/FR locale-key parity, `git diff --check`. No tracked working-tree changes remained after push.
+
+### Not resolved by this change
+
+- The live `GET /api/care-needs` response still returns `medication`/`Medikamentengabe` and `personalHygiene`/`Körperpflege` as active options; `mealPreparation`/`Mahlzeitenzubereitung` is not currently returned. This patch does not hide, filter, rename, or deactivate any API-supplied option — that remains a separate, unresolved issue gated on taxonomy migration execution approval.
+- No change to Production-approval status, browser/Preview QA status, overall registration-blocked status, taxonomy-migration execution status, legal-page content, the security checklist, or client final acceptance.
+
 ## [2026-07-12] — Governance snapshot synchronized for repository commit
 
 ### Reviewed and corrected
