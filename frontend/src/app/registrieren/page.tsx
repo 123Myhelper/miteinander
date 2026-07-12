@@ -159,13 +159,16 @@ export default function RegisterPage() {
         firstName: formData.firstName,
         lastName: formData.lastName,
         role: selectedRole,
-        phone: formData.phoneCountryCode + formData.phone,
         dateOfBirth: formData.dateOfBirth || null,
         address: formData.address,
         postalCode: formData.postalCode,
         country: formData.country || 'DE',
       };
-      
+
+      if (formData.phone.trim()) {
+        payload.phone = formData.phoneCountryCode + formData.phone;
+      }
+
       if (selectedRole === 'care_recipient') {
         payload.careNeeds = formData.careNeeds;
         // Emergency contact is optional
@@ -244,7 +247,8 @@ export default function RegisterPage() {
       case 3:
         return (
           formData.address.length > 0 &&
-          formData.postalCode.length > 0
+          formData.postalCode.length > 0 &&
+          formData.country.length > 0
         );
       case 4:
         if (selectedRole === 'care_recipient') {

@@ -12,7 +12,7 @@ interface CareNeedsFormProps {
 
 const CareNeedsForm: FC<CareNeedsFormProps> = ({ careNeeds, onChange }) => {
   const { t, language } = useTranslation();
-  const { data: careNeedOptions = [], isLoading } = useCareNeedsPublic();
+  const { data: careNeedOptions = [], isLoading, isError } = useCareNeedsPublic();
 
   const toggleCareNeed = (key: string) => {
     if (careNeeds.includes(key)) {
@@ -40,10 +40,10 @@ const CareNeedsForm: FC<CareNeedsFormProps> = ({ careNeeds, onChange }) => {
         <p className="mt-2 text-gray-600">{t('register.careNeedsSubtitle')}</p>
       </div>
 
-      <div className="space-y-2">
-        <label className="block text-sm font-medium text-gray-700">
+      <fieldset className="space-y-2">
+        <legend className="block text-sm font-medium text-gray-700">
           {t('register.careNeeds')} *
-        </label>
+        </legend>
         {isLoading ? (
           <>
             <p className="text-sm text-gray-600">{t('register.careNeedsLoading')}</p>
@@ -53,6 +53,8 @@ const CareNeedsForm: FC<CareNeedsFormProps> = ({ careNeeds, onChange }) => {
               ))}
             </div>
           </>
+        ) : isError ? (
+          <p className="text-sm text-red-600">{t('register.careNeedsError')}</p>
         ) : careNeedOptions.length === 0 ? (
           <p className="text-sm text-gray-600">{t('register.careNeedsEmpty')}</p>
         ) : (
@@ -62,6 +64,7 @@ const CareNeedsForm: FC<CareNeedsFormProps> = ({ careNeeds, onChange }) => {
                 key={need.key}
                 type="button"
                 onClick={() => toggleCareNeed(need.key)}
+                aria-pressed={careNeeds.includes(need.key)}
                 className={`flex items-center gap-3 p-3 rounded-xl border transition-all text-left cursor-pointer ${
                   careNeeds.includes(need.key)
                     ? 'border-amber-500 bg-amber-50 text-amber-800'
@@ -78,7 +81,7 @@ const CareNeedsForm: FC<CareNeedsFormProps> = ({ careNeeds, onChange }) => {
             ))}
           </div>
         )}
-      </div>
+      </fieldset>
     </div>
   );
 };
