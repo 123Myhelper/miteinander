@@ -2,7 +2,7 @@
 
 import { useMemo } from "react";
 import { motion } from "framer-motion";
-import { Users, MessageSquare, Shield, MapPin, Home, Accessibility, Pill, Heart, Sparkles, ChefHat, Car, Bath } from "lucide-react";
+import { Users, MessageSquare, Shield, MapPin, Home, Accessibility, Heart, Sparkles, Car } from "lucide-react";
 import { useTranslation } from "@/context/LanguageContext";
 
 export default function DifferenceSection() {
@@ -39,12 +39,9 @@ export default function DifferenceSection() {
     const allTags = [
       { icon: Home, label: t('difference.tagDailyLiving') },
       { icon: Accessibility, label: t('difference.tagMobility') },
-      { icon: Pill, label: t('difference.tagMedication') },
       { icon: Heart, label: t('difference.tagCompanionship') },
       { icon: Sparkles, label: t('difference.tagHousekeeping') },
-      { icon: ChefHat, label: t('difference.tagMealPrep') },
       { icon: Car, label: t('difference.tagTransportation') },
-      { icon: Bath, label: t('difference.tagHygiene') },
     ];
     // Fisher-Yates shuffle
     for (let i = allTags.length - 1; i > 0; i--) {
