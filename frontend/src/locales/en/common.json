@@ -49,7 +49,10 @@
     "card2Item3": "No nursing qualification or certificates required",
     "card2Price": "Monthly membership fee",
     "card2PriceValue": "€8.99 / month",
-    "card2Cancellation": "Cancel monthly"
+    "card2Cancellation": "Cancel monthly",
+    "recommendationTitle": "Recommendation for you",
+    "recommendation1": "First-aid course",
+    "recommendation2": "Police clearance certificate"
   },
   "difference": {
     "badge": "Our difference",
@@ -67,7 +70,7 @@
     "tagMobility": "Mobility",
     "tagMedication": "Medication",
     "tagCompanionship": "Companionship",
-    "tagHousekeeping": "Housekeeping",
+    "tagShopping": "Shopping",
     "tagTransportation": "Transportation",
     "tagHygiene": "Personal Hygiene"
   },

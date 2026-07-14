@@ -19,6 +19,11 @@ export default function TargetGroupsSection() {
       ],
       price: t("targetGroups.card1Price"),
       priceValue: t("targetGroups.card1PriceValue"),
+      recommendationTitle: t("targetGroups.recommendationTitle"),
+      recommendations: [
+        t("targetGroups.recommendation1"),
+        t("targetGroups.recommendation2"),
+      ],
     },
     {
       id: 2,
@@ -31,6 +36,11 @@ export default function TargetGroupsSection() {
       ],
       price: t("targetGroups.card2Price"),
       priceValue: t("targetGroups.card2PriceValue"),
+      recommendationTitle: t("targetGroups.recommendationTitle"),
+      recommendations: [
+        t("targetGroups.recommendation1"),
+        t("targetGroups.recommendation2"),
+      ],
     },
   ];
 
@@ -78,6 +88,21 @@ export default function TargetGroupsSection() {
                   </li>
                 ))}
               </ul>
+              <div className="mb-6">
+                <p className="text-sm font-semibold text-primary mb-3 break-words">
+                  {group.recommendationTitle}
+                </p>
+                <ul className="flex flex-col gap-2">
+                  {group.recommendations.map((rec) => (
+                    <li key={rec} className="flex items-start gap-2 min-w-0">
+                      <span className="shrink-0 mt-[7px] w-1.5 h-1.5 rounded-full bg-accent" aria-hidden="true" />
+                      <span className="text-sm text-muted leading-relaxed break-words min-w-0">
+                        {rec}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
               <div className="rounded-2xl border border-accent/20 bg-accent/10 px-6 py-5 text-center">
                 <p className="text-sm font-medium text-primary/75 break-words">
                   {group.price}

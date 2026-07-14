@@ -49,7 +49,10 @@
     "card2Item3": "Aucune formation en soins ni certificat requis",
     "card2Price": "Cotisation mensuelle",
     "card2PriceValue": "8,99 € / mois",
-    "card2Cancellation": "Résiliable chaque mois"
+    "card2Cancellation": "Résiliable chaque mois",
+    "recommendationTitle": "Recommandation pour vous",
+    "recommendation1": "Cours de premiers secours",
+    "recommendation2": "Extrait de casier judiciaire"
   },
   "difference": {
     "badge": "Notre différence",
@@ -67,7 +70,7 @@
     "tagMobility": "Aide À La Mobilité",
     "tagMedication": "Gestion Des Médicaments",
     "tagCompanionship": "Compagnie",
-    "tagHousekeeping": "Entretien Ménager",
+    "tagShopping": "Courses",
     "tagTransportation": "Transport",
     "tagHygiene": "Hygiène Personnelle"
   },
