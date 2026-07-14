@@ -19,7 +19,7 @@ export default function TargetGroupsSection() {
       ],
       price: t("targetGroups.card1Price"),
       priceValue: t("targetGroups.card1PriceValue"),
-      recommendationTitle: t("targetGroups.recommendationTitle"),
+      recommendationTitle: t("targetGroups.noteTitle"),
       recommendations: [
         t("targetGroups.recommendation1"),
         t("targetGroups.recommendation2"),
