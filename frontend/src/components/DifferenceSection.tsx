@@ -35,15 +35,17 @@ export default function DifferenceSection() {
     },
   ];
 
+  // Shuffle the tag KEYS once (stable order across renders). Labels are
+  // resolved with t() in render so they re-translate when the locale changes.
   const shuffledTags = useMemo(() => {
     const allTags = [
-      { icon: Home, label: t('difference.tagDailyLiving') },
-      { icon: Accessibility, label: t('difference.tagMobility') },
-      { icon: Pill, label: t('difference.tagMedication') },
-      { icon: Heart, label: t('difference.tagCompanionship') },
-      { icon: ShoppingBag, label: t('difference.tagShopping') },
-      { icon: Car, label: t('difference.tagTransportation') },
-      { icon: Bath, label: t('difference.tagHygiene') },
+      { icon: Home, labelKey: 'difference.tagDailyLiving' },
+      { icon: Accessibility, labelKey: 'difference.tagMobility' },
+      { icon: Pill, labelKey: 'difference.tagMedication' },
+      { icon: Heart, labelKey: 'difference.tagCompanionship' },
+      { icon: ShoppingBag, labelKey: 'difference.tagShopping' },
+      { icon: Car, labelKey: 'difference.tagTransportation' },
+      { icon: Bath, labelKey: 'difference.tagHygiene' },
     ];
     // Fisher-Yates shuffle
     for (let i = allTags.length - 1; i > 0; i--) {
@@ -51,7 +53,6 @@ export default function DifferenceSection() {
       [allTags[i], allTags[j]] = [allTags[j], allTags[i]];
     }
     return allTags.slice(0, 6);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -176,7 +177,7 @@ export default function DifferenceSection() {
                   const TagIcon = tag.icon;
                   return (
                     <motion.span
-                      key={tag.label}
+                      key={tag.labelKey}
                       className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm text-white/80 text-xs font-medium border border-white/10"
                       initial={{ opacity: 0, scale: 0.8 }}
                       whileInView={{ opacity: 1, scale: 1 }}
@@ -185,7 +186,7 @@ export default function DifferenceSection() {
                       whileHover={{ scale: 1.08, backgroundColor: 'rgba(255,255,255,0.2)' }}
                     >
                       <TagIcon className="w-3 h-3" />
-                      {tag.label}
+                      {t(tag.labelKey)}
                     </motion.span>
                   );
                 })}
