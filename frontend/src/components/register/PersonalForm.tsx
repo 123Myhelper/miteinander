@@ -103,22 +103,28 @@ const PersonalForm: FC<PersonalFormProps> = ({ firstName, lastName, phone, phone
               </button>
               
               {isCodeDropdownOpen && (
-                <div className="absolute top-full left-0 mt-1 w-32 bg-white border border-gray-200 rounded-xl shadow-lg z-10 overflow-hidden">
-                  {COUNTRY_CODES.map((country) => (
-                    <button
-                      key={country.code}
-                      type="button"
-                      onClick={() => {
-                        onChange({ phoneCountryCode: country.code });
-                        setIsCodeDropdownOpen(false);
-                      }}
-                      className="w-full flex items-center gap-2 px-3 py-2 hover:bg-amber-50 text-left cursor-pointer transition-colors"
-                    >
-                      <span className="text-lg">{country.flag}</span>
-                      <span className="text-sm text-gray-700">{country.code}</span>
-                    </button>
-                  ))}
-                </div>
+                <>
+                  <div
+                    className="fixed inset-0 z-10"
+                    onClick={() => setIsCodeDropdownOpen(false)}
+                  />
+                  <div className="absolute top-full left-0 mt-1 w-32 bg-white border border-gray-200 rounded-xl shadow-lg z-20 overflow-hidden">
+                    {COUNTRY_CODES.map((country) => (
+                      <button
+                        key={country.code}
+                        type="button"
+                        onClick={() => {
+                          onChange({ phoneCountryCode: country.code });
+                          setIsCodeDropdownOpen(false);
+                        }}
+                        className="w-full flex items-center gap-2 px-3 py-2 hover:bg-amber-50 text-left cursor-pointer transition-colors"
+                      >
+                        <span className="text-lg">{country.flag}</span>
+                        <span className="text-sm text-gray-700">{country.code}</span>
+                      </button>
+                    ))}
+                  </div>
+                </>
               )}
             </div>
             

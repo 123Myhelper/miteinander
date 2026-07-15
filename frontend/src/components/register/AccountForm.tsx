@@ -40,7 +40,7 @@ const AccountForm: FC<AccountFormProps> = ({ email, password, confirmPassword, o
               type="email"
               value={email}
               onChange={(e) => onChange({ email: e.target.value })}
-              placeholder="ihre@email.de"
+              placeholder={t('register.emailPlaceholder')}
               className="w-full pl-12 pr-4 py-3.5 rounded-xl border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-gray-900 placeholder:text-gray-400"
               required
             />
@@ -69,7 +69,8 @@ const AccountForm: FC<AccountFormProps> = ({ email, password, confirmPassword, o
             <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+              aria-label={showPassword ? t('register.hidePassword') : t('register.showPassword')}
+              className="absolute right-1 top-1/2 transform -translate-y-1/2 w-11 h-11 flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors"
             >
               {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
             </button>
@@ -100,7 +101,8 @@ const AccountForm: FC<AccountFormProps> = ({ email, password, confirmPassword, o
             <button
               type="button"
               onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+              aria-label={showConfirmPassword ? t('register.hidePassword') : t('register.showPassword')}
+              className="absolute right-1 top-1/2 transform -translate-y-1/2 w-11 h-11 flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors"
             >
               {showConfirmPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
             </button>

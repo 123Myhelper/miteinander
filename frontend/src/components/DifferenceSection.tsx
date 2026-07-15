@@ -2,7 +2,7 @@
 
 import { useMemo } from "react";
 import { motion } from "framer-motion";
-import { Users, MessageSquare, Shield, MapPin, Home, Accessibility, Heart, Sparkles, Car } from "lucide-react";
+import { Users, MessageSquare, Shield, MapPin, Home, Accessibility, Pill, Heart, ShoppingBag, Car, Bath } from "lucide-react";
 import { useTranslation } from "@/context/LanguageContext";
 
 export default function DifferenceSection() {
@@ -35,13 +35,17 @@ export default function DifferenceSection() {
     },
   ];
 
+  // Shuffle the tag KEYS once (stable order across renders). Labels are
+  // resolved with t() in render so they re-translate when the locale changes.
   const shuffledTags = useMemo(() => {
     const allTags = [
-      { icon: Home, label: t('difference.tagDailyLiving') },
-      { icon: Accessibility, label: t('difference.tagMobility') },
-      { icon: Heart, label: t('difference.tagCompanionship') },
-      { icon: Sparkles, label: t('difference.tagHousekeeping') },
-      { icon: Car, label: t('difference.tagTransportation') },
+      { icon: Home, labelKey: 'difference.tagDailyLiving' },
+      { icon: Accessibility, labelKey: 'difference.tagMobility' },
+      { icon: Pill, labelKey: 'difference.tagMedication' },
+      { icon: Heart, labelKey: 'difference.tagCompanionship' },
+      { icon: ShoppingBag, labelKey: 'difference.tagShopping' },
+      { icon: Car, labelKey: 'difference.tagTransportation' },
+      { icon: Bath, labelKey: 'difference.tagHygiene' },
     ];
     // Fisher-Yates shuffle
     for (let i = allTags.length - 1; i > 0; i--) {
@@ -49,7 +53,6 @@ export default function DifferenceSection() {
       [allTags[i], allTags[j]] = [allTags[j], allTags[i]];
     }
     return allTags.slice(0, 6);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -118,7 +121,7 @@ export default function DifferenceSection() {
             return (
               <motion.div
                 key={item.id}
-                className="col-span-1 row-span-1 relative group cursor-pointer shimmer-effect"
+                className="col-span-2 sm:col-span-1 row-span-1 relative group cursor-pointer shimmer-effect"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -140,7 +143,7 @@ export default function DifferenceSection() {
                   <h3 className="text-xl font-serif text-white mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-white/70 text-sm line-clamp-2">
+                  <p className="text-white/70 text-sm leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -174,7 +177,7 @@ export default function DifferenceSection() {
                   const TagIcon = tag.icon;
                   return (
                     <motion.span
-                      key={tag.label}
+                      key={tag.labelKey}
                       className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm text-white/80 text-xs font-medium border border-white/10"
                       initial={{ opacity: 0, scale: 0.8 }}
                       whileInView={{ opacity: 1, scale: 1 }}
@@ -183,7 +186,7 @@ export default function DifferenceSection() {
                       whileHover={{ scale: 1.08, backgroundColor: 'rgba(255,255,255,0.2)' }}
                     >
                       <TagIcon className="w-3 h-3" />
-                      {tag.label}
+                      {t(tag.labelKey)}
                     </motion.span>
                   );
                 })}

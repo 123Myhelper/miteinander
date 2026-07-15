@@ -23,7 +23,7 @@ const CareGiverDetailsForm: FC<CareGiverDetailsFormProps> = ({
   onChange 
 }) => {
   const { t, language } = useTranslation();
-  const { data: skillOptions = [], isLoading } = useCareNeedsPublic();
+  const { data: skillOptions = [], isLoading, isError } = useCareNeedsPublic();
 
   const toggleSkill = (key: string) => {
     if (skills.includes(key)) {
@@ -72,16 +72,23 @@ const CareGiverDetailsForm: FC<CareGiverDetailsFormProps> = ({
         </div>
 
         {/* Skills */}
-        <div className="space-y-2">
-          <label className="block text-sm font-medium text-gray-700">
+        <fieldset className="space-y-2">
+          <legend className="block text-sm font-medium text-gray-700">
             {t('register.skills')}
-          </label>
+          </legend>
           {isLoading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {[...Array(6)].map((_, i) => (
-                <div key={i} className="h-12 bg-gray-100 rounded-xl animate-pulse" />
-              ))}
-            </div>
+            <>
+              <p className="text-sm text-gray-600">{t('register.careNeedsLoading')}</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {[...Array(6)].map((_, i) => (
+                  <div key={i} className="h-12 bg-gray-100 rounded-xl animate-pulse" />
+                ))}
+              </div>
+            </>
+          ) : isError ? (
+            <p className="text-sm text-red-600">{t('register.careNeedsError')}</p>
+          ) : skillOptions.length === 0 ? (
+            <p className="text-sm text-gray-600">{t('register.careNeedsEmpty')}</p>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {skillOptions.map((skill) => (
@@ -89,6 +96,7 @@ const CareGiverDetailsForm: FC<CareGiverDetailsFormProps> = ({
                   key={skill.key}
                   type="button"
                   onClick={() => toggleSkill(skill.key)}
+                  aria-pressed={skills.includes(skill.key)}
                   className={`flex items-center gap-3 p-3 rounded-xl border transition-all text-left ${
                     skills.includes(skill.key)
                       ? 'border-amber-500 bg-amber-50 text-amber-800'
@@ -105,7 +113,7 @@ const CareGiverDetailsForm: FC<CareGiverDetailsFormProps> = ({
               ))}
             </div>
           )}
-        </div>
+        </fieldset>
 
         {/* Certifications */}
         <div className="space-y-2">

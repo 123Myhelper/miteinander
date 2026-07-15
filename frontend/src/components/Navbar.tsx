@@ -48,14 +48,14 @@ export default function Navbar() {
               >
                 <Image
                   src="/logo.svg"
-                  alt="MyHelper Logo"
+                  alt="MyHelper.me Logo"
                   width={40}
                   height={34}
                   className="w-full h-full"
                 />
               </motion.div>
               <span className="font-serif text-xl text-primary font-semibold hidden sm:inline">
-                MyHelper
+                MyHelper.me
               </span>
             </Link>
 
@@ -108,14 +108,14 @@ export default function Navbar() {
               <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center p-1">
                 <Image
                   src="/logo.svg"
-                  alt="MyHelper Logo"
+                  alt="MyHelper.me Logo"
                   width={40}
                   height={34}
                   className="w-full h-full"
                 />
               </div>
               <span className="font-serif text-xl text-primary font-semibold">
-                MyHelper
+                MyHelper.me
               </span>
             </Link>
             <button

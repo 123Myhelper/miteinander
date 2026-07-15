@@ -1,23 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, ArrowRight } from "lucide-react";
-import { useState } from "react";
 import { useTranslation } from "@/context/LanguageContext";
 
 export default function AppSection() {
   const { t } = useTranslation();
-  const [email, setEmail] = useState("");
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      setIsSubmitted(true);
-      setEmail("");
-      setTimeout(() => setIsSubmitted(false), 3000);
-    }
-  };
 
   return (
     <section id="app" className="py-24 md:py-32 bg-[#eae9e4] overflow-hidden">
@@ -47,42 +34,6 @@ export default function AppSection() {
             <p className="text-muted text-lg mb-8 leading-relaxed">
               {t("app.subtitle")}
             </p>
-
-            {/* Email Form */}
-            <form onSubmit={handleSubmit} className="relative max-w-md">
-              <div className="relative">
-                <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted w-5 h-5" />
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder={t("app.emailPlaceholder")}
-                  className="w-full pl-12 pr-36 py-4 rounded-full glass border border-white/30 focus:border-accent focus:outline-none transition-colors text-primary placeholder:text-muted"
-                  required
-                />
-                <motion.button
-                  type="submit"
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-accent text-white px-6 py-2.5 rounded-full font-medium hover:bg-accent-light transition-colors flex items-center gap-2"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <span className="hidden sm:inline">{t("app.notifyMe")}</span>
-                  <ArrowRight className="w-4 h-4" />
-                </motion.button>
-              </div>
-
-              {/* Success Message */}
-              <motion.p
-                className="text-accent text-sm mt-3 ml-4"
-                initial={{ opacity: 0, height: 0 }}
-                animate={{
-                  opacity: isSubmitted ? 1 : 0,
-                  height: isSubmitted ? "auto" : 0,
-                }}
-              >
-                ✓ {t("app.notifyMe")}
-              </motion.p>
-            </form>
 
             {/* Features List */}
             <div className="mt-10 grid grid-cols-2 gap-4">
@@ -150,7 +101,7 @@ export default function AppSection() {
                       {/* Search */}
                       <div className="glass rounded-2xl p-4 mb-6">
                         <p className="text-muted text-sm">
-                          🔍 Pflegekraft suchen...
+                          🔍 Alltagsbegleitung suchen...
                         </p>
                       </div>
 
@@ -170,8 +121,8 @@ export default function AppSection() {
                             </p>
                             <p className="text-muted text-xs">
                               {i === 1
-                                ? "Pfleger • 5 Jahre"
-                                : "Pflegehelfer • 3 Jahre"}
+                                ? "Alltagsbegleiter • 5 Jahre"
+                                : "Begleiter • 3 Jahre"}
                             </p>
                           </div>
                           <div className="flex items-center gap-1">

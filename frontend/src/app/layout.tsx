@@ -21,32 +21,33 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "MyHelper | Fürsorge, die verbindet",
-  description: "Finden Sie die perfekte Unterstützung für Ihre Liebsten. Direkt, persönlich, menschlich. Die deutsche Plattform für Pflege.",
-  keywords: "Pflege, Seniorenbetreuung, Pflegekräfte, Deutschland, häusliche Pflege, Betreuung",
-  authors: [{ name: "MyHelper" }],
+  metadataBase: new URL("https://www.myhelper.me"),
+  title: "MyHelper.me | Fürsorge, die verbindet",
+  description: "MyHelper.me verbindet Menschen mit passender Alltagsbegleitung, Betreuung und Unterstützung im Alltag. Direkt, persönlich, menschlich.",
+  keywords: "Alltagsbegleitung, Betreuung, Unterstützung im Alltag, Entlastungsleistungen, Alltagsbegleiter",
+  authors: [{ name: "MyHelper.me" }],
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
     apple: "/favicon.svg",
   },
   openGraph: {
-    title: "MyHelper | Die Plattform, die verbindet",
-    description: "Finden Sie die perfekte Unterstützung für Ihre Liebsten. Direkt, persönlich, menschlich.",
+    title: "MyHelper.me | Die Plattform, die verbindet",
+    description: "MyHelper.me verbindet Menschen mit passender Alltagsbegleitung und Betreuung. Direkt, persönlich, menschlich.",
     type: "website",
     images: [
       {
         url: "/logo.svg",
         width: 512,
         height: 512,
-        alt: "MyHelper Logo",
+        alt: "MyHelper.me Logo",
       },
     ],
   },
   twitter: {
     card: "summary",
-    title: "MyHelper | Die Plattform, die verbindet",
-    description: "Finden Sie die perfekte Unterstützung für Ihre Liebsten. Direkt, persönlich, menschlich.",
+    title: "MyHelper.me | Die Plattform, die verbindet",
+    description: "MyHelper.me verbindet Menschen mit passender Alltagsbegleitung und Betreuung. Direkt, persönlich, menschlich.",
     images: ["/logo.svg"],
   },
 };

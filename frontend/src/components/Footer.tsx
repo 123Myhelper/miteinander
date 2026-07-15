@@ -1,25 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Instagram, Facebook, Linkedin, Twitter, Heart, Phone, Mail } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "@/context/LanguageContext";
+import { socialLinks } from "@/config/social";
 
 export default function Footer() {
   const { t } = useTranslation();
-  
-  const socialLinks = [
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-  ];
 
   const footerLinks = [
     { name: t("footer.imprint"), href: "/impressum" },
     { name: t("footer.privacy"), href: "/datenschutz" },
     { name: t("footer.terms"), href: "/agb" },
+    { name: t("footer.faq"), href: "/faq" },
   ];
   return (
     <footer id="footer" className="bg-primary text-white py-16 md:py-20">
@@ -36,18 +31,21 @@ export default function Footer() {
               <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center p-1.5">
                 <Image
                   src="/logo.svg"
-                  alt="MyHelper Logo"
+                  alt="MyHelper.me Logo"
                   width={48}
                   height={40}
                   className="w-full h-full"
                 />
               </div>
               <span className="font-serif text-xl font-semibold">
-                MyHelper
+                MyHelper.me
               </span>
             </div>
+            <p className="text-white/70 text-sm leading-relaxed max-w-xs mb-4">
+              {t("footer.description")}
+            </p>
             <p className="text-white/70 text-sm leading-relaxed max-w-xs">
-              MeritaCare
+              MyHelper.me
               <br />
               Rhoda Fideler
               <br />
@@ -74,8 +72,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={14} />
-                <a href="mailto:info@merita.care" className="hover:text-white transition-colors">
-                  info@merita.care
+                <a href="mailto:info@myhelper.me" className="hover:text-white transition-colors">
+                  info@myhelper.me
                 </a>
               </li>
             </ul>
@@ -86,6 +84,8 @@ export default function Footer() {
                   <motion.a
                     key={social.label}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={social.label}
                     className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white/70 hover:text-white hover:border-white transition-colors"
                     whileHover={{ scale: 1.1, y: -2 }}
@@ -140,7 +140,7 @@ export default function Footer() {
         >
           <p>{t("footer.copyright")}</p>
           <p className="flex items-center gap-1">
-            Mit <Heart size={14} className="text-accent fill-accent" /> in Deutschland gemacht
+            Gemeinsam mehr Lebensqualität.
           </p>
         </motion.div>
       </div>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { useTranslation } from '@/context/LanguageContext';
 import { useAuth } from '@/context/AuthContext';
 import { API_URL } from '@/lib/api';
@@ -158,13 +159,16 @@ export default function RegisterPage() {
         firstName: formData.firstName,
         lastName: formData.lastName,
         role: selectedRole,
-        phone: formData.phoneCountryCode + formData.phone,
         dateOfBirth: formData.dateOfBirth || null,
         address: formData.address,
         postalCode: formData.postalCode,
         country: formData.country || 'DE',
       };
-      
+
+      if (formData.phone.trim()) {
+        payload.phone = formData.phoneCountryCode + formData.phone;
+      }
+
       if (selectedRole === 'care_recipient') {
         payload.careNeeds = formData.careNeeds;
         // Emergency contact is optional
@@ -200,7 +204,7 @@ export default function RegisterPage() {
         } else if (errorCode === 'PHONE_EXISTS') {
           throw new Error(t('register.phoneExists'));
         }
-        throw new Error(data.error?.message || t('register.registrationFailed'));
+        throw new Error(t('register.registrationFailed'));
       }
       
       // Registration successful - redirect to email verification
@@ -243,7 +247,8 @@ export default function RegisterPage() {
       case 3:
         return (
           formData.address.length > 0 &&
-          formData.postalCode.length > 0
+          formData.postalCode.length > 0 &&
+          formData.country.length > 0
         );
       case 4:
         if (selectedRole === 'care_recipient') {
@@ -446,10 +451,10 @@ export default function RegisterPage() {
           {/* Terms */}
           <p className="mt-6 text-center text-xs text-gray-500 px-4">
             {t('register.termsAgree')}{' '}
-            <a href="/agb" className="text-amber-600 hover:underline">{t('footer.terms')}</a>
+            <Link href="/agb" className="text-amber-600 hover:underline">{t('footer.terms')}</Link>
             {' '}{t('register.and')}{' '}
-            <a href="/datenschutz" className="text-amber-600 hover:underline">{t('footer.privacy')}</a>
-            {' '}zu.
+            <Link href="/datenschutz" className="text-amber-600 hover:underline">{t('footer.privacy')}</Link>
+            {t('register.termsSuffix')}
           </p>
 
           {/* Disclaimer */}

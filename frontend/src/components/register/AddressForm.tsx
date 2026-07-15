@@ -69,21 +69,27 @@ const AddressForm: FC<AddressFormProps> = ({ address, postalCode, country, onCha
             </button>
             
             {isCountryDropdownOpen && (
-              <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-xl shadow-lg z-20 overflow-hidden max-h-60 overflow-y-auto">
-                {COUNTRIES.map((c) => (
-                  <button
-                    key={c.code}
-                    type="button"
-                    onClick={() => handleCountryChange(c.code)}
-                    className={`w-full flex items-center gap-3 px-4 py-3 hover:bg-amber-50 text-left cursor-pointer transition-colors ${
-                      c.code === country ? 'bg-amber-50' : ''
-                    }`}
-                  >
-                    <span className="text-lg">{c.flag}</span>
-                    <span className="text-gray-900">{t(`register.countries.${c.code}`)}</span>
-                  </button>
-                ))}
-              </div>
+              <>
+                <div
+                  className="fixed inset-0 z-10"
+                  onClick={() => setIsCountryDropdownOpen(false)}
+                />
+                <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-xl shadow-lg z-20 overflow-hidden max-h-60 overflow-y-auto">
+                  {COUNTRIES.map((c) => (
+                    <button
+                      key={c.code}
+                      type="button"
+                      onClick={() => handleCountryChange(c.code)}
+                      className={`w-full flex items-center gap-3 px-4 py-3 hover:bg-amber-50 text-left cursor-pointer transition-colors ${
+                        c.code === country ? 'bg-amber-50' : ''
+                      }`}
+                    >
+                      <span className="text-lg">{c.flag}</span>
+                      <span className="text-gray-900">{t(`register.countries.${c.code}`)}</span>
+                    </button>
+                  ))}
+                </div>
+              </>
             )}
           </div>
         </div>

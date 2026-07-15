@@ -648,7 +648,7 @@ const sendTrialExpiringEmail = async (to, firstName, daysLeft) => {
 };
 
 /**
- * Send user feedback to info@merita.care
+ * Send user feedback to info@myhelper.me
  * 
  * @param {object} user - User object with id, email, firstName, lastName, role
  * @param {string} message - Feedback message
@@ -722,7 +722,7 @@ const sendFeedbackEmail = async (user, message) => {
 
   const mailOptions = {
     from: `"MyHelper Feedback" <${process.env.SMTP_USER || process.env.EMAIL_FROM}>`,
-    to: 'info@merita.care',
+    to: 'info@myhelper.me',
     replyTo: user.email,
     subject: `Feedback von ${user.firstName} ${user.lastName} (${user.role === 'care_giver' ? 'Pflegekraft' : 'Pflegebedürftiger'})`,
     html,

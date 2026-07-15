@@ -41,7 +41,7 @@ const ProgressSteps: FC<ProgressStepsProps> = ({ currentStep, totalSteps, labels
               {labels && labels[index] && (
                 <span 
                   className={`
-                    mt-1 text-[8px] sm:text-[9px] md:text-[10px] font-medium text-center leading-tight
+                    mt-1 text-[10px] sm:text-[11px] md:text-xs font-medium text-center leading-tight
                     transition-colors duration-300 whitespace-nowrap
                     ${index <= currentStep ? 'text-amber-600' : 'text-gray-400'}
                   `}

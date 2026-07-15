@@ -25,9 +25,9 @@ export default function Impressum() {
             {t('imprint.accordingTo')}
           </h2>
           <p>
-            Rhoda Mutheu Fideler
+            Rhoda Fideler
             <br />
-            MeritaCare
+            MyHelper.me
             <br />
             Im Hof 16
             <br />
@@ -40,7 +40,7 @@ export default function Impressum() {
           <p>
             {t('imprint.phone')}: +49 152/09465369
             <br />
-            {t('imprint.email')}: info@merita.care
+            {t('imprint.email')}: info@myhelper.me
           </p>
 
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
@@ -53,42 +53,10 @@ export default function Impressum() {
           </p>
 
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
-            {t('imprint.editoriallyResponsible')}
-          </h2>
-          <p>Rhoda Mutheu Fideler</p>
-
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
-            {t('imprint.designAndDevelopment')}
+            {t('imprint.companyPurpose')}
           </h2>
           <p>
-            Made with ❤️ from Atika Solutions
-            <br />
-            <a
-              href="https://atika.solutions"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent hover:text-accent-light transition-colors"
-            >
-              www.atika.solutions
-            </a>
-          </p>
-
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
-            {t('imprint.euDisputeResolution')}
-          </h2>
-          <p>
-            {t('imprint.euDisputeResolutionText')}{' '}
-            <a
-              href="https://ec.europa.eu/consumers/odr/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent hover:text-accent-light transition-colors"
-            >
-              https://ec.europa.eu/consumers/odr/
-            </a>
-            .
-            <br />
-            {t('imprint.emailInImprint')}
+            {t('imprint.companyPurposeText')}
           </p>
 
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
@@ -96,6 +64,36 @@ export default function Impressum() {
           </h2>
           <p>
             {t('imprint.consumerDisputeText')}
+          </p>
+
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
+            {t('imprint.projectDevelopment')}
+          </h2>
+          <p>
+            Atika Solutions
+            <br />
+            Visions-Architect
+          </p>
+
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
+            {t('imprint.liabilityNotice')}
+          </h2>
+          <p>
+            {t('imprint.liabilityNoticeText')}
+          </p>
+
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
+            {t('imprint.legalNotice')}
+          </h2>
+          <p>
+            {t('imprint.legalNoticeText')}
+          </p>
+
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">
+            {t('imprint.imageCredits')}
+          </h2>
+          <p>
+            {t('imprint.imageCreditsText')}
           </p>
         </div>
       </div>
