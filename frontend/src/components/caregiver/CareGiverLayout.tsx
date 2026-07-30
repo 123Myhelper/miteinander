@@ -76,12 +76,6 @@ export default function CareGiverLayout({ children }: CareGiverLayoutProps) {
   const settlementRef = useRef<HTMLDivElement>(null);
   const mobileSettlementRef = useRef<HTMLDivElement>(null);
 
-  // Compute subscription access synchronously
-  const subscriptionStatus = user?.subscriptionStatus;
-  const hasSubscriptionAccess = isAuthenticated && user?.role === 'care_giver' && (
-    subscriptionStatus === 'active'
-  );
-
   useEffect(() => {
     if (isLoading) return;
 
@@ -97,12 +91,8 @@ export default function CareGiverLayout({ children }: CareGiverLayoutProps) {
       else router.push('/');
       return;
     }
-
-    // Redirect to plans page if subscription expired or not active
-    if (user?.role === 'care_giver' && !hasSubscriptionAccess) {
-      router.push('/plans');
-    }
-  }, [isLoading, isAuthenticated, user, router, hasSubscriptionAccess]);
+    // Platform is currently free — no subscription gate.
+  }, [isLoading, isAuthenticated, user, router]);
 
   // Fetch settlement requests
   useEffect(() => {
@@ -249,8 +239,8 @@ export default function CareGiverLayout({ children }: CareGiverLayoutProps) {
     );
   }
 
-  // Block ALL dashboard content if not authenticated, wrong role, or no subscription access
-  if (!isAuthenticated || user?.role !== 'care_giver' || !hasSubscriptionAccess) {
+  // Block dashboard content until authenticated as the correct role (platform is free — no subscription gate)
+  if (!isAuthenticated || user?.role !== 'care_giver') {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-amber-500" />

@@ -98,8 +98,8 @@ const register = async (req, res, next) => {
       ...additionalData,
     };
 
-    // No trial — all users start with 'none' subscription status (must subscribe)
-    userData.subscriptionStatus = 'none';
+    // Platform is currently free (Stripe disabled for now) — grant access on registration
+    userData.subscriptionStatus = 'active';
 
     const user = await Model.create(userData);
     
@@ -342,28 +342,13 @@ const login = async (req, res, next) => {
       role: userRole,
     });
 
-    // Check subscription status for care_giver and care_recipient
+    // Platform is currently free (Stripe disabled for now) — never gate login on subscription
     if (userRole === USER_ROLES.CARE_GIVER || userRole === USER_ROLES.CARE_RECIPIENT) {
-      let subStatus = foundUser.subscriptionStatus || 'none';
-
-      // If subscription is not active, require subscription
-      if (subStatus !== 'active') {
-        return successResponse(res, {
-          user: foundUser.toJSON(),
-          token,
-          role: userRole,
-          subscriptionStatus: subStatus,
-          subscriptionEndsAt: foundUser.subscriptionEndsAt || null,
-          subscriptionRequired: true,
-        }, 'Login successful — subscription required');
-      }
-
-      // Otherwise return normal login with subscription info
       return successResponse(res, {
         user: foundUser.toJSON(),
         token,
         role: userRole,
-        subscriptionStatus: subStatus,
+        subscriptionStatus: foundUser.subscriptionStatus || 'active',
         subscriptionEndsAt: foundUser.subscriptionEndsAt || null,
       }, 'Login successful');
     }
