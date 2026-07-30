@@ -43,12 +43,7 @@ export default function LoginPage() {
       const result = await login(email, password);
       
       if (result.success && result.role) {
-        // If subscription is required, redirect to plans page
-        if (result.subscriptionRequired) {
-          router.push('/plans');
-          return;
-        }
-
+        // Platform is currently free — no subscription redirect.
         // Redirect based on role returned from API
         if (result.role === 'admin') {
           router.push('/admin');

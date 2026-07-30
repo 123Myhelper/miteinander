@@ -21,11 +21,9 @@ import {
   Plus,
   Trash2,
   Globe,
-  CreditCard,
 } from 'lucide-react';
 import ImageCropper from '@/components/shared/ImageCropper';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
-import SubscriptionTab from '@/components/shared/SubscriptionTab';
 
 interface CareNeed {
   id: number;
@@ -372,7 +370,6 @@ export default function CareGiverSettingsPage() {
     { key: 'certifications' as SettingsTab, label: t('caregiver.settings.tabs.certifications'), icon: Award },
     { key: 'password' as SettingsTab, label: t('caregiver.settings.tabs.password'), icon: Lock },
     { key: 'email' as SettingsTab, label: t('caregiver.settings.tabs.email'), icon: Mail },
-    { key: 'subscription' as SettingsTab, label: t('plans.manageSubscription'), icon: CreditCard },
     { key: 'language' as SettingsTab, label: t('settings.language'), icon: Globe },
   ];
 
@@ -862,11 +859,6 @@ export default function CareGiverSettingsPage() {
                 </button>
               </div>
             </div>
-          )}
-
-          {/* Subscription Tab */}
-          {activeTab === 'subscription' && (
-            <SubscriptionTab />
           )}
 
           {/* Language Tab */}
