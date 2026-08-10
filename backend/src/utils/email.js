@@ -751,10 +751,11 @@ const sendFeedbackEmail = async (user, message) => {
 const sendNewRegistrationNotification = async ({ firstName, lastName, email, role }) => {
   const transporter = createTransporter();
 
-  const adminEmail = process.env.ADMIN_NOTIFY_EMAIL || 'info@merita.care';
+  // Operator notification recipients (comma-separated). Override via ADMIN_NOTIFY_EMAIL.
+  const adminEmails = process.env.ADMIN_NOTIFY_EMAIL || 'info@merita.care, artzymeri2001@gmail.com';
   // In development, redirect to the dev inbox to avoid emailing the operator while testing.
   const isDevelopment = process.env.NODE_ENV === 'development';
-  const recipient = isDevelopment ? 'artzymeri2001@gmail.com' : adminEmail;
+  const recipient = isDevelopment ? 'artzymeri2001@gmail.com' : adminEmails;
 
   const roleLabels = {
     care_giver: 'Alltagsbegleiter:in / Freiberufler:in (Caregiver)',
