@@ -1,7 +1,7 @@
 const models = require('../models');
 const { generateToken } = require('../utils/jwt');
 const { successResponse, errorResponse, USER_ROLES, getModelByRole } = require('../utils/helpers');
-const { generateVerificationCode, sendVerificationEmail, sendWelcomeEmail, sendPasswordResetEmail } = require('../utils/email');
+const { generateVerificationCode, sendVerificationEmail, sendWelcomeEmail, sendPasswordResetEmail, sendNewRegistrationNotification } = require('../utils/email');
 
 const { CareNeed } = models;
 
@@ -115,6 +115,11 @@ const register = async (req, res, next) => {
     // Send verification email (don't block registration on email failure)
     sendVerificationEmail(email, firstName, verificationCode).catch(err => {
       console.error('Failed to send verification email:', err);
+    });
+
+    // Notify the platform operator of the new registration (don't block on failure)
+    sendNewRegistrationNotification({ firstName, lastName, email, role }).catch(err => {
+      console.error('Failed to send new-registration notification:', err);
     });
     
     // Generate token
