@@ -19,15 +19,31 @@ const heroImages = [
   },
 ];
 
+// Deterministic pseudo-random generator (mulberry32). The particle layout must
+// be identical on the server and in the first client render, otherwise React
+// fails hydration. A fixed seed keeps the scatter looking random while staying
+// byte-identical across both renders.
+function createSeededRandom(seed: number) {
+  let state = seed;
+  return () => {
+    state = (state + 0x6d2b79f5) | 0;
+    let t = Math.imul(state ^ (state >>> 15), 1 | state);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
 // Floating particles component
 function FloatingParticles() {
+  const random = createSeededRandom(0x5eed1e);
   const particles = Array.from({ length: 20 }, (_, i) => ({
     id: i,
-    size: Math.random() * 4 + 2,
-    x: Math.random() * 100,
-    y: Math.random() * 100,
-    duration: Math.random() * 10 + 15,
-    delay: Math.random() * 5,
+    size: random() * 4 + 2,
+    x: random() * 100,
+    y: random() * 100,
+    duration: random() * 10 + 15,
+    delay: random() * 5,
+    drift: random() * 50 - 25,
   }));
 
   return (
@@ -44,7 +60,7 @@ function FloatingParticles() {
           }}
           animate={{
             y: [0, -100, 0],
-            x: [0, Math.random() * 50 - 25, 0],
+            x: [0, particle.drift, 0],
             opacity: [0, 0.6, 0],
             scale: [0.5, 1, 0.5],
           }}

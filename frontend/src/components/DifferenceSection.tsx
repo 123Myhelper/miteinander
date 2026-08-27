@@ -1,6 +1,5 @@
 "use client";
 
-import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { Users, MessageSquare, Shield, MapPin, Home, Accessibility, Pill, Heart, ShoppingBag, Car, Bath } from "lucide-react";
 import { useTranslation } from "@/context/LanguageContext";
@@ -35,25 +34,21 @@ export default function DifferenceSection() {
     },
   ];
 
-  // Shuffle the tag KEYS once (stable order across renders). Labels are
-  // resolved with t() in render so they re-translate when the locale changes.
-  const shuffledTags = useMemo(() => {
-    const allTags = [
-      { icon: Home, labelKey: 'difference.tagDailyLiving' },
-      { icon: Accessibility, labelKey: 'difference.tagMobility' },
-      { icon: Pill, labelKey: 'difference.tagMedication' },
-      { icon: Heart, labelKey: 'difference.tagCompanionship' },
-      { icon: ShoppingBag, labelKey: 'difference.tagShopping' },
-      { icon: Car, labelKey: 'difference.tagTransportation' },
-      { icon: Bath, labelKey: 'difference.tagHygiene' },
-    ];
-    // Fisher-Yates shuffle
-    for (let i = allTags.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [allTags[i], allTags[j]] = [allTags[j], allTags[i]];
-    }
-    return allTags.slice(0, 6);
-  }, []);
+  // All care-need categories, in a fixed order. Labels are resolved with t()
+  // in render so they re-translate when the locale changes. This list used to
+  // be shuffled with Math.random() and sliced to six, which both hid one
+  // category per load and broke React hydration (server and first client
+  // render produced different orders). Rendering the full list in a stable
+  // order keeps every category visible and makes hydration deterministic.
+  const careNeedTags = [
+    { icon: Home, labelKey: 'difference.tagDailyLiving' },
+    { icon: Accessibility, labelKey: 'difference.tagMobility' },
+    { icon: Pill, labelKey: 'difference.tagMedication' },
+    { icon: Heart, labelKey: 'difference.tagCompanionship' },
+    { icon: ShoppingBag, labelKey: 'difference.tagShopping' },
+    { icon: Car, labelKey: 'difference.tagTransportation' },
+    { icon: Bath, labelKey: 'difference.tagHygiene' },
+  ];
 
   return (
     <section id="difference" className="py-24 md:py-32 bg-gradient-to-b from-background to-[#eae9e4]">
@@ -171,9 +166,9 @@ export default function DifferenceSection() {
               <h3 className="text-xl md:text-2xl font-serif text-white mb-4 max-w-sm">
                 {t('difference.bannerTitle')}
               </h3>
-              {/* Care need category pills — shuffled, show 6 */}
+              {/* Care need category pills — full list, stable order */}
               <div className="flex flex-wrap gap-2">
-                {shuffledTags.map((tag, i) => {
+                {careNeedTags.map((tag, i) => {
                   const TagIcon = tag.icon;
                   return (
                     <motion.span
