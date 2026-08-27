@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { Suspense, useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '@/context/AuthContext';
 import { useSocket } from '@/context/SocketContext';
@@ -72,7 +72,7 @@ interface Message {
   messageType?: string;
 }
 
-export default function CaregiverMessagesPage() {
+function CaregiverMessagesContent() {
   const { token, user } = useAuth();
   const { sendMessage, sendSettlementRequest, joinConversation, leaveConversation, onNewMessage, onNewNotification, onMessagesRead, startTyping, stopTyping, onTyping, onStopTyping, markAsRead, refreshUnreadCount, onSettlementCompleted } = useSocket();
   const { t } = useTranslation();
@@ -761,5 +761,13 @@ export default function CaregiverMessagesPage() {
         confirmText={dialogState.variant === 'danger' ? t('messages.deleteChat') : 'OK'}
       />
     </CareGiverLayout>
+  );
+}
+
+export default function CaregiverMessagesPage() {
+  return (
+    <Suspense fallback={null}>
+      <CaregiverMessagesContent />
+    </Suspense>
   );
 }

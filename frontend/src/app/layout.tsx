@@ -7,6 +7,12 @@ import { SocketProvider } from "@/context/SocketContext";
 import { QueryProvider } from "@/providers/QueryProvider";
 import { Toaster } from "sonner";
 import CookieConsent from "@/components/CookieConsent";
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_TITLE,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/seo";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -21,19 +27,35 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.myhelper.me"),
-  title: "MyHelper.me | Fürsorge, die verbindet",
-  description: "MyHelper.me verbindet Menschen mit passender Alltagsbegleitung, Betreuung und Unterstützung im Alltag. Direkt, persönlich, menschlich.",
-  keywords: "Alltagsbegleitung, Betreuung, Unterstützung im Alltag, Entlastungsleistungen, Alltagsbegleiter",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${DEFAULT_TITLE} | ${SITE_NAME}`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: DEFAULT_DESCRIPTION,
+  keywords: [
+    "Alltagsbegleitung",
+    "Unterstützung im Alltag",
+    "Alltagsbegleiter:innen",
+    "Vermittlungsplattform",
+  ],
   authors: [{ name: "MyHelper.me" }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
-    icon: "/favicon.svg",
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
     shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
   },
   openGraph: {
-    title: "MyHelper.me | Die Plattform, die verbindet",
-    description: "MyHelper.me verbindet Menschen mit passender Alltagsbegleitung und Betreuung. Direkt, persönlich, menschlich.",
+    title: `${DEFAULT_TITLE} | ${SITE_NAME}`,
+    description: DEFAULT_DESCRIPTION,
+    url: "/",
+    siteName: SITE_NAME,
+    locale: "de_DE",
     type: "website",
     images: [
       {
@@ -46,8 +68,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "MyHelper.me | Die Plattform, die verbindet",
-    description: "MyHelper.me verbindet Menschen mit passender Alltagsbegleitung und Betreuung. Direkt, persönlich, menschlich.",
+    title: `${DEFAULT_TITLE} | ${SITE_NAME}`,
+    description: DEFAULT_DESCRIPTION,
     images: ["/logo.svg"],
   },
 };
