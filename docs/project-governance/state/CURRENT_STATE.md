@@ -2,9 +2,77 @@
 
 > What exists **today**. Updated whenever the product or repository materially changes. This is a factual snapshot, not a plan.
 
-**Last updated:** 2026-07-12
+**Last updated:** 2026-08-28
 **Confidence:** The release snapshot below is verified from the canonical repository and Git history on 2026-07-12. Older live-site findings retain their original verification date. Items marked 🔍 remain pending confirmation.
 **Information Governance (Phase 2A + ADR-008):** information is classified PUBLIC/INTERNAL/CONFIDENTIAL/SECRET per **`INFORMATION_CLASSIFICATION.md`** (`PROJECT_PRINCIPLES.md` §13). Client-identifying (CONFIDENTIAL) data has been redacted from `/AI_OS` planning docs and replaced with neutral placeholders (Client Representative, Legal Entity (Pending), Business Address (Pending), VAT ID (Pending), Contact (Pending)). Real identity remains only on the live legal pages (Impressum/Datenschutz/AGB) and other legally-required artifacts, which are unchanged. See `CONFIDENTIALITY_AUDIT.md` (applied record).
+
+---
+
+## PHASE 2B-0 — COMPLETE, PRODUCTION VERIFIED (2026-08-28)
+
+> **This section supersedes any older statement below that says Production is NOT APPROVED, that SEO is planned only after legal-acceptance tracking, that `robots.txt` is empty, or that no sitemap/canonical/JSON-LD exists.** Those statements were accurate on 2026-07-12 and are retained for history only.
+
+**PHASE 2B-0 STATUS: COMPLETE — PRODUCTION VERIFIED**
+
+| Field | Value |
+|---|---|
+| Production commit | `b3f24d43f99a08eab27e8d41f17f192f3f94684c` (`b3f24d4`) |
+| Production tree | `a53e0e5a94109c5411c566d9999f0e765ffb7b53` |
+| Commit subject | `Merge Phase 2B-0 SEO authority foundation` |
+| Branch | `main` |
+| Production domain | `https://www.myhelper.me` |
+| Vercel project | `miteinander` |
+| Environment / status | Production — Ready / Latest / Current (owner-verified in the Vercel dashboard) |
+
+Release chain merged into `main` (fast-forward; `cda4f1a` was **not** cherry-picked):
+
+- `994cd5a` — `feat(frontend): add SEO baseline and unblock production build`
+- `34780d0` — `fix(frontend): resolve homepage hydration mismatch`
+- `cda4f1a` — `feat(seo): add German authority page and German-first SEO foundation`
+- `b3f24d4` — `Merge Phase 2B-0 SEO authority foundation`
+
+The same `b3f24d4` commit exists in Vercel as both the `phase2b0-production-integration` Preview and the `main` Production deployment.
+
+### New live authority page
+
+`/alltagsbegleitung-oder-pflegedienst` — informational comparison between Alltagsbegleitung and Pflegedienst.
+
+### Live Production checks passed (2026-08-28)
+
+- HTTP 200: `/`, `/alltagsbegleitung-oder-pflegedienst`, `/faq`, `/impressum`, `/datenschutz`, `/agb`, `/sitemap.xml`, `/robots.txt`
+- `sitemap.xml` serves exactly 6 canonical production URLs
+- Authority page canonical = `https://www.myhelper.me/alltagsbegleitung-oder-pflegedienst`; `robots` meta = `index, follow`
+- Exactly one JSON-LD block on the authority page: `WebPage` + `BreadcrumbList` + `FAQPage`
+- Visible FAQ / schema parity 6/6
+- §45b wording correct and verbatim; no euro amount; no unsupported recognition or reimbursement claim
+- Private/auth `X-Robots-Tag` noindex headers verified live on `/admin`, `/caregiver`, `/dashboard`, `/plans`, `/support`, `/login`, `/registrieren`, `/verify-email`, `/forgot-password`; public routes carry none
+- Homepage `WebSite.inLanguage = "de"`; exactly one JSON-LD block
+- Hydration fix live: no `Math.random` in served homepage HTML; all 7 care-need tags rendered
+- Authority-page internal links live; footer link to the authority page present
+
+### Manual Preview QA passed (owner)
+
+Desktop and mobile. Comparison content is accessible on mobile via horizontal table scroll, and **both** the Alltagsbegleitung and the Ambulanter Pflegedienst columns are reachable.
+
+### Accepted navigation disposition
+
+The authority page has no global Navbar. This is **pre-existing secondary-page architecture** — `/faq`, `/impressum`, `/datenschutz` and `/agb` behave the same way, and `Navbar` is rendered only by `HomePageClient.tsx`. This is **not** a Phase 2B-0 regression. A shared public navigation/header remains a separate future milestone.
+
+### Sequencing note (supersedes the 2026-07-12 plan)
+
+The 2026-07-12 documents state that SEO begins only after legal-acceptance tracking and release stabilization. In practice the German-first SEO foundation (Phase 2A + 2B-0) shipped first, by owner decision. The legal-acceptance backend milestone and the taxonomy migration remain **unstarted and unexecuted**, exactly as previously recorded. Registration blockers below are unchanged by Phase 2B-0.
+
+### Hosting correction
+
+Production `https://www.myhelper.me` is served by **Vercel** (verified live: `server: Vercel`, `x-vercel-id`, `x-nextjs-prerender`). The older "Production hosting: Strato" note in §1 below is superseded.
+
+### Known non-blockers carried forward
+
+1. Public secondary pages have no shared global header.
+2. The mobile comparison table requires horizontal scrolling; all content is reachable. A subtle "Seitlich wischen…" affordance may be considered later.
+3. Historical badge-removal anomaly: `7b080e4` removed certain `DifferenceSection` badges/tags, but a later historical merge restored the branch-side state. Predates Phase 2B-0; not modified.
+4. Duplicate `carerecipient.dashboard.unreadMessages` dictionary key is pre-existing and equivalent; not Phase 2B-0.
+5. The existing pricing / public-vs-AGB contradiction remains intentionally unresolved.
 
 ---
 

@@ -1,8 +1,42 @@
 # TODO.md — Backlog
 
-**Last updated:** 2026-07-12
+**Last updated:** 2026-08-28
 Priority: **P0** blocker/legal · **P1** high · **P2** medium · **P3** later.
 Status: ☐ open · ◐ in progress · ☑ done.
+
+---
+
+## Phase 2B-0 — COMPLETE, PRODUCTION VERIFIED (2026-08-28)
+
+- ☑ **P1** German SEO authority foundation released to Production as `b3f24d4` (tree `a53e0e5…`), owner-verified in Vercel as `main` / Production / Ready.
+- ☑ **P1** Authority page `/alltagsbegleitung-oder-pflegedienst` is **LIVE**.
+- ☑ **P1** Real `robots.ts` shipped — public allowed; `/admin`, `/caregiver`, `/dashboard`, `/plans`, `/support` disallowed; `Sitemap:` line present. *(closes the P1 robots item below)*
+- ☑ **P1** Dynamic `sitemap.ts` shipped — exactly 6 canonical public URLs. *(closes the P1 sitemap item below)*
+- ☑ **P1** Per-page metadata + canonicals shipped for public and legal routes; private/auth routes carry `X-Robots-Tag` noindex. *(closes the P1 metadata/canonical items below)*
+- ☑ **P2** JSON-LD live: `Organization` + `WebSite` + `Service` on the homepage; `WebPage` + `BreadcrumbList` + `FAQPage` on the authority page. *(closes the P2 structured-data item below, except the deferred Article schema decision)*
+- ☑ **P1** Homepage hydration mismatch fixed; all 7 care-need tags render in a stable order.
+
+> **Sequencing note:** the ordering below ("begin SEO only after legal acceptance tracking") was superseded by owner decision — the German-first SEO foundation shipped first. Backend items below remain in their previously recorded state.
+
+## Phase 2C — next SEO milestone (ASSESSMENT ONLY, not approved for implementation)
+
+- ☐ **P1** Assess Phase 2C priority between `/alltagsbegleitung` (definition/pillar) and `/alltagsbegleitung-finden` (commercial/finding). Do not implement either without explicit approval.
+- ☐ **P1** Review search intent and internal-link architecture across the live comparison page and both candidates to avoid cannibalization.
+- ☐ **P1** Decide whether the shared public navigation/header milestone should precede further authority pages.
+- ☐ **P2** German/Germany-first is retained; do **not** create EN/FR authority pages merely for symmetry.
+- ☐ **P2** Do **not** resubmit the sitemap or request indexing merely because Phase 2B-0 deployed; wait for natural recrawl.
+
+### Deferred, carried forward (do not start without approval)
+
+Shared public navigation/header architecture · mobile comparison "Seitlich wischen…" affordance · `/alltagsbegleitung` pillar · `/alltagsbegleitung-finden` commercial · possible `/so-funktioniert-es`, `/sicherheit-und-vertrauen`, `/leistungen` · raster 1200×630 OG image · broader breadcrumb architecture · editorial responsibility / §18 MStV · Article schema · `Service.areaServed` reconciliation · pricing contradiction resolution · city/local pages only when substantiated · off-page citations · analytics/tracking · cookie/privacy work · Search Console follow-up.
+
+### Known non-blockers
+
+1. Public secondary pages have no shared global header (pre-existing architecture, not a regression).
+2. Mobile comparison table scrolls horizontally; all content including **Ambulanter Pflegedienst** is reachable.
+3. Historical badge-removal anomaly (`7b080e4`) predates Phase 2B-0; not modified.
+4. Duplicate `carerecipient.dashboard.unreadMessages` key is pre-existing and equivalent.
+5. Pricing / public-vs-AGB contradiction remains intentionally unresolved.
 
 ---
 

@@ -4,6 +4,45 @@
 
 ---
 
+## [2026-08-28] — Phase 2B-0 German SEO authority foundation released to Production (commit `b3f24d4`)
+
+### Released
+
+- `main` fast-forwarded `a3a9298..b3f24d4` and pushed. Production commit `b3f24d43f99a08eab27e8d41f17f192f3f94684c`, tree `a53e0e5a94109c5411c566d9999f0e765ffb7b53`.
+- Owner verified in the Vercel dashboard: project `miteinander`, branch `main`, environment Production, status Ready / Latest / Current. The same commit also exists as the `phase2b0-production-integration` Preview.
+- New live authority page `/alltagsbegleitung-oder-pflegedienst` (Alltagsbegleitung vs. Pflegedienst comparison intent).
+- Release chain: `994cd5a` (SEO baseline) → `34780d0` (homepage hydration fix) → `cda4f1a` (German authority page) → `b3f24d4` (merge). `cda4f1a` was deliberately **not** cherry-picked; the two prerequisite commits are hard build dependencies.
+
+### Integration method
+
+- Isolated temporary worktrees were used throughout; the canonical working directory and its protected untracked entries were never written to.
+- The merge was proven conflict-free by read-only simulation before any write, and the resulting tree was gated against the exact approved hash `a53e0e5…` before push.
+- `main` reached Production by fast-forward, so the deployed Production SHA is byte-for-byte the SHA that passed Preview QA — not merely an equivalent tree.
+
+### Verified live in Production
+
+- HTTP 200 on `/`, `/alltagsbegleitung-oder-pflegedienst`, `/faq`, `/impressum`, `/datenschutz`, `/agb`, `/sitemap.xml`, `/robots.txt`.
+- `sitemap.xml` = exactly 6 canonical production URLs. `robots.txt` allows public crawling, disallows `/admin`, `/caregiver`, `/dashboard`, `/plans`, `/support`, and points to `https://www.myhelper.me/sitemap.xml`.
+- Authority page: correct H1, breadcrumb, production canonical, `index, follow`, exactly one JSON-LD block (`WebPage` + `BreadcrumbList` + `FAQPage`), 6/6 visible-FAQ-to-schema parity.
+- `X-Robots-Tag` noindex verified on all five private and all four auth paths; absent on public paths.
+- Homepage: one JSON-LD block, `WebSite.inLanguage = "de"`, hydration fix live (no `Math.random`, all 7 care-need tags rendered).
+
+### Statutory and product boundaries held
+
+- §45b wording present verbatim and unchanged. No euro amount anywhere on the page.
+- No claim of MyHelper.me or helper recognition under §45a, no automatic reimbursement, no guaranteed Entlastungsbetrag eligibility, no vetting, certification, rating, or geographic-availability claim.
+- General statutory information remains structurally separated from MyHelper.me-specific statements.
+
+### Not changed by this release
+
+- No backend, database, migration, auth, payment, cookie, or analytics change. The delta was 43 files, all under `frontend/`.
+- Registration blockers, taxonomy-migration status (reviewed, **not executed**), and the legal-acceptance backend milestone (authorized, **not started**) are all unchanged.
+- No Search Console submission, no indexing request, no sitemap resubmission, no DNS or Vercel configuration change.
+
+### Sequencing deviation recorded
+
+The 2026-07-12 plan sequenced SEO after legal-acceptance tracking. By owner decision the German-first SEO foundation shipped first. The backend milestones remain in their previously recorded state.
+
 ## [2026-07-12] — Registration EN/FR terminology wording aligned (commit `6a97c2c`, pushed)
 
 ### Commit and push
