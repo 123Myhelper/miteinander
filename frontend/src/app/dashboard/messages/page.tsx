@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { Suspense, useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '@/context/AuthContext';
 import { useSocket } from '@/context/SocketContext';
@@ -64,7 +64,7 @@ interface Message {
   messageType?: string;
 }
 
-export default function RecipientMessagesPage() {
+function RecipientMessagesContent() {
   const { token, user } = useAuth();
   const { sendMessage, respondSettlement, joinConversation, leaveConversation, onNewMessage, onNewNotification, onMessagesRead, startTyping, stopTyping, onTyping, onStopTyping, markAsRead, refreshUnreadCount, onSettlementCompleted } = useSocket();
   const { t } = useTranslation();
@@ -673,5 +673,13 @@ export default function RecipientMessagesPage() {
         confirmText={dialogState.variant === 'danger' ? t('messages.deleteChat') : 'OK'}
       />
     </CareRecipientLayout>
+  );
+}
+
+export default function RecipientMessagesPage() {
+  return (
+    <Suspense fallback={null}>
+      <RecipientMessagesContent />
+    </Suspense>
   );
 }

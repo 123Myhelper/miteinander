@@ -30,20 +30,21 @@ const STORAGE_KEY = 'myhelper-locale';
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>('de');
-  const [isHydrated, setIsHydrated] = useState(false);
 
   // Load locale from localStorage on mount
   useEffect(() => {
     const savedLocale = localStorage.getItem(STORAGE_KEY) as Locale | null;
     if (savedLocale && ['en', 'de', 'fr'].includes(savedLocale)) {
-      setLocaleState(savedLocale);
+      document.documentElement.lang = savedLocale;
+      const timeoutId = window.setTimeout(() => setLocaleState(savedLocale), 0);
+      return () => window.clearTimeout(timeoutId);
     }
-    setIsHydrated(true);
   }, []);
 
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale);
     localStorage.setItem(STORAGE_KEY, newLocale);
+    document.documentElement.lang = newLocale;
   };
 
   // Translation function - supports nested keys like "nav.howItWorks"
@@ -72,11 +73,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
     return result;
   };
-
-  // Prevent hydration mismatch by showing nothing until hydrated
-  if (!isHydrated) {
-    return null;
-  }
 
   return (
     <LanguageContext.Provider value={{ locale, language: locale, setLocale, t }}>

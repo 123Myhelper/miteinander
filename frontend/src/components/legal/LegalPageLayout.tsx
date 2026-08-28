@@ -3,6 +3,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { useTranslation } from "@/context/LanguageContext";
+import PublicPageLinks from "./PublicPageLinks";
 
 interface LegalPageLayoutProps {
   title: string;
@@ -32,6 +33,8 @@ export default function LegalPageLayout({
         <div className="space-y-6 break-words text-base leading-7 text-muted sm:text-lg sm:leading-8">
           {children}
         </div>
+
+        <PublicPageLinks />
       </div>
     </main>
   );

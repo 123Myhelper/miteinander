@@ -117,14 +117,14 @@ export default function CinematicLoader({ onLoadingComplete }: CinematicLoaderPr
             </div>
 
             {/* Text fade in */}
-            <motion.h1
+            <motion.p
               className="text-4xl md:text-5xl font-serif text-[#f5f5f0] tracking-wide"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 2.2 }}
             >
               MyHelper.me
-            </motion.h1>
+            </motion.p>
 
             <motion.p
               className="text-[#e07a5f] text-sm tracking-[0.3em] uppercase mt-3"
