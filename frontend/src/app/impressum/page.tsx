@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useTranslation } from "@/context/LanguageContext";
+import PublicPageLinks from "@/components/legal/PublicPageLinks";
 
 export default function Impressum() {
   const { t } = useTranslation();
@@ -96,6 +97,8 @@ export default function Impressum() {
             {t('imprint.imageCreditsText')}
           </p>
         </div>
+
+        <PublicPageLinks />
       </div>
     </main>
   );

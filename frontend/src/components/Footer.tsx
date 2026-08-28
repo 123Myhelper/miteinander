@@ -119,6 +119,26 @@ export default function Footer() {
               ))}
             </ul>
           </motion.div>
+
+          {/* Quick Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <h4 className="font-serif text-lg mb-4">{t("footer.quickLinks")}</h4>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/alltagsbegleitung-oder-pflegedienst"
+                  className="text-white/70 hover:text-white transition-colors text-sm"
+                >
+                  {t("footer.guideAlltagsbegleitung")}
+                </Link>
+              </li>
+            </ul>
+          </motion.div>
         </div>
 
         {/* Divider */}

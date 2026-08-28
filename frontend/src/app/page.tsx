@@ -47,7 +47,7 @@ const homeStructuredData = {
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
       name: SITE_NAME,
-      inLanguage: ["de", "en", "fr"],
+      inLanguage: "de",
       publisher: {
         "@id": `${SITE_URL}/#organization`,
       },

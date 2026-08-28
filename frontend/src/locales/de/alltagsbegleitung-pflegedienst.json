@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Alltagsbegleitung oder Pflegedienst: Der Unterschied",
+    "description": "Alltagsbegleitung hilft im Alltag, ein Pflegedienst erbringt pflegerische und medizinische Leistungen. Unterschied, typische Aufgaben und Grenzen im Überblick.",
+    "heading": "Alltagsbegleitung oder Pflegedienst: Wo liegt der Unterschied?",
+    "breadcrumbLabel": "Brotkrümelnavigation",
+    "breadcrumbHome": "Startseite",
+    "breadcrumbCurrent": "Alltagsbegleitung oder Pflegedienst",
+    "aboutAlltagsbegleitung": "Alltagsbegleitung",
+    "aboutSupport": "Unterstützung im Alltag"
+  },
+  "intro": {
+    "label": "Kurz erklärt",
+    "text": "Alltagsbegleitung unterstützt Menschen bei den Dingen, die den Tag ausmachen: Gesellschaft leisten, zu Terminen begleiten, Einkäufe erledigen, leicht im Haushalt mit anpacken. Ein ambulanter Pflegedienst ist dagegen auf die pflegerische Versorgung ausgerichtet und erbringt, soweit dafür vorgesehen, auch Behandlungspflege. Alltagsbegleitung setzt also beim Alltag an, ein Pflegedienst bei der Pflege."
+  },
+  "alltagsbegleitung": {
+    "heading": "Was ist Alltagsbegleitung?",
+    "paragraph1": "Alltagsbegleitung – häufig auch Alltagshilfe oder Unterstützung im Alltag genannt – bedeutet, Menschen bei alltäglichen Aufgaben und Wegen zu begleiten. Im Mittelpunkt stehen Entlastung, Gesellschaft und Teilhabe: Der Alltag soll leichter, verlässlicher und weniger einsam werden.",
+    "paragraph2": "Alltagsbegleitung richtet sich an Menschen, die im Alltag Unterstützung brauchen, und ebenso an Angehörige, die Entlastung suchen. Sie ersetzt keine pflegerische Versorgung, sondern ergänzt sie dort, wo es nicht um Pflege, sondern um den Alltag geht.",
+    "tasksHeading": "Typische Aufgaben einer Alltagsbegleitung",
+    "tasks": [
+      "Gesellschaft leisten und gemeinsam Zeit verbringen",
+      "Begleitung zu Terminen",
+      "Unterstützung bei der Mobilität",
+      "Einkäufe und Besorgungen",
+      "Leichte Haushaltshilfe",
+      "Begleitung bei Wegen außer Haus",
+      "Unterstützung bei alltäglichen Aktivitäten"
+    ],
+    "qualificationHeading": "Welche Qualifikation hat eine Alltagsbegleitung?",
+    "qualificationText": "Darauf gibt es keine pauschale Antwort. Welche Qualifikation erforderlich ist, hängt von der konkreten Tätigkeit, vom jeweiligen Angebot und gegebenenfalls von geltenden Anerkennungsvoraussetzungen ab. Für pflegerische Leistungen gelten eigene fachliche Anforderungen, die sich von der allgemeinen Alltagsbegleitung unterscheiden."
+  },
+  "pflegedienst": {
+    "heading": "Was ist ein ambulanter Pflegedienst?",
+    "text": "Ein ambulanter Pflegedienst versorgt Menschen pflegerisch in ihrem Zuhause. Der Schwerpunkt liegt auf der pflegerischen Versorgung und – wo dies vorgesehen ist – auf Behandlungspflege, die durch entsprechend qualifiziertes Personal erbracht wird. Für Leistungen gegenüber Pflege- oder Krankenkassen gelten dabei besondere Zulassungs- und Vertragsvoraussetzungen.",
+    "tasksHeading": "Typische Leistungen eines Pflegedienstes",
+    "tasks": [
+      "Pflegerische Versorgung im häuslichen Umfeld",
+      "Behandlungspflege, soweit sie vorgesehen und entsprechend qualifiziert erbracht wird",
+      "Beratung und Anleitung von Angehörigen",
+      "Zusammenarbeit mit Ärztinnen, Ärzten und weiteren beteiligten Stellen"
+    ]
+  },
+  "comparison": {
+    "heading": "Der Unterschied auf einen Blick",
+    "columnFeature": "Merkmal",
+    "columnBegleitung": "Alltagsbegleitung",
+    "columnPflegedienst": "Ambulanter Pflegedienst",
+    "rows": [
+      {
+        "label": "Schwerpunkt",
+        "begleitung": "Unterstützung, Begleitung und Entlastung im Alltag",
+        "pflegedienst": "Pflegerische Versorgung und – soweit vorgesehen – Behandlungspflege"
+      },
+      {
+        "label": "Typische Aufgaben",
+        "begleitung": "Gesellschaft, Begleitung zu Terminen, Einkäufe, leichte Haushaltshilfe, Mobilität",
+        "pflegedienst": "Pflegerische Versorgung, Behandlungspflege im dafür vorgesehenen Rahmen, Beratung"
+      },
+      {
+        "label": "Behandlungspflege",
+        "begleitung": "Gehört nicht zur allgemeinen Alltagsbegleitung.",
+        "pflegedienst": "Kann durch entsprechend qualifiziertes Personal im dafür vorgesehenen Rahmen erbracht werden."
+      },
+      {
+        "label": "Qualifikation",
+        "begleitung": "Abhängig von Tätigkeit, Angebot und gegebenenfalls geltenden Anerkennungsvoraussetzungen.",
+        "pflegedienst": "Abhängig von der jeweiligen pflegerischen Leistung und den dafür geltenden fachlichen Anforderungen."
+      },
+      {
+        "label": "Rechtlicher Rahmen",
+        "begleitung": "Je nach Angebot und rechtlichem Rahmen unterschiedlich.",
+        "pflegedienst": "Für Leistungen gegenüber Pflege- oder Krankenkassen gelten besondere Zulassungs- und Vertragsvoraussetzungen."
+      },
+      {
+        "label": "Ziel",
+        "begleitung": "Teilhabe, Entlastung und Lebensqualität im Alltag",
+        "pflegedienst": "Pflegerische Versorgung und Sicherheit"
+      }
+    ]
+  },
+  "boundaries": {
+    "heading": "Was Alltagsbegleitung nicht abdeckt",
+    "text": "Behandlungspflege gehört nicht zur allgemeinen Alltagsbegleitung. Pflegerische und medizinische Leistungen werden durch entsprechend qualifiziertes Personal in dem dafür vorgesehenen Rahmen erbracht. Wer regelmäßige pflegerische Versorgung benötigt, ist mit einer Alltagsbegleitung allein daher nicht ausreichend unterstützt."
+  },
+  "escalation": {
+    "heading": "Wann ist ein Pflegedienst die passende Wahl?",
+    "text": "Ein Pflegedienst kommt dann in Betracht, wenn der Bedarf über die Begleitung im Alltag hinausgeht und eine pflegerische Versorgung erforderlich ist. Wo genau diese Grenze verläuft, lässt sich nicht allgemein festlegen – sie hängt von der individuellen Situation ab.",
+    "adviceHeading": "Wo Sie sich unabhängig beraten lassen können",
+    "adviceText": "Eine verbindliche Einschätzung geben die Stellen, die den Einzelfall kennen: die behandelnde Hausärztin oder der behandelnde Hausarzt, die Pflegeberatung, Pflegestützpunkte vor Ort sowie die zuständige Pflegekasse.",
+    "disclaimer": "Dieser Beitrag dient der allgemeinen Information und ersetzt keine medizinische, pflegerische oder rechtliche Beratung."
+  },
+  "combination": {
+    "heading": "Alltagsbegleitung und Pflegedienst schließen sich nicht aus",
+    "text": "Die Frage lautet in der Praxis selten „entweder oder“. Alltagsbegleitung und pflegerische Versorgung decken unterschiedliche Bedarfe ab und werden häufig nebeneinander genutzt: Der Pflegedienst übernimmt die pflegerische Versorgung, die Alltagsbegleitung sorgt für Gesellschaft, Begleitung und Entlastung im übrigen Alltag."
+  },
+  "entlastungsbetrag": {
+    "heading": "Alltagsbegleitung und Entlastungsbetrag: allgemeine Einordnung",
+    "infoLabel": "Allgemeine Information",
+    "infoText": "Pflegebedürftige in häuslicher Pflege haben nach § 45b SGB XI Anspruch auf einen Entlastungsbetrag. Dieser kann unter anderem für sogenannte Angebote zur Unterstützung im Alltag nach § 45a SGB XI eingesetzt werden. Solche Angebote müssen dafür nach dem Recht des jeweiligen Bundeslandes anerkannt sein. Die Anerkennungsvoraussetzungen unterscheiden sich von Bundesland zu Bundesland. Verbindliche Auskunft geben die zuständige Pflegekasse und die jeweilige Landesbehörde.",
+    "myhelperHeading": "Was das für MyHelper.me bedeutet",
+    "myhelperText": "MyHelper.me macht keine allgemeine Zusage, dass über die Plattform gefundene Unterstützungsleistungen als Angebot zur Unterstützung im Alltag nach § 45a SGB XI anerkannt oder über den Entlastungsbetrag nach § 45b SGB XI erstattungsfähig sind. Ob eine konkrete Leistung im Einzelfall berücksichtigt werden kann, hängt von den jeweils geltenden Voraussetzungen ab und sollte vorab mit der zuständigen Pflegekasse beziehungsweise Stelle geklärt werden."
+  },
+  "positioning": {
+    "heading": "Wo ordnet sich MyHelper.me ein?",
+    "paragraph1": "MyHelper.me ist eine digitale Vermittlungsplattform. Die Plattform bringt Menschen, die Unterstützung im Alltag suchen, mit Alltagsbegleiterinnen und Alltagsbegleitern zusammen.",
+    "paragraph2": "MyHelper.me ist kein Pflegedienst und erbringt selbst keine pflegerischen, medizinischen oder Behandlungsleistungen. Die Unterstützungsleistungen werden unmittelbar zwischen den Nutzerinnen und Nutzern vereinbart; MyHelper.me wird nicht Vertragspartner dieser individuellen Leistungsvereinbarungen.",
+    "paragraph3": "Wer eine Alltagsbegleitung sucht, erstellt ein Profil, beschreibt den eigenen Unterstützungsbedarf und kann anschließend passende Profile finden und direkt Kontakt aufnehmen.",
+    "paragraph4": "Wird darüber hinaus pflegerische oder medizinische Versorgung benötigt, ist dafür ein Pflegedienst oder eine entsprechend qualifizierte Stelle zuständig."
+  },
+  "faq": {
+    "heading": "Häufige Fragen",
+    "items": [
+      {
+        "question": "Was ist der Unterschied zwischen Alltagsbegleitung und Pflegedienst?",
+        "answer": "Alltagsbegleitung setzt beim Alltag an: Gesellschaft leisten, zu Terminen begleiten, Einkäufe erledigen oder leicht im Haushalt mit anpacken. Ein ambulanter Pflegedienst ist auf pflegerische Versorgung ausgerichtet und erbringt, soweit dafür vorgesehen, auch Behandlungspflege. Für Leistungen gegenüber Pflege- oder Krankenkassen gelten dabei besondere Zulassungs- und Vertragsvoraussetzungen."
+      },
+      {
+        "question": "Ist Alltagsbegleitung Pflege?",
+        "answer": "Alltagsbegleitung ist auf Begleitung, Entlastung und Teilhabe im Alltag ausgerichtet. Behandlungspflege gehört nicht zur allgemeinen Alltagsbegleitung. Wo im Einzelfall die Grenze verläuft, hängt von der konkreten Tätigkeit und dem dafür geltenden Rahmen ab."
+      },
+      {
+        "question": "Darf eine Alltagsbegleitung pflegerische oder medizinische Aufgaben übernehmen?",
+        "answer": "Behandlungspflege gehört nicht zur allgemeinen Alltagsbegleitung. Pflegerische und medizinische Leistungen werden durch entsprechend qualifiziertes Personal in dem dafür vorgesehenen Rahmen erbracht. Welche Anforderungen für eine konkrete Tätigkeit gelten, richtet sich nach der Leistung selbst und nach den dafür geltenden fachlichen Voraussetzungen."
+      },
+      {
+        "question": "Braucht eine Alltagsbegleitung eine pflegerische Ausbildung?",
+        "answer": "Das lässt sich nicht pauschal beantworten. Welche Qualifikation erforderlich ist, hängt von der konkreten Tätigkeit, vom jeweiligen Angebot und gegebenenfalls von geltenden Anerkennungsvoraussetzungen ab. Für pflegerische Leistungen gelten eigene fachliche Anforderungen."
+      },
+      {
+        "question": "Kann man Alltagsbegleitung und einen Pflegedienst zusammen nutzen?",
+        "answer": "Beides schließt sich nicht aus. Alltagsbegleitung und pflegerische Versorgung decken unterschiedliche Bedarfe ab und werden in der Praxis häufig nebeneinander genutzt. Wie sich beides im Einzelfall sinnvoll ergänzt, klären Betroffene und Angehörige am besten mit den jeweils beteiligten Stellen."
+      },
+      {
+        "question": "Ist MyHelper.me ein Pflegedienst?",
+        "answer": "Nein. MyHelper.me ist eine Vermittlungsplattform. Die Plattform verbindet Nutzerinnen und Nutzer miteinander, erbringt aber selbst keine Pflege-, Behandlungs- oder medizinischen Leistungen."
+      }
+    ]
+  },
+  "related": {
+    "heading": "Weiterlesen",
+    "links": [
+      { "href": "/faq", "label": "Häufig gestellte Fragen zu MyHelper.me" },
+      { "href": "/registrieren", "label": "Profil erstellen" },
+      { "href": "/agb", "label": "Allgemeine Geschäftsbedingungen" },
+      { "href": "/impressum", "label": "Impressum" }
+    ]
+  }
+}

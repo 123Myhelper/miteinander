@@ -7,15 +7,15 @@ import { useTranslation } from "@/context/LanguageContext";
 const heroImages = [
   {
     src: "https://images.unsplash.com/photo-1596633607590-7156877ef734?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Elderly hands holding a warm cup",
+    alt: "Ältere Person hält eine warme Tasse in den Händen",
   },
   {
     src: "https://images.unsplash.com/photo-1572567981653-ce74f7356946?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Caregiver holding hands with elderly person",
+    alt: "Zwei Menschen halten sich an den Händen",
   },
   {
     src: "https://images.unsplash.com/photo-1508028922235-7b9a1b690358?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Happy elderly couple walking together",
+    alt: "Älteres Paar geht gemeinsam spazieren",
   },
 ];
 
