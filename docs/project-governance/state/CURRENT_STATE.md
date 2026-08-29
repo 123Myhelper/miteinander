@@ -2,7 +2,7 @@
 
 > What exists **today**. Updated whenever the product or repository materially changes. This is a factual snapshot, not a plan.
 
-**Last updated:** 2026-08-28
+**Last updated:** 2026-08-29
 **Confidence:** The release snapshot below is verified from the canonical repository and Git history on 2026-07-12. Older live-site findings retain their original verification date. Items marked 🔍 remain pending confirmation.
 **Information Governance (Phase 2A + ADR-008):** information is classified PUBLIC/INTERNAL/CONFIDENTIAL/SECRET per **`INFORMATION_CLASSIFICATION.md`** (`PROJECT_PRINCIPLES.md` §13). Client-identifying (CONFIDENTIAL) data has been redacted from `/AI_OS` planning docs and replaced with neutral placeholders (Client Representative, Legal Entity (Pending), Business Address (Pending), VAT ID (Pending), Contact (Pending)). Real identity remains only on the live legal pages (Impressum/Datenschutz/AGB) and other legally-required artifacts, which are unchanged. See `CONFIDENTIALITY_AUDIT.md` (applied record).
 
@@ -227,16 +227,19 @@ The following files are unreviewed candidate artifacts. They must not be opened,
 
 ## 4. SEO / metadata (verified from live site + root layout)
 
-- ✅ Root metadata and reviewed visible brand copy are aligned to MyHelper.me on the pushed review branch. Production promotion is not approved.
+- ✅ Root metadata and visible brand copy are aligned to MyHelper.me. **Phase 2 Production promotion is COMPLETE** — Production is live at `07f52c2f2cf3b63fc49536e25bed9fe0a4c7a384` (tree `027ab4d052ae0d929c3fc6d6520313cfe259f908`), reverified 2026-08-29.
 - ✅ The reviewed homepage is repositioned around Alltagsbegleitung and includes the approved responsive target-group membership cards.
 - **Language status (ADR-007):** German remains the source language. Neutral EN/FR equivalents were added only where required to preserve locale-key parity for approved shared frontend changes; this does not authorize a broader EN/FR rewrite.
 - **Jurisdiction (ADR-009):** MyHelper.me operates **only in Germany under German law**. German, English, and French are **interface languages of one German-jurisdiction platform**, not country editions. Expansion outside Germany requires a new ADR and legal review.
 - ✅ **CA-19 implementation is committed:** the meal-preparation homepage tag is removed in de/en/fr. Database-governed care-needs taxonomy remains a separate migration/release concern.
 - ◐ **Social media (verified live):** footer has 4 placeholder `href="#"` icons (Instagram, Facebook, LinkedIn, Twitter/X); no social references elsewhere. Confirmed accounts: Instagram + Facebook (canonical); **Twitter/X icon to be removed** (no account); **LinkedIn pending** = sole blocker. Wire in one pass via a single shared config when LinkedIn arrives → `SOCIAL_MEDIA_REFERENCE.md`.
-- ✅ `robots.txt` at the live domain returns **empty** — no directives, no sitemap reference.
+- ✅ `robots.txt` is **populated**, served from `src/app/robots.ts`: allows `/`; disallows `/admin`, `/caregiver`, `/dashboard`, `/plans`, `/support`; carries `Host:` and `Sitemap:` lines. Reverified live 2026-08-29. *(Supersedes the earlier "returns empty" finding, which predates Phase 2B-0.)*
 - ✅ Open Graph + Twitter tags present; social image is `logo.svg` (512×512); Twitter card type `summary` (small).
 - ✅ `<html lang="de">` set (good for SEO/accessibility).
-- 🔍 Per-page unique titles/descriptions, canonical tags, `sitemap.xml`, and JSON-LD structured data — `/datenschutz` returned the generic root metadata via server fetch, suggesting legal pages may be client-rendered without unique metadata. To confirm on full inspection.
+- ✅ **RESOLVED (reverified 2026-08-29).** Per-page unique titles, descriptions and canonical tags ship for every public route via `createPublicMetadata`; the legal pages carry their own metadata through their route `layout.tsx`, so the earlier "generic root metadata" observation no longer applies. `sitemap.xml` serves exactly **7 canonical public URLs** with commit-derived `lastmod` values. JSON-LD is live: `Organization` + `WebSite` + `Service` on `/`; `WebPage` + `BreadcrumbList` + `FAQPage` on both authority pages; `FAQPage` on `/faq`.
+- ✅ **Search Console:** verified as a **Domain property via DNS TXT** on the apex, so apex, `www` and both protocols report into one dataset. Reverified 2026-08-29. *(Verification token value not recorded here — INTERNAL handling per `INFORMATION_CLASSIFICATION.md`.)*
+- ✅ **Canonical host redirects:** apex → `www` and `http` → `https` both return `308`. Reverified 2026-08-29.
+- 🔴 **No web analytics is installed** — no GA4, Vercel Analytics, Plausible, Matomo or PostHog anywhere in `frontend/src` or `package.json`, and no analytics script on the live homepage. Search Console therefore provides acquisition data only; **no post-click or conversion data exists**. Blocked behind TDDDG § 25 consent design and Datenschutzerklärung completion.
 
 ## 5. Privacy / legal (Phase 2 verified — see `LEGAL_GAP_ANALYSIS.md`)
 
