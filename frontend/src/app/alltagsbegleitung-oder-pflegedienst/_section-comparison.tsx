@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getAlltagsbegleitungPflegedienstContent } from "@/lib/content/alltagsbegleitung-pflegedienst";
 import { SectionHeading, SubHeading } from "./_ui";
 
@@ -55,6 +56,15 @@ export default function SectionComparison() {
 
       <SectionHeading>{combination.heading}</SectionHeading>
       <p>{combination.text}</p>
+      <p>
+        {combination.findingLead}
+        <Link
+          href="/alltagsbegleitung-finden"
+          className="rounded-md text-accent transition-colors hover:text-accent-light focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+        >
+          {combination.findingLinkLabel}
+        </Link>
+      </p>
     </>
   );
 }

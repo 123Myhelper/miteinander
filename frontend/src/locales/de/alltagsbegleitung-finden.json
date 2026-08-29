@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "title": "Alltagsbegleitung finden: So gehen Sie vor",
+    "description": "Wie Sie Unterstützung im Alltag finden und organisieren: Bedarf klären, Wege zur Suche, Fragen fürs erste Gespräch und was vor dem Start geklärt sein sollte.",
+    "heading": "Alltagsbegleitung finden: So organisieren Sie Unterstützung im Alltag",
+    "breadcrumbLabel": "Brotkrümelnavigation",
+    "breadcrumbHome": "Startseite",
+    "breadcrumbCurrent": "Alltagsbegleitung finden",
+    "aboutAlltagsbegleitung": "Alltagsbegleitung",
+    "aboutSupport": "Unterstützung im Alltag"
+  },
+  "intro": {
+    "label": "Kurz erklärt",
+    "text": "Eine Alltagsbegleitung zu finden ist vor allem Organisationsarbeit: erst klären, welche Unterstützung wirklich gebraucht wird, dann entscheiden, über welchen Weg gesucht werden soll, und schließlich im Gespräch herausfinden, ob es menschlich und praktisch zusammenpasst. Diese Seite geht diese Schritte der Reihe nach durch – von der ersten Bedarfsklärung bis zu den ersten Wochen der Begleitung."
+  },
+  "bedarf": {
+    "heading": "Zuerst klären: Welche Unterstützung wird gebraucht?",
+    "text": "Bevor Sie suchen, lohnt sich eine Bestandsaufnahme. „Ein bisschen Hilfe im Alltag“ kann von einer Stunde Gesellschaft pro Woche bis zu täglicher Begleitung alles bedeuten – und je nachdem, was gemeint ist, sieht die Suche völlig anders aus. Je genauer Sie den Bedarf beschreiben können, desto klarer lässt sich beurteilen, ob ein Angebot dazu passt.",
+    "fragenHeading": "Vier Fragen, die den Bedarf greifbar machen",
+    "fragen": [
+      "Was genau soll übernommen werden? Einkäufe, Begleitung zu Terminen, Gesellschaft, leichte Haushaltshilfe, Wege außer Haus – möglichst konkret.",
+      "Wie oft und wie lange? Feste Termine oder flexibel, vormittags oder nachmittags, eine Stunde oder ein halber Tag.",
+      "Wo findet die Unterstützung statt? Zu Hause, unterwegs oder beides.",
+      "Wer ist außer der unterstützten Person noch beteiligt? Angehörige, Nachbarn, ein Pflegedienst, eine rechtliche Betreuung."
+    ],
+    "notizenText": "Es hilft, eine Woche lang mitzuschreiben, an welchen Stellen tatsächlich Unterstützung gefehlt hat. Aus diesen Notizen wird fast von selbst eine Beschreibung, die Sie später einer Alltagsbegleitung geben können – und an der Sie merken, ob ein Angebot dazu passt.",
+    "entscheidungHeading": "Wer mitentscheidet",
+    "entscheidungText": "Wenn Sie die Unterstützung für eine andere Person organisieren, klären Sie früh, wer welche Entscheidungen trifft. Beziehen Sie die Person, die begleitet werden soll, so weit wie möglich ein und besprechen Sie mit ihr, welche Unterstützung sie sich wünscht. Bestehen eine Vorsorgevollmacht oder eine rechtliche Betreuung, gehört auch das in die Vorüberlegung.",
+    "grenzeHeading": "Wenn der Bedarf über den Alltag hinausgeht",
+    "grenzeTextBefore": "Nicht jeder Unterstützungsbedarf ist Alltagsbegleitung. Sobald pflegerische oder medizinische Versorgung eine Rolle spielt, ist dafür eine andere Stelle zuständig. Wo diese Grenze verläuft und woran Sie sie erkennen, ist ausführlich beschrieben unter ",
+    "grenzeLinkLabel": "Alltagsbegleitung oder Pflegedienst: Wo liegt der Unterschied?",
+    "grenzeTextAfter": "."
+  },
+  "wege": {
+    "heading": "Welche Wege es gibt, eine Alltagsbegleitung zu finden",
+    "text": "Es gibt nicht den einen richtigen Weg. Welcher Weg für Sie infrage kommt, hängt davon ab, wie verbindlich die Unterstützung sein soll, wie viel Zeit Sie für die Suche haben und welche Angebote es bei Ihnen vor Ort gibt. Die folgenden Wege schließen einander nicht aus.",
+    "beratungHeading": "Beratungsstellen und öffentliche Anlaufstellen",
+    "beratungText": "Pflegestützpunkte, die Pflegeberatung, Seniorenbüros und die Sozialdienste der Kommunen können zu Unterstützungsangeboten beraten und über regionale Anlaufstellen informieren. Auch die Pflegekasse ist eine Anlaufstelle.",
+    "landesrechtHeading": "Nach Landesrecht anerkannte Angebote zur Unterstützung im Alltag",
+    "landesrechtTextBefore": "In den Bundesländern gibt es Angebote zur Unterstützung im Alltag, die nach dem jeweiligen Landesrecht anerkannt sind. Welche Angebote das sind und welche Voraussetzungen dafür gelten, unterscheidet sich von Bundesland zu Bundesland. Auskunft geben die zuständige Stelle des jeweiligen Landes und die Pflegekasse. Eine allgemeine Einordnung dazu finden Sie im Abschnitt zum Entlastungsbetrag auf der Seite ",
+    "landesrechtLinkLabel": "Alltagsbegleitung oder Pflegedienst",
+    "landesrechtTextAfter": ".",
+    "verbaendeHeading": "Wohlfahrtsverbände, Vereine und Nachbarschaftshilfe",
+    "verbaendeText": "Kirchengemeinden, Wohlfahrtsverbände, Freiwilligenagenturen und organisierte Nachbarschaftshilfen bieten je nach Ort Besuchs- und Begleitdienste an. Ob es ein solches Angebot bei Ihnen gibt und welchen Umfang es hat, erfahren Sie bei der jeweiligen Einrichtung oder über die Beratungsstellen im vorigen Abschnitt.",
+    "umfeldHeading": "Das persönliche Umfeld",
+    "umfeldText": "Ein weiterer Weg führt über das persönliche Umfeld: über Bekannte, Nachbarinnen und Nachbarn oder über andere Angehörige, die bereits Unterstützung organisiert haben. Was diesen Weg auszeichnet, ist, dass jemand die Person bereits kennt und Ihnen aus eigener Erfahrung berichten kann. Der Kreis möglicher Kontakte ist dabei allerdings auf Ihr eigenes Umfeld begrenzt.",
+    "plattformenHeading": "Plattformen und Vermittlungsangebote",
+    "plattformenText": "Digitale Vermittlungsplattformen – MyHelper.me ist eine davon – zeigen Profile von Menschen, die Unterstützung im Alltag anbieten. Nutzerinnen und Nutzer können Profile ansehen und über die Plattform Kontakt aufnehmen; die Auswahl treffen sie selbst. Sehen Sie beim jeweiligen Anbieter nach, welche Angaben in den Profilen von den anbietenden Personen selbst stammen – daran erkennen Sie, was Sie im Gespräch noch selbst klären sollten."
+  },
+  "gespraech": {
+    "heading": "Das erste Gespräch: Worauf Sie achten können",
+    "text": "Planen Sie für das erste Gespräch Zeit ein und führen Sie es, wenn möglich, gemeinsam mit der Person, die begleitet werden soll. Es geht nicht um ein Vorstellungsgespräch im klassischen Sinn, sondern um die Frage, ob eine Zusammenarbeit im Alltag für beide Seiten vorstellbar ist.",
+    "personHeading": "Fragen zur Person und zur Erfahrung",
+    "personFragen": [
+      "Was haben Sie bisher gemacht, und mit welchen Menschen haben Sie gearbeitet?",
+      "Was machen Sie in einer Begleitung besonders gern – und was liegt Ihnen weniger?",
+      "Haben Sie Erfahrung mit Situationen wie unserer, etwa mit eingeschränkter Mobilität, mit Vergesslichkeit oder mit wenig Kontakt nach außen?",
+      "Gibt es Unterlagen, die Sie mir zeigen können – zum Beispiel zu Kursen, Fortbildungen oder einem Führungszeugnis?"
+    ],
+    "aufgabenHeading": "Fragen zu Aufgaben und Grenzen",
+    "aufgabenFragen": [
+      "Welche der Aufgaben, die wir besprochen haben, würden Sie übernehmen – und welche nicht?",
+      "Wie gehen Sie damit um, wenn Sie um etwas gebeten werden, das Sie nicht übernehmen können oder möchten?",
+      "Wie würden Sie reagieren, wenn Ihnen etwas auffällt, das ärztlich oder pflegerisch abgeklärt gehört?"
+    ],
+    "verlaesslichkeitHeading": "Fragen zur Verlässlichkeit im Alltag",
+    "verlaesslichkeitFragen": [
+      "Welche Zeiten können Sie dauerhaft zusagen?",
+      "Wie sagen Sie Termine ab, und wie viel Vorlauf ist dabei realistisch?",
+      "Was passiert bei Urlaub oder Krankheit – gibt es eine Vertretung?",
+      "Wie sind Sie zwischen den Terminen erreichbar?"
+    ],
+    "eindruckHeading": "Was sich nicht erfragen lässt",
+    "eindruckText": "Ob es passt, entscheidet sich selten über die Antworten, sondern über den Umgangston, die Geduld und darüber, ob die unterstützte Person sich in Gegenwart dieser Person wohlfühlt. Vereinbaren Sie einen kurzen Kennenlerntermin im gewohnten Umfeld, bevor Sie sich festlegen, und nehmen Sie sich Zeit für die Entscheidung. Nach Unterlagen und Nachweisen zu fragen ist dabei völlig selbstverständlich – Sie müssen sich aber selbst darum kümmern, sie sich auch zeigen zu lassen."
+  },
+  "vereinbarung": {
+    "heading": "Was vor dem Start besprochen sein sollte",
+    "text": "Absprachen, die vor dem Beginn getroffen werden, geben beiden Seiten eine klare Grundlage. Halten Sie sie schriftlich fest.",
+    "punkte": [
+      "Aufgaben: was übernommen wird und was ausdrücklich nicht.",
+      "Zeiten: feste Termine, Dauer und wie kurzfristig Änderungen möglich sind.",
+      "Absagen: bis wann und auf welchem Weg beide Seiten absagen können.",
+      "Vergütung und Abrechnung: Höhe, Abrechnungszeitraum und Zahlungsweg – schriftlich, bevor die Begleitung beginnt.",
+      "Fahrten und Auslagen: wer Fahrtkosten oder Einkäufe verauslagt und wie das abgerechnet wird.",
+      "Schlüssel und Zugang zur Wohnung: ob ein Schlüssel übergeben wird und was bei Verlust gilt.",
+      "Umgang mit Geld: ob und in welchem Rahmen Einkäufe erledigt werden und wie Belege aufbewahrt werden.",
+      "Erreichbarkeit und Notfall: wen die Alltagsbegleitung anruft, wenn etwas ist.",
+      "Vertretung: was gilt, wenn die Alltagsbegleitung ausfällt.",
+      "Beendigung: mit welcher Frist beide Seiten die Zusammenarbeit beenden können."
+    ],
+    "rechtHeading": "Rechtliche und versicherungsrechtliche Fragen",
+    "rechtText": "Ob eine Alltagsbegleitung selbständig tätig ist oder angestellt wird, wirkt sich auf steuerliche, sozialversicherungsrechtliche und Haftungsfragen aus. Wie das im Einzelfall zu beurteilen ist, hängt davon ab, wie die Zusammenarbeit tatsächlich ausgestaltet ist. Klären Sie diese Fragen vor dem Beginn und lassen Sie sich dazu fachlich beraten; fragen Sie außerdem nach dem Versicherungsschutz auf beiden Seiten."
+  },
+  "wochen": {
+    "heading": "Die ersten Wochen: Woran Sie merken, ob es passt",
+    "text": "Geben Sie der Zusammenarbeit Zeit, sich einzuspielen. Nicht jede Unsicherheit am Anfang bedeutet, dass die Begleitung nicht passt.",
+    "guteZeichenHeading": "Gute Zeichen",
+    "guteZeichen": [
+      "Die unterstützte Person freut sich auf die Termine oder wirkt danach entspannter.",
+      "Absprachen werden eingehalten, und Änderungen werden rechtzeitig angekündigt.",
+      "Es wird von sich aus mitgeteilt, wenn etwas nicht geklappt hat.",
+      "Angehörige werden spürbar entlastet, ohne ständig nachsteuern zu müssen."
+    ],
+    "warnzeichenHeading": "Zeichen, die Sie ernst nehmen sollten",
+    "warnzeichen": [
+      "Termine fallen wiederholt kurzfristig aus.",
+      "Absprachen zu Aufgaben oder zur Abrechnung werden unklar oder verschieben sich.",
+      "Die unterstützte Person zieht sich zurück oder äußert Unbehagen.",
+      "Es werden Aufgaben übernommen, die ausdrücklich nicht vereinbart waren."
+    ],
+    "abschlussText": "Benennen Sie Beobachtungen früh und konkret – das schafft die Grundlage, Absprachen anzupassen. Ändert sich danach nichts, können Sie die Zusammenarbeit im vereinbarten Rahmen beenden und neu suchen."
+  },
+  "beratung": {
+    "heading": "Wann Sie sich beraten lassen sollten",
+    "textBefore": "Beratung ist sinnvoll, wenn Sie unsicher sind, welche Art von Unterstützung die richtige ist. Die Pflegeberatung, ein Pflegestützpunkt und die Pflegekasse können Sie zu geeigneten Unterstützungs- und Pflegeangeboten beraten. Geht es um gesundheitliche oder medizinische Fragen, wenden Sie sich an die behandelnde Ärztin oder den behandelnden Arzt. Zeichnet sich ab, dass pflegerische Versorgung nötig wird, lesen Sie ",
+    "linkLabel": "Alltagsbegleitung oder Pflegedienst: Wo liegt der Unterschied?",
+    "textAfter": " und wenden Sie sich an eine der genannten Stellen.",
+    "disclaimer": "Dieser Beitrag dient der allgemeinen Information und ersetzt keine medizinische, pflegerische, steuerliche oder rechtliche Beratung."
+  },
+  "myhelper": {
+    "heading": "Wo sich MyHelper.me einordnet",
+    "paragraph1": "MyHelper.me ist eine digitale Vermittlungsplattform für Alltagsbegleitung und Unterstützung im Alltag. Die Plattform bringt Menschen, die Unterstützung im Alltag suchen, mit Alltagsbegleiterinnen und Alltagsbegleitern zusammen. MyHelper.me ist kein Pflegedienst und erbringt selbst keine pflegerischen, medizinischen oder Behandlungsleistungen.",
+    "paragraph2": "Der Ablauf: Sie legen ein Konto an – als hilfesuchende Person oder als Alltagsbegleiterin beziehungsweise Alltagsbegleiter. Die Registrierung umfasst rollenbezogene Profildaten und eine E-Mail-Verifizierung; einen Notfallkontakt können Sie zusätzlich angeben. Anschließend können Sie Profile ansehen, selbst entscheiden, wen Sie kontaktieren möchten, und über die Plattform Nachrichten austauschen.",
+    "paragraph3": "Für Ihre Auswahl ist wichtig: Die Angaben in den Profilen – etwa zu Erfahrung, Tätigkeiten, Beruf oder Fortbildungen – stammen von den Nutzerinnen und Nutzern selbst. Die Schritte, die auf dieser Seite beschrieben sind – das Gespräch führen, sich Unterlagen zeigen lassen, Aufgaben und Zeiten schriftlich vereinbaren –, gelten deshalb genauso, wenn Sie über MyHelper.me suchen.",
+    "paragraph4": "Die Unterstützungsleistungen werden unmittelbar zwischen den Nutzerinnen und Nutzern vereinbart; MyHelper.me wird nicht Vertragspartner dieser individuellen Leistungsvereinbarungen.",
+    "paragraph5": "MyHelper.me ist einer von mehreren Wegen. Welcher Weg für Sie infrage kommt, hängt von Ihrer Situation ab.",
+    "ctaPrimaryLabel": "Profil erstellen und Unterstützung suchen",
+    "ctaPrimaryHref": "/registrieren",
+    "ctaSupportText": "Sie legen ein Konto an, beschreiben Ihren Unterstützungsbedarf und können anschließend Profile ansehen und Kontakt aufnehmen.",
+    "ctaSecondaryLabel": "Häufige Fragen zu MyHelper.me",
+    "ctaSecondaryHref": "/faq"
+  },
+  "faq": {
+    "heading": "Häufige Fragen",
+    "items": [
+      {
+        "question": "Wo kann ich eine Alltagsbegleitung finden?",
+        "answer": "Es gibt mehrere Wege: Beratungsstellen wie Pflegestützpunkte und die Pflegeberatung, nach Landesrecht anerkannte Angebote zur Unterstützung im Alltag, Wohlfahrtsverbände, Vereine und Nachbarschaftshilfen, das persönliche Umfeld sowie digitale Vermittlungsplattformen. Welcher Weg für Sie infrage kommt, hängt davon ab, wie verbindlich die Unterstützung sein soll, wie viel Zeit Sie für die Suche haben und welche Angebote es bei Ihnen vor Ort gibt."
+      },
+      {
+        "question": "Worauf sollte ich bei der Auswahl einer Alltagsbegleitung achten?",
+        "answer": "Achten Sie darauf, ob die Person die Aufgaben übernehmen möchte, um die es Ihnen tatsächlich geht, ob sie verlässliche Zeiten zusagen kann und wie offen sie über eigene Grenzen spricht. Lassen Sie sich Unterlagen zu Kursen, Fortbildungen oder einem Führungszeugnis zeigen, wenn Ihnen das wichtig ist – fragen Sie aktiv danach. Wie das persönliche Gespräch verläuft und wie die unterstützte Person auf den Kontakt reagiert, sind dabei weitere wichtige Gesichtspunkte."
+      },
+      {
+        "question": "Welche Fragen sollte ich im ersten Gespräch stellen?",
+        "answer": "Nützlich sind Fragen zu drei Bereichen: zur bisherigen Erfahrung, zu den konkreten Aufgaben einschließlich der Aufgaben, die ausdrücklich nicht übernommen werden, und zur Verlässlichkeit im Alltag – also zu Zeiten, Absagen, Vertretung und Erreichbarkeit. Hilfreich ist außerdem die Frage, wie die Person reagieren würde, wenn ihr etwas auffällt, das ärztlich oder pflegerisch abgeklärt gehört."
+      },
+      {
+        "question": "Was sollte vor dem Beginn der Unterstützung besprochen und schriftlich festgehalten werden?",
+        "answer": "Aufgaben und ausdrücklich ausgenommene Aufgaben, Zeiten und Dauer, Absageregeln, Vergütung und Abrechnung, der Umgang mit Fahrtkosten und Auslagen, Schlüssel und Zugang zur Wohnung, Erreichbarkeit und das Vorgehen im Notfall, die Vertretung bei Ausfall sowie die Frist für eine Beendigung. Klären Sie außerdem vorab die versicherungs- und steuerrechtlichen Fragen und lassen Sie sich dazu fachlich beraten."
+      },
+      {
+        "question": "Kann ich eine Alltagsbegleitung für eine Angehörige oder einen Angehörigen organisieren?",
+        "answer": "Ja. Beziehen Sie die Person, die begleitet werden soll, dabei so weit wie möglich ein und besprechen Sie mit ihr, welche Unterstützung sie sich wünscht. Klären Sie außerdem, wer welche Entscheidungen trifft und ob eine Vorsorgevollmacht oder eine rechtliche Betreuung besteht."
+      },
+      {
+        "question": "Was kann ich tun, wenn die Alltagsbegleitung nicht zu uns passt?",
+        "answer": "Benennen Sie Ihre Beobachtungen früh und konkret – Zeiten, Aufgaben, Tonfall –, damit Absprachen angepasst werden können. Ändert sich danach nichts, können Sie die Zusammenarbeit im vereinbarten Rahmen beenden und neu suchen. Halten Sie deshalb schon zu Beginn fest, mit welcher Frist beide Seiten beenden können."
+      }
+    ]
+  },
+  "related": {
+    "heading": "Weiterlesen",
+    "links": [
+      {
+        "href": "/alltagsbegleitung-oder-pflegedienst",
+        "label": "Alltagsbegleitung oder Pflegedienst: Wo liegt der Unterschied?"
+      },
+      {
+        "href": "/faq",
+        "label": "Häufig gestellte Fragen zu MyHelper.me"
+      },
+      {
+        "href": "/registrieren",
+        "label": "Profil erstellen"
+      },
+      {
+        "href": "/agb",
+        "label": "Allgemeine Geschäftsbedingungen"
+      },
+      {
+        "href": "/impressum",
+        "label": "Impressum"
+      }
+    ]
+  }
+}

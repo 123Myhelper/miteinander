@@ -137,6 +137,14 @@ export default function Footer() {
                   {t("footer.guideAlltagsbegleitung")}
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/alltagsbegleitung-finden"
+                  className="text-white/70 hover:text-white transition-colors text-sm"
+                >
+                  {t("footer.guideFinden")}
+                </Link>
+              </li>
             </ul>
           </motion.div>
         </div>

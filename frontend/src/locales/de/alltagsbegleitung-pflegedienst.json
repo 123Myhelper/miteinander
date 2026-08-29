@@ -92,7 +92,9 @@
   },
   "combination": {
     "heading": "Alltagsbegleitung und Pflegedienst schließen sich nicht aus",
-    "text": "Die Frage lautet in der Praxis selten „entweder oder“. Alltagsbegleitung und pflegerische Versorgung decken unterschiedliche Bedarfe ab und werden häufig nebeneinander genutzt: Der Pflegedienst übernimmt die pflegerische Versorgung, die Alltagsbegleitung sorgt für Gesellschaft, Begleitung und Entlastung im übrigen Alltag."
+    "text": "Die Frage lautet in der Praxis selten „entweder oder“. Alltagsbegleitung und pflegerische Versorgung decken unterschiedliche Bedarfe ab und werden häufig nebeneinander genutzt: Der Pflegedienst übernimmt die pflegerische Versorgung, die Alltagsbegleitung sorgt für Gesellschaft, Begleitung und Entlastung im übrigen Alltag.",
+    "findingLead": "Wenn für Sie feststeht, dass Alltagsbegleitung das Passende ist, finden Sie die einzelnen Schritte hier: ",
+    "findingLinkLabel": "Wie Sie eine Alltagsbegleitung finden und organisieren"
   },
   "entlastungsbetrag": {
     "heading": "Alltagsbegleitung und Entlastungsbetrag: allgemeine Einordnung",
@@ -140,6 +142,10 @@
   "related": {
     "heading": "Weiterlesen",
     "links": [
+      {
+        "href": "/alltagsbegleitung-finden",
+        "label": "Alltagsbegleitung finden: So gehen Sie vor"
+      },
       { "href": "/faq", "label": "Häufig gestellte Fragen zu MyHelper.me" },
       { "href": "/registrieren", "label": "Profil erstellen" },
       { "href": "/agb", "label": "Allgemeine Geschäftsbedingungen" },

@@ -21,6 +21,10 @@ export default function PublicPageLinks() {
       href: "/alltagsbegleitung-oder-pflegedienst",
       label: t("footer.guideAlltagsbegleitung"),
     },
+    {
+      href: "/alltagsbegleitung-finden",
+      label: t("footer.guideFinden"),
+    },
     { href: "/faq", label: t("footer.faq") },
     { href: "/impressum", label: t("footer.imprint") },
     { href: "/datenschutz", label: t("footer.privacy") },
