@@ -11,6 +11,24 @@ const PAGE_URL = `${SITE_URL}${PAGE_PATH}`;
 
 const content = getAlltagsbegleitungPflegedienstContent();
 
+/**
+ * "Ist MyHelper.me ein Pflegedienst?" is a direct question about the platform
+ * itself, so /faq is the canonical owner of that Question entity. Carrying it in
+ * this page's FAQPage graph as well would put two URLs forward for one entity,
+ * so it is excluded here. The visible Q&A deliberately stays on the page: the
+ * surrounding comparison is exactly where a reader might otherwise infer that
+ * MyHelper.me provides care itself.
+ *
+ * Keyed to the question text rather than to an index, because the exclusion
+ * exists on account of that exact wording; an index would silently exclude the
+ * wrong item if the FAQ list were ever reordered.
+ */
+const FAQ_QUESTION_OWNED_BY_FAQ_PAGE = "Ist MyHelper.me ein Pflegedienst?";
+
+const faqSchemaItems = content.faq.items.filter(
+  (item) => item.question !== FAQ_QUESTION_OWNED_BY_FAQ_PAGE,
+);
+
 export const metadata = createPublicMetadata({
   title: content.meta.title,
   description: content.meta.description,
@@ -58,9 +76,10 @@ const structuredData = {
       "@id": `${PAGE_URL}#faq`,
       inLanguage: "de",
       isPartOf: { "@id": `${PAGE_URL}#webpage` },
-      // Built from the same array the visible FAQ section renders, so the
-      // structured data can never describe text a visitor cannot see.
-      mainEntity: content.faq.items.map((item) => ({
+      // Built from the visible FAQ section's own items, minus the single entity
+      // owned by /faq, so the structured data stays a subset of what a visitor
+      // can see and never describes text that is not on the page.
+      mainEntity: faqSchemaItems.map((item) => ({
         "@type": "Question",
         name: item.question,
         acceptedAnswer: {
