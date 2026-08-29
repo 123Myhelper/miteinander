@@ -149,7 +149,8 @@
       { "href": "/faq", "label": "Häufig gestellte Fragen zu MyHelper.me" },
       { "href": "/registrieren", "label": "Profil erstellen" },
       { "href": "/agb", "label": "Allgemeine Geschäftsbedingungen" },
-      { "href": "/impressum", "label": "Impressum" }
+      { "href": "/impressum", "label": "Impressum" },
+      { "href": "/datenschutz", "label": "Datenschutzerklärung" }
     ]
   }
 }

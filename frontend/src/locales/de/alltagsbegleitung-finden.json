@@ -181,6 +181,10 @@
       {
         "href": "/impressum",
         "label": "Impressum"
+      },
+      {
+        "href": "/datenschutz",
+        "label": "Datenschutzerklärung"
       }
     ]
   }
