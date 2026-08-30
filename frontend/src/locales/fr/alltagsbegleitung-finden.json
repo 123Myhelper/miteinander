@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "title": "Trouver une Alltagsbegleitung : comment procéder",
+    "description": "Comment trouver et organiser une aide au quotidien : clarifier les besoins, les voies de recherche, les questions pour le premier entretien et ce qu’il faut régler avant de commencer.",
+    "heading": "Trouver une Alltagsbegleitung : comment organiser une aide au quotidien",
+    "breadcrumbLabel": "Fil d’Ariane",
+    "breadcrumbHome": "Accueil",
+    "breadcrumbCurrent": "Trouver une Alltagsbegleitung",
+    "languageNavLabel": "Choix de la langue",
+    "aboutAlltagsbegleitung": "Alltagsbegleitung",
+    "aboutSupport": "Aide au quotidien"
+  },
+  "intro": {
+    "label": "En bref",
+    "text": "Trouver une Alltagsbegleitung relève avant tout de l’organisation : clarifier d’abord quelle aide est réellement nécessaire, décider ensuite par quelle voie chercher et, enfin, déterminer lors de l’entretien si le courant passe sur le plan humain et pratique. Cette page parcourt ces étapes dans l’ordre – de la première évaluation des besoins aux premières semaines de l’accompagnement."
+  },
+  "bedarf": {
+    "heading": "Clarifier d’abord : quelle aide est nécessaire ?",
+    "text": "Avant de chercher, il vaut la peine de faire le point. « Un peu d’aide au quotidien » peut aller d’une heure de compagnie par semaine à un accompagnement quotidien – et selon ce que l’on entend par là, la recherche prend une tout autre forme. Plus vous décrivez précisément le besoin, plus il est facile d’évaluer si une offre y correspond.",
+    "fragenHeading": "Quatre questions pour rendre le besoin concret",
+    "fragen": [
+      "Que faut-il exactement prendre en charge ? Les courses, l’accompagnement à des rendez-vous, la compagnie, une aide ménagère légère, les sorties – le plus concrètement possible.",
+      "À quelle fréquence et pour combien de temps ? Des rendez-vous fixes ou en souplesse, le matin ou l’après-midi, une heure ou une demi-journée.",
+      "Où l’aide a-t-elle lieu ? À domicile, à l’extérieur ou les deux.",
+      "Qui d’autre est impliqué en dehors de la personne aidée ? Des proches, des voisins, un Pflegedienst, une rechtliche Betreuung (curatelle judiciaire)."
+    ],
+    "notizenText": "Il est utile de noter pendant une semaine les moments où une aide a réellement fait défaut. Ces notes se transforment presque d’elles-mêmes en une description que vous pourrez ensuite donner à une Alltagsbegleitung – et qui vous permettra de voir si une offre y correspond.",
+    "entscheidungHeading": "Qui participe à la décision",
+    "entscheidungText": "Si vous organisez l’aide pour une autre personne, clarifiez tôt qui prend quelles décisions. Associez autant que possible la personne qui sera accompagnée et discutez avec elle de l’aide qu’elle souhaite. S’il existe une Vorsorgevollmacht (procuration de prévoyance) ou une rechtliche Betreuung, cela fait aussi partie des éléments à prendre en compte au préalable.",
+    "grenzeHeading": "Lorsque le besoin dépasse le quotidien",
+    "grenzeTextBefore": "Tout besoin d’aide n’est pas une Alltagsbegleitung. Dès que des soins ou une prise en charge médicale entrent en jeu, c’est un autre organisme qui en est responsable. L’endroit où passe cette limite et la manière de la reconnaître sont décrits en détail sous ",
+    "grenzeLinkLabel": "Alltagsbegleitung ou Pflegedienst : quelle est la différence ?",
+    "grenzeTextAfter": "."
+  },
+  "wege": {
+    "heading": "Les différentes voies pour trouver une Alltagsbegleitung",
+    "text": "Il n’existe pas une seule bonne voie. Celle qui vous convient dépend du degré d’engagement souhaité, du temps dont vous disposez pour la recherche et des offres existantes près de chez vous. Les voies suivantes ne s’excluent pas les unes les autres.",
+    "beratungHeading": "Services de conseil et points de contact publics",
+    "beratungText": "Les Pflegestützpunkte (points d’appui pour les soins), la Pflegeberatung (service de conseil en matière de soins), les Seniorenbüros (bureaux pour les seniors) et les services sociaux des communes peuvent conseiller sur les offres d’aide et informer sur les points de contact régionaux. La Pflegekasse est également un interlocuteur.",
+    "landesrechtHeading": "Offres d’aide au quotidien reconnues par le droit du Land",
+    "landesrechtTextBefore": "Dans les Länder, il existe des Angebote zur Unterstützung im Alltag (offres d’aide au quotidien) reconnues selon le droit du Land concerné. Quelles offres sont concernées et quelles conditions s’y appliquent varient d’un Land à l’autre. Les renseignements sont donnés par l’autorité compétente du Land concerné et par la Pflegekasse. Vous trouverez une mise en contexte générale à ce sujet dans la section consacrée à l’Entlastungsbetrag sur la page ",
+    "landesrechtLinkLabel": "Alltagsbegleitung ou Pflegedienst",
+    "landesrechtTextAfter": ".",
+    "verbaendeHeading": "Organisations caritatives, associations et entraide de voisinage",
+    "verbaendeText": "Selon les endroits, les paroisses, les organisations caritatives, les agences de bénévolat et les réseaux d’entraide de voisinage organisés proposent des services de visite et d’accompagnement. Pour savoir si une telle offre existe près de chez vous et quelle en est l’ampleur, adressez-vous à l’organisme concerné ou aux services de conseil mentionnés dans la section précédente.",
+    "umfeldHeading": "L’entourage personnel",
+    "umfeldText": "Une autre voie passe par l’entourage personnel : des connaissances, des voisins ou d’autres proches qui ont déjà organisé une aide. Ce qui caractérise cette voie, c’est que quelqu’un connaît déjà la personne et peut vous en parler d’après sa propre expérience. Le cercle des contacts possibles reste toutefois limité à votre propre entourage.",
+    "plattformenHeading": "Plateformes et services de mise en relation",
+    "plattformenText": "Les plateformes numériques de mise en relation – MyHelper.me en fait partie – présentent des profils de personnes qui proposent une aide au quotidien. Les utilisateurs peuvent consulter les profils et prendre contact via la plateforme ; ils effectuent eux-mêmes la sélection. Vérifiez auprès du prestataire concerné quelles informations des profils proviennent des personnes qui proposent l’aide elles-mêmes – cela vous indique ce qu’il vous reste à clarifier vous-même lors de l’entretien."
+  },
+  "gespraech": {
+    "heading": "Le premier entretien : ce à quoi vous pouvez prêter attention",
+    "text": "Prévoyez du temps pour le premier entretien et menez-le si possible en présence de la personne qui sera accompagnée. Il ne s’agit pas d’un entretien d’embauche au sens classique, mais de savoir si une collaboration au quotidien est envisageable pour les deux parties.",
+    "personHeading": "Questions sur la personne et son expérience",
+    "personFragen": [
+      "Qu’avez-vous fait jusqu’à présent et avec quelles personnes avez-vous travaillé ?",
+      "Qu’aimez-vous particulièrement dans un accompagnement – et qu’est-ce qui vous convient moins ?",
+      "Avez-vous l’expérience de situations comme la nôtre, par exemple une mobilité réduite, des oublis ou peu de contacts avec l’extérieur ?",
+      "Y a-t-il des documents que vous pouvez me montrer – par exemple concernant des cours, des formations continues ou un Führungszeugnis (extrait de casier judiciaire) ?"
+    ],
+    "aufgabenHeading": "Questions sur les tâches et les limites",
+    "aufgabenFragen": [
+      "Parmi les tâches dont nous avons parlé, lesquelles prendriez-vous en charge – et lesquelles non ?",
+      "Comment réagissez-vous lorsqu’on vous demande quelque chose que vous ne pouvez pas ou ne souhaitez pas prendre en charge ?",
+      "Comment réagiriez-vous si vous remarquiez quelque chose qui devrait être examiné par un médecin ou un professionnel des soins ?"
+    ],
+    "verlaesslichkeitHeading": "Questions sur la fiabilité au quotidien",
+    "verlaesslichkeitFragen": [
+      "Quels horaires pouvez-vous vous engager à assurer sur la durée ?",
+      "Comment annulez-vous un rendez-vous et quel délai de prévenance est réaliste ?",
+      "Que se passe-t-il en cas de congés ou de maladie – y a-t-il un remplacement ?",
+      "Comment peut-on vous joindre entre les rendez-vous ?"
+    ],
+    "eindruckHeading": "Ce qui ne se demande pas",
+    "eindruckText": "Ce qui décide si cela convient, ce sont rarement les réponses, mais le ton, la patience et le fait que la personne aidée se sente à l’aise en présence de cette personne. Convenez d’une courte rencontre de prise de contact dans le cadre habituel avant de vous engager et prenez le temps de décider. Demander des documents et des justificatifs va tout à fait de soi – mais c’est à vous de veiller à ce qu’ils vous soient effectivement présentés."
+  },
+  "vereinbarung": {
+    "heading": "Ce qui doit être discuté avant de commencer",
+    "text": "Les accords conclus avant le début donnent aux deux parties une base claire. Consignez-les par écrit.",
+    "punkte": [
+      "Tâches : ce qui est pris en charge et ce qui ne l’est expressément pas.",
+      "Horaires : rendez-vous fixes, durée et délai dans lequel des changements sont possibles.",
+      "Annulations : jusqu’à quand et par quel moyen chaque partie peut annuler.",
+      "Rémunération et facturation : montant, période de facturation et mode de paiement – par écrit, avant le début de l’accompagnement.",
+      "Trajets et frais avancés : qui avance les frais de déplacement ou les courses et comment cela est décompté.",
+      "Clés et accès au logement : si une clé est remise et ce qui s’applique en cas de perte.",
+      "Gestion de l’argent : si et dans quelle mesure des courses sont effectuées et comment les justificatifs sont conservés.",
+      "Joignabilité et urgence : qui l’Alltagsbegleitung appelle en cas de problème.",
+      "Remplacement : ce qui s’applique si l’Alltagsbegleitung est empêchée.",
+      "Fin de la collaboration : avec quel préavis chaque partie peut y mettre fin."
+    ],
+    "rechtHeading": "Questions juridiques et d’assurance",
+    "rechtText": "Le fait qu’une Alltagsbegleitung exerce en tant qu’indépendante ou soit salariée a des conséquences fiscales, en matière de sécurité sociale et de responsabilité. L’appréciation dans un cas particulier dépend de la manière dont la collaboration est effectivement organisée. Clarifiez ces questions avant de commencer et faites-vous conseiller par un professionnel ; renseignez-vous en outre sur la couverture d’assurance des deux côtés."
+  },
+  "wochen": {
+    "heading": "Les premières semaines : comment savoir si cela convient",
+    "text": "Laissez à la collaboration le temps de se mettre en place. Toute incertitude au début ne signifie pas que l’accompagnement ne convient pas.",
+    "guteZeichenHeading": "Bons signes",
+    "guteZeichen": [
+      "La personne aidée attend les rendez-vous avec plaisir ou paraît plus détendue ensuite.",
+      "Les accords sont respectés et les changements sont annoncés en temps utile.",
+      "Ce qui n’a pas fonctionné est signalé spontanément.",
+      "Les proches se sentent nettement soulagés sans avoir à intervenir en permanence."
+    ],
+    "warnzeichenHeading": "Signes à prendre au sérieux",
+    "warnzeichen": [
+      "Des rendez-vous sont annulés à plusieurs reprises à court terme.",
+      "Les accords sur les tâches ou la facturation deviennent flous ou se décalent.",
+      "La personne aidée se replie sur elle-même ou exprime un malaise.",
+      "Des tâches expressément non convenues sont prises en charge."
+    ],
+    "abschlussText": "Formulez vos observations tôt et concrètement – cela crée la base pour ajuster les accords. Si rien ne change ensuite, vous pouvez mettre fin à la collaboration dans le cadre convenu et chercher à nouveau."
+  },
+  "beratung": {
+    "heading": "Quand demander conseil",
+    "textBefore": "Un conseil est utile si vous ne savez pas quel type d’aide convient. La Pflegeberatung, un Pflegestützpunkt et la Pflegekasse peuvent vous conseiller sur les offres d’aide et de soins appropriées. Pour les questions de santé ou d’ordre médical, adressez-vous au médecin traitant. S’il apparaît que des soins deviennent nécessaires, lisez ",
+    "linkLabel": "Alltagsbegleitung ou Pflegedienst : quelle est la différence ?",
+    "textAfter": " et adressez-vous à l’un des organismes mentionnés.",
+    "disclaimer": "Cet article fournit des informations générales et ne remplace pas un conseil médical, infirmier, fiscal ou juridique."
+  },
+  "myhelper": {
+    "heading": "Où se situe MyHelper.me",
+    "paragraph1": "MyHelper.me est une plateforme numérique de mise en relation pour l’Alltagsbegleitung et l’aide au quotidien. Elle met en relation les personnes qui cherchent une aide au quotidien et les personnes qui proposent une Alltagsbegleitung. MyHelper.me n’est pas un Pflegedienst et ne fournit elle-même aucune prestation de soins, prestation médicale ou prestation de traitement.",
+    "paragraph2": "Le déroulement : vous créez un compte – en tant que personne cherchant de l’aide ou en tant que personne proposant une Alltagsbegleitung. L’inscription comprend des données de profil liées au rôle et une vérification de l’adresse e-mail ; vous pouvez en outre indiquer un contact d’urgence. Vous pouvez ensuite consulter les profils, décider vous-même qui contacter et échanger des messages via la plateforme.",
+    "paragraph3": "Un point important pour votre choix : les informations figurant dans les profils – par exemple sur l’expérience, les activités, la profession ou les formations continues – proviennent des utilisateurs eux-mêmes. Les étapes décrites sur cette page – mener l’entretien, se faire présenter des documents, convenir par écrit des tâches et des horaires – s’appliquent donc tout autant lorsque vous cherchez via MyHelper.me.",
+    "paragraph4": "Les prestations d’aide sont convenues directement entre les utilisateurs ; MyHelper.me ne devient pas partie à ces accords de prestation individuels.",
+    "paragraph5": "MyHelper.me est l’une des voies possibles. Celle qui vous convient dépend de votre situation.",
+    "ctaPrimaryLabel": "Créer un profil et chercher de l’aide",
+    "ctaPrimaryHref": "/registrieren",
+    "ctaSupportText": "Vous créez un compte, décrivez vos besoins d’aide, puis vous pouvez consulter des profils et prendre contact.",
+    "ctaSecondaryLabel": "Questions fréquentes sur MyHelper.me",
+    "ctaSecondaryHref": "/faq"
+  },
+  "faq": {
+    "heading": "Questions fréquentes",
+    "items": [
+      {
+        "question": "Où puis-je trouver une Alltagsbegleitung ?",
+        "answer": "Il existe plusieurs voies : des services de conseil comme les Pflegestützpunkte et la Pflegeberatung, les offres d’aide au quotidien reconnues par le droit du Land, les organisations caritatives, les associations et les réseaux d’entraide de voisinage, l’entourage personnel ainsi que les plateformes numériques de mise en relation. La voie qui vous convient dépend du degré d’engagement souhaité, du temps dont vous disposez pour la recherche et des offres existantes près de chez vous."
+      },
+      {
+        "question": "À quoi dois-je faire attention lors du choix d’une Alltagsbegleitung ?",
+        "answer": "Regardez si la personne souhaite prendre en charge les tâches qui vous importent réellement, si elle peut s’engager sur des horaires fiables et avec quelle franchise elle parle de ses propres limites. Faites-vous présenter des documents relatifs à des cours, des formations continues ou un Führungszeugnis si cela compte pour vous – demandez-les activement. La manière dont se déroule l’entretien personnel et la façon dont la personne aidée réagit au contact sont d’autres critères importants."
+      },
+      {
+        "question": "Quelles questions poser lors du premier entretien ?",
+        "answer": "Il est utile de poser des questions dans trois domaines : sur l’expérience passée, sur les tâches concrètes, y compris celles qui ne seront expressément pas prises en charge, et sur la fiabilité au quotidien – c’est-à-dire les horaires, les annulations, le remplacement et la joignabilité. Il est également utile de demander comment la personne réagirait si elle remarquait quelque chose qui devrait être examiné par un médecin ou un professionnel des soins."
+      },
+      {
+        "question": "Que faut-il discuter et consigner par écrit avant le début de l’aide ?",
+        "answer": "Les tâches et les tâches expressément exclues, les horaires et la durée, les règles d’annulation, la rémunération et la facturation, la gestion des frais de déplacement et des frais avancés, les clés et l’accès au logement, la joignabilité et la marche à suivre en cas d’urgence, le remplacement en cas d’empêchement ainsi que le préavis pour mettre fin à la collaboration. Clarifiez en outre au préalable les questions d’assurance et de fiscalité et faites-vous conseiller par un professionnel."
+      },
+      {
+        "question": "Puis-je organiser une Alltagsbegleitung pour un proche ?",
+        "answer": "Oui. Associez autant que possible la personne qui sera accompagnée et discutez avec elle de l’aide qu’elle souhaite. Clarifiez en outre qui prend quelles décisions et s’il existe une Vorsorgevollmacht ou une rechtliche Betreuung."
+      },
+      {
+        "question": "Que puis-je faire si l’Alltagsbegleitung ne nous convient pas ?",
+        "answer": "Formulez vos observations tôt et concrètement – horaires, tâches, ton – afin que les accords puissent être ajustés. Si rien ne change ensuite, vous pouvez mettre fin à la collaboration dans le cadre convenu et chercher à nouveau. Consignez donc dès le début le préavis avec lequel chaque partie peut y mettre fin."
+      }
+    ]
+  },
+  "related": {
+    "heading": "Pour aller plus loin",
+    "links": [
+      {
+        "href": "/fr/alltagsbegleitung-oder-pflegedienst",
+        "label": "Alltagsbegleitung ou Pflegedienst : quelle est la différence ?"
+      },
+      {
+        "href": "/faq",
+        "label": "Questions fréquentes sur MyHelper.me"
+      },
+      {
+        "href": "/registrieren",
+        "label": "Créer un profil"
+      },
+      {
+        "href": "/agb",
+        "label": "Conditions générales (AGB)"
+      },
+      {
+        "href": "/impressum",
+        "label": "Impressum (mentions légales)"
+      },
+      {
+        "href": "/datenschutz",
+        "label": "Politique de confidentialité"
+      }
+    ]
+  }
+}

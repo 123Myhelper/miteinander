@@ -1,10 +1,15 @@
 import Link from "next/link";
 import { getAlltagsbegleitungPflegedienstContent } from "@/lib/content/alltagsbegleitung-pflegedienst";
+import { localizedPath, type AuthorityLocale } from "@/lib/i18n/authority-pages";
 import { SectionHeading, SubHeading } from "./_ui";
 
-export default function SectionComparison() {
+export default function SectionComparison({
+  locale,
+}: {
+  locale: AuthorityLocale;
+}) {
   const { comparison, boundaries, escalation, combination } =
-    getAlltagsbegleitungPflegedienstContent();
+    getAlltagsbegleitungPflegedienstContent(locale);
 
   return (
     <>
@@ -59,7 +64,7 @@ export default function SectionComparison() {
       <p>
         {combination.findingLead}
         <Link
-          href="/alltagsbegleitung-finden"
+          href={localizedPath(locale, "/alltagsbegleitung-finden")}
           className="rounded-md text-accent transition-colors hover:text-accent-light focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
         >
           {combination.findingLinkLabel}

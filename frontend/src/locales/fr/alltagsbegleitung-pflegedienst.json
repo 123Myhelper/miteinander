@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Alltagsbegleitung ou Pflegedienst : la différence",
+    "description": "L’Alltagsbegleitung aide au quotidien, un Pflegedienst assure des soins infirmiers et médicaux. La différence, les tâches typiques et les limites en un coup d’œil.",
+    "heading": "Alltagsbegleitung ou Pflegedienst : quelle est la différence ?",
+    "breadcrumbLabel": "Fil d’Ariane",
+    "breadcrumbHome": "Accueil",
+    "breadcrumbCurrent": "Alltagsbegleitung ou Pflegedienst",
+    "languageNavLabel": "Choix de la langue",
+    "aboutAlltagsbegleitung": "Alltagsbegleitung",
+    "aboutSupport": "Aide au quotidien"
+  },
+  "intro": {
+    "label": "En bref",
+    "text": "L’Alltagsbegleitung aide les personnes dans ce qui fait leur quotidien : tenir compagnie, accompagner à des rendez-vous, faire les courses, donner un coup de main pour les tâches ménagères légères. Un ambulanter Pflegedienst (service de soins à domicile) est en revanche axé sur les soins et assure également, dans la mesure où cela est prévu, la Behandlungspflege (soins sur prescription médicale). L’Alltagsbegleitung part donc du quotidien, un Pflegedienst des soins."
+  },
+  "alltagsbegleitung": {
+    "heading": "Qu’est-ce que l’Alltagsbegleitung ?",
+    "paragraph1": "L’Alltagsbegleitung – souvent appelée aussi Alltagshilfe ou Unterstützung im Alltag (aide au quotidien) – consiste à accompagner les personnes dans leurs tâches et déplacements quotidiens. L’accent est mis sur le soulagement, la compagnie et la participation : le quotidien doit devenir plus facile, plus fiable et moins solitaire.",
+    "paragraph2": "L’Alltagsbegleitung s’adresse aux personnes qui ont besoin d’aide au quotidien, ainsi qu’aux proches qui cherchent à être soulagés. Elle ne remplace pas les soins : elle les complète là où il ne s’agit pas de soins, mais du quotidien.",
+    "tasksHeading": "Tâches typiques d’une Alltagsbegleitung",
+    "tasks": [
+      "Tenir compagnie et passer du temps ensemble",
+      "Accompagnement à des rendez-vous",
+      "Aide à la mobilité",
+      "Courses et commissions",
+      "Aide ménagère légère",
+      "Accompagnement lors des sorties",
+      "Aide dans les activités quotidiennes"
+    ],
+    "qualificationHeading": "Quelle qualification a une Alltagsbegleitung ?",
+    "qualificationText": "Il n’existe pas de réponse générale. La qualification requise dépend de l’activité concrète, de l’offre concernée et, le cas échéant, des conditions de reconnaissance applicables. Les prestations de soins sont soumises à des exigences professionnelles propres, qui se distinguent de celles de l’Alltagsbegleitung générale."
+  },
+  "pflegedienst": {
+    "heading": "Qu’est-ce qu’un ambulanter Pflegedienst ?",
+    "text": "Un ambulanter Pflegedienst (service de soins à domicile) prodigue des soins aux personnes à leur domicile. L’accent est mis sur les soins et – lorsque cela est prévu – sur la Behandlungspflege, assurée par du personnel dûment qualifié. Les prestations fournies à l’égard des Pflegekassen (caisses de soins de longue durée) ou des caisses d’assurance maladie sont soumises à des conditions particulières d’agrément et de contrat.",
+    "tasksHeading": "Prestations typiques d’un Pflegedienst",
+    "tasks": [
+      "Soins dans l’environnement domestique",
+      "Behandlungspflege, dans la mesure où elle est prévue et assurée par du personnel dûment qualifié",
+      "Conseil et accompagnement des proches",
+      "Coopération avec les médecins et les autres intervenants"
+    ]
+  },
+  "comparison": {
+    "heading": "La différence en un coup d’œil",
+    "columnFeature": "Critère",
+    "columnBegleitung": "Alltagsbegleitung",
+    "columnPflegedienst": "Ambulanter Pflegedienst",
+    "rows": [
+      {
+        "label": "Axe principal",
+        "begleitung": "Soutien, accompagnement et soulagement au quotidien",
+        "pflegedienst": "Soins et – dans la mesure où cela est prévu – Behandlungspflege"
+      },
+      {
+        "label": "Tâches typiques",
+        "begleitung": "Compagnie, accompagnement à des rendez-vous, courses, aide ménagère légère, mobilité",
+        "pflegedienst": "Soins, Behandlungspflege dans le cadre prévu à cet effet, conseil"
+      },
+      {
+        "label": "Behandlungspflege",
+        "begleitung": "Ne fait pas partie de l’Alltagsbegleitung générale.",
+        "pflegedienst": "Peut être assurée par du personnel dûment qualifié dans le cadre prévu à cet effet."
+      },
+      {
+        "label": "Qualification",
+        "begleitung": "Dépend de l’activité, de l’offre et, le cas échéant, des conditions de reconnaissance applicables.",
+        "pflegedienst": "Dépend de la prestation de soins concernée et des exigences professionnelles qui s’y appliquent."
+      },
+      {
+        "label": "Cadre juridique",
+        "begleitung": "Variable selon l’offre et le cadre juridique.",
+        "pflegedienst": "Les prestations fournies à l’égard des Pflegekassen ou des caisses d’assurance maladie sont soumises à des conditions particulières d’agrément et de contrat."
+      },
+      {
+        "label": "Objectif",
+        "begleitung": "Participation, soulagement et qualité de vie au quotidien",
+        "pflegedienst": "Soins et sécurité"
+      }
+    ]
+  },
+  "boundaries": {
+    "heading": "Ce que l’Alltagsbegleitung ne couvre pas",
+    "text": "La Behandlungspflege ne fait pas partie de l’Alltagsbegleitung générale. Les prestations de soins et les prestations médicales sont assurées par du personnel dûment qualifié dans le cadre prévu à cet effet. Une personne qui a besoin de soins réguliers n’est donc pas suffisamment aidée par une Alltagsbegleitung seule."
+  },
+  "escalation": {
+    "heading": "Quand un Pflegedienst est-il le bon choix ?",
+    "text": "Un Pflegedienst entre en ligne de compte lorsque le besoin dépasse l’accompagnement au quotidien et que des soins sont nécessaires. L’endroit exact où passe cette limite ne peut pas être fixé de manière générale : il dépend de la situation individuelle.",
+    "adviceHeading": "Où obtenir des conseils indépendants",
+    "adviceText": "Une évaluation contraignante est donnée par les organismes qui connaissent le cas individuel : le médecin traitant, la Pflegeberatung (service de conseil en matière de soins), les Pflegestützpunkte (points d’appui pour les soins) locaux ainsi que la Pflegekasse compétente.",
+    "disclaimer": "Cet article fournit des informations générales et ne remplace pas un conseil médical, infirmier ou juridique."
+  },
+  "combination": {
+    "heading": "Alltagsbegleitung et Pflegedienst ne s’excluent pas",
+    "text": "Dans la pratique, la question se pose rarement en termes d’« ou bien, ou bien ». L’Alltagsbegleitung et les soins couvrent des besoins différents et sont souvent utilisés en parallèle : le Pflegedienst assure les soins, l’Alltagsbegleitung apporte compagnie, accompagnement et soulagement dans le reste du quotidien.",
+    "findingLead": "Si vous avez la certitude que l’Alltagsbegleitung est ce qui convient, vous en trouverez les différentes étapes ici : ",
+    "findingLinkLabel": "Comment trouver et organiser une Alltagsbegleitung"
+  },
+  "entlastungsbetrag": {
+    "heading": "Alltagsbegleitung et Entlastungsbetrag : mise en contexte générale",
+    "infoLabel": "Information générale",
+    "infoText": "Les personnes dépendantes prises en charge à domicile ont droit à un Entlastungsbetrag (forfait de soulagement) en vertu du § 45b SGB XI. Celui-ci peut notamment être utilisé pour ce que l’on appelle les Angebote zur Unterstützung im Alltag (offres d’aide au quotidien) au sens du § 45a SGB XI. Pour cela, ces offres doivent être reconnues selon le droit du Land concerné. Les conditions de reconnaissance diffèrent d’un Land à l’autre. Les renseignements contraignants sont donnés par la Pflegekasse compétente et par l’autorité du Land concernée.",
+    "myhelperHeading": "Ce que cela signifie pour MyHelper.me",
+    "myhelperText": "MyHelper.me ne donne aucune assurance générale selon laquelle les prestations d’aide trouvées via la plateforme seraient reconnues comme Angebot zur Unterstützung im Alltag au sens du § 45a SGB XI ou remboursables au titre de l’Entlastungsbetrag prévu au § 45b SGB XI. La question de savoir si une prestation concrète peut être prise en compte dans un cas particulier dépend des conditions applicables et doit être clarifiée au préalable avec la Pflegekasse ou l’organisme compétent."
+  },
+  "positioning": {
+    "heading": "Où se situe MyHelper.me ?",
+    "paragraph1": "MyHelper.me est une plateforme numérique de mise en relation (Vermittlungsplattform). Elle met en relation les personnes qui cherchent une aide au quotidien et les personnes qui proposent une Alltagsbegleitung.",
+    "paragraph2": "MyHelper.me n’est pas un Pflegedienst et ne fournit elle-même aucune prestation de soins, prestation médicale ou prestation de traitement. Les prestations d’aide sont convenues directement entre les utilisateurs ; MyHelper.me ne devient pas partie à ces accords de prestation individuels.",
+    "paragraph3": "Toute personne à la recherche d’une Alltagsbegleitung crée un profil, décrit ses propres besoins d’aide, puis peut trouver des profils correspondants et prendre contact directement.",
+    "paragraph4": "Si des soins ou une prise en charge médicale sont en outre nécessaires, c’est un Pflegedienst ou un organisme dûment qualifié qui en est responsable."
+  },
+  "faq": {
+    "heading": "Questions fréquentes",
+    "items": [
+      {
+        "question": "Quelle est la différence entre l’Alltagsbegleitung et un Pflegedienst ?",
+        "answer": "L’Alltagsbegleitung part du quotidien : tenir compagnie, accompagner à des rendez-vous, faire les courses ou donner un coup de main pour les tâches ménagères légères. Un ambulanter Pflegedienst est axé sur les soins et assure également, dans la mesure où cela est prévu, la Behandlungspflege. Les prestations fournies à l’égard des Pflegekassen ou des caisses d’assurance maladie sont soumises à des conditions particulières d’agrément et de contrat."
+      },
+      {
+        "question": "L’Alltagsbegleitung est-elle un soin ?",
+        "answer": "L’Alltagsbegleitung est axée sur l’accompagnement, le soulagement et la participation au quotidien. La Behandlungspflege ne fait pas partie de l’Alltagsbegleitung générale. L’endroit où passe la limite dans un cas particulier dépend de l’activité concrète et du cadre qui s’y applique."
+      },
+      {
+        "question": "Une Alltagsbegleitung peut-elle assumer des tâches de soins ou des tâches médicales ?",
+        "answer": "La Behandlungspflege ne fait pas partie de l’Alltagsbegleitung générale. Les prestations de soins et les prestations médicales sont assurées par du personnel dûment qualifié dans le cadre prévu à cet effet. Les exigences applicables à une activité concrète dépendent de la prestation elle-même et des conditions professionnelles qui s’y appliquent."
+      },
+      {
+        "question": "Une Alltagsbegleitung doit-elle avoir une formation en soins ?",
+        "answer": "Il n’est pas possible d’y répondre de manière générale. La qualification requise dépend de l’activité concrète, de l’offre concernée et, le cas échéant, des conditions de reconnaissance applicables. Les prestations de soins sont soumises à des exigences professionnelles propres."
+      },
+      {
+        "question": "Peut-on recourir en même temps à une Alltagsbegleitung et à un Pflegedienst ?",
+        "answer": "Les deux ne s’excluent pas. L’Alltagsbegleitung et les soins couvrent des besoins différents et sont souvent utilisés en parallèle dans la pratique. La manière dont les deux se complètent utilement dans un cas particulier est à clarifier de préférence par les personnes concernées et leurs proches avec les organismes impliqués."
+      },
+      {
+        "question": "MyHelper.me est-il un Pflegedienst ?",
+        "answer": "Non. MyHelper.me est une plateforme de mise en relation. Elle met les utilisateurs en relation les uns avec les autres, mais ne fournit elle-même aucune prestation de soins, de traitement ou prestation médicale."
+      }
+    ]
+  },
+  "related": {
+    "heading": "Pour aller plus loin",
+    "links": [
+      {
+        "href": "/fr/alltagsbegleitung-finden",
+        "label": "Trouver une Alltagsbegleitung : comment procéder"
+      },
+      { "href": "/faq", "label": "Questions fréquentes sur MyHelper.me" },
+      { "href": "/registrieren", "label": "Créer un profil" },
+      { "href": "/agb", "label": "Conditions générales (AGB)" },
+      { "href": "/impressum", "label": "Impressum (mentions légales)" },
+      { "href": "/datenschutz", "label": "Politique de confidentialité" }
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "title": "Finding an Alltagsbegleitung: how to go about it",
+    "description": "How to find and organise everyday support: clarifying what is needed, ways to search, questions for the first conversation and what should be settled before you start.",
+    "heading": "Finding an Alltagsbegleitung: how to organise support in everyday life",
+    "breadcrumbLabel": "Breadcrumb navigation",
+    "breadcrumbHome": "Home",
+    "breadcrumbCurrent": "Finding an Alltagsbegleitung",
+    "languageNavLabel": "Language selection",
+    "aboutAlltagsbegleitung": "Alltagsbegleitung",
+    "aboutSupport": "Everyday support"
+  },
+  "intro": {
+    "label": "In brief",
+    "text": "Finding an Alltagsbegleitung is above all a matter of organisation: first clarify what support is really needed, then decide which route to search by, and finally find out in conversation whether it fits on a personal and a practical level. This page works through those steps in order – from first establishing what is needed to the first few weeks of the arrangement."
+  },
+  "bedarf": {
+    "heading": "First clarify: what support is needed?",
+    "text": "Before you start looking, it is worth taking stock. “A bit of help in everyday life” can mean anything from an hour of company a week to daily accompaniment – and depending on what is meant, the search looks entirely different. The more precisely you can describe what is needed, the more clearly you can judge whether an offer fits.",
+    "fragenHeading": "Four questions that make the need concrete",
+    "fragen": [
+      "What exactly should be taken on? Shopping, going along to appointments, company, light help around the house, trips outside the home – as concretely as possible.",
+      "How often and for how long? Fixed appointments or flexible, mornings or afternoons, an hour or half a day.",
+      "Where does the support take place? At home, out and about, or both.",
+      "Who else is involved besides the person being supported? Relatives, neighbours, a Pflegedienst, a rechtliche Betreuung (court-appointed legal guardianship)."
+    ],
+    "notizenText": "It helps to note down for a week where support was actually missing. Those notes turn almost by themselves into a description you can later give to an Alltagsbegleitung – and against which you can tell whether an offer fits.",
+    "entscheidungHeading": "Who takes part in the decision",
+    "entscheidungText": "If you are organising support for someone else, clarify early on who makes which decisions. Involve the person who is to be accompanied as far as possible and discuss with them what support they would like. If there is a Vorsorgevollmacht (health and welfare power of attorney) or a rechtliche Betreuung, that belongs in your initial considerations too.",
+    "grenzeHeading": "When the need goes beyond everyday life",
+    "grenzeTextBefore": "Not every support need is Alltagsbegleitung. As soon as nursing or medical care comes into play, a different body is responsible for it. Where this line runs and how to recognise it is described in detail under ",
+    "grenzeLinkLabel": "Alltagsbegleitung or Pflegedienst: what is the difference?",
+    "grenzeTextAfter": "."
+  },
+  "wege": {
+    "heading": "The routes to finding an Alltagsbegleitung",
+    "text": "There is no single right route. Which one is an option for you depends on how binding the support should be, how much time you have for the search and what is available where you live. The routes below are not mutually exclusive.",
+    "beratungHeading": "Advice centres and public points of contact",
+    "beratungText": "Pflegestützpunkte (local care support centres), the Pflegeberatung (statutory care advice service), Seniorenbüros (senior citizens’ offices) and municipal social services can advise on support services and provide information about regional points of contact. The Pflegekasse is also a point of contact.",
+    "landesrechtHeading": "Everyday support services recognised under state law",
+    "landesrechtTextBefore": "In the federal states there are Angebote zur Unterstützung im Alltag (everyday support services) that are recognised under the law of the respective state. Which services these are and which requirements apply to them differs from state to state. Information is provided by the responsible authority of the state in question and by the Pflegekasse. You will find a general overview of this in the section on the Entlastungsbetrag on the page ",
+    "landesrechtLinkLabel": "Alltagsbegleitung or Pflegedienst",
+    "landesrechtTextAfter": ".",
+    "verbaendeHeading": "Welfare organisations, associations and neighbourhood help",
+    "verbaendeText": "Depending on the location, parishes, welfare organisations, volunteer agencies and organised neighbourhood help schemes offer visiting and accompaniment services. Whether such a service exists where you live, and how extensive it is, you can find out from the organisation concerned or through the advice centres in the previous section.",
+    "umfeldHeading": "Your personal network",
+    "umfeldText": "Another route runs through your personal network: through acquaintances, neighbours or other relatives who have already organised support. What distinguishes this route is that someone already knows the person and can tell you about them from their own experience. The circle of possible contacts is, however, limited to your own network.",
+    "plattformenHeading": "Platforms and matching services",
+    "plattformenText": "Digital matching platforms – MyHelper.me is one of them – show profiles of people who offer support in everyday life. Users can view profiles and make contact through the platform; they make the selection themselves. Check with the provider in question which details in the profiles come from the people offering the support themselves – that tells you what you still need to clarify yourself in conversation."
+  },
+  "gespraech": {
+    "heading": "The first conversation: what to look out for",
+    "text": "Set aside time for the first conversation and, if possible, hold it together with the person who is to be accompanied. This is not a job interview in the classic sense; the question is whether working together in everyday life is imaginable for both sides.",
+    "personHeading": "Questions about the person and their experience",
+    "personFragen": [
+      "What have you done so far, and what kind of people have you worked with?",
+      "What do you particularly enjoy in an accompaniment role – and what suits you less well?",
+      "Do you have experience of situations like ours – for example with limited mobility, with forgetfulness, or with having little contact with the outside world?",
+      "Are there documents you can show me – for example about courses, further training or a Führungszeugnis (certificate of good conduct)?"
+    ],
+    "aufgabenHeading": "Questions about tasks and limits",
+    "aufgabenFragen": [
+      "Which of the tasks we have discussed would you take on – and which not?",
+      "How do you handle it when you are asked to do something you cannot or do not want to take on?",
+      "How would you react if you noticed something that ought to be checked by a doctor or a nursing professional?"
+    ],
+    "verlaesslichkeitHeading": "Questions about day-to-day reliability",
+    "verlaesslichkeitFragen": [
+      "Which times can you commit to on a lasting basis?",
+      "How do you cancel appointments, and how much notice is realistic?",
+      "What happens during holidays or illness – is there a stand-in?",
+      "How can you be reached between appointments?"
+    ],
+    "eindruckHeading": "What cannot be asked about",
+    "eindruckText": "Whether it fits is rarely decided by the answers, but by the tone, the patience, and whether the person being supported feels comfortable in this person’s presence. Arrange a short introductory meeting in familiar surroundings before you commit, and take your time over the decision. Asking for documents and proof is entirely a matter of course – but it is up to you to make sure you are actually shown them."
+  },
+  "vereinbarung": {
+    "heading": "What should be discussed before you start",
+    "text": "Arrangements made before the start give both sides a clear basis. Put them in writing.",
+    "punkte": [
+      "Tasks: what will be taken on and what expressly will not.",
+      "Times: fixed appointments, duration, and how much notice is needed for changes.",
+      "Cancellations: by when and by what means either side can cancel.",
+      "Payment and invoicing: amount, billing period and method of payment – in writing, before the arrangement begins.",
+      "Travel and out-of-pocket costs: who pays travel costs or shopping up front and how this is settled.",
+      "Keys and access to the home: whether a key is handed over and what applies if it is lost.",
+      "Handling money: whether and to what extent shopping is done, and how receipts are kept.",
+      "Contactability and emergencies: who the Alltagsbegleitung calls if something happens.",
+      "Cover: what applies if the Alltagsbegleitung is unavailable.",
+      "Ending: what notice period either side needs to end the arrangement."
+    ],
+    "rechtHeading": "Legal and insurance questions",
+    "rechtText": "Whether an Alltagsbegleitung works on a self-employed basis or is employed affects tax, social insurance and liability questions. How this is to be assessed in an individual case depends on how the working relationship is actually arranged. Clarify these questions before you start and seek professional advice on them; also ask about insurance cover on both sides."
+  },
+  "wochen": {
+    "heading": "The first weeks: how to tell whether it fits",
+    "text": "Give the arrangement time to settle in. Not every uncertainty at the start means the accompaniment is not a good fit.",
+    "guteZeichenHeading": "Good signs",
+    "guteZeichen": [
+      "The person being supported looks forward to the visits or seems more relaxed afterwards.",
+      "Arrangements are kept to, and changes are announced in good time.",
+      "Things that did not work out are mentioned unprompted.",
+      "Relatives feel noticeably relieved without having to keep intervening."
+    ],
+    "warnzeichenHeading": "Signs you should take seriously",
+    "warnzeichen": [
+      "Appointments are repeatedly cancelled at short notice.",
+      "Arrangements about tasks or invoicing become unclear or start to shift.",
+      "The person being supported withdraws or expresses discomfort.",
+      "Tasks are taken on that were expressly not agreed."
+    ],
+    "abschlussText": "Name what you observe early and concretely – that creates the basis for adjusting the arrangements. If nothing changes after that, you can end the arrangement within the agreed terms and start looking again."
+  },
+  "beratung": {
+    "heading": "When you should seek advice",
+    "textBefore": "Advice is worthwhile if you are unsure which kind of support is the right one. The Pflegeberatung, a Pflegestützpunkt and the Pflegekasse can advise you on suitable support and care services. For health or medical questions, turn to the treating doctor. If it becomes apparent that nursing care will be needed, read ",
+    "linkLabel": "Alltagsbegleitung or Pflegedienst: what is the difference?",
+    "textAfter": " and contact one of the bodies named above.",
+    "disclaimer": "This article provides general information and does not replace medical, nursing, tax or legal advice."
+  },
+  "myhelper": {
+    "heading": "Where MyHelper.me fits in",
+    "paragraph1": "MyHelper.me is a digital matching platform for Alltagsbegleitung and everyday support. It brings together people who are looking for support in everyday life and people who offer Alltagsbegleitung. MyHelper.me is not a Pflegedienst and does not itself provide any nursing, medical or treatment services.",
+    "paragraph2": "How it works: you create an account – either as someone seeking help or as someone offering Alltagsbegleitung. Registration involves role-specific profile data and an email verification; you can additionally provide an emergency contact. You can then view profiles, decide for yourself who you want to contact, and exchange messages through the platform.",
+    "paragraph3": "One thing matters for your selection: the details in the profiles – on experience, activities, occupation or further training, for example – come from the users themselves. The steps described on this page – holding the conversation, asking to be shown documents, agreeing tasks and times in writing – therefore apply just as much when you search via MyHelper.me.",
+    "paragraph4": "The support services are agreed directly between users; MyHelper.me does not become a contracting party to these individual service agreements.",
+    "paragraph5": "MyHelper.me is one of several routes. Which route is an option for you depends on your situation.",
+    "ctaPrimaryLabel": "Create a profile and look for support",
+    "ctaPrimaryHref": "/registrieren",
+    "ctaSupportText": "You create an account, describe the support you need and can then view profiles and make contact.",
+    "ctaSecondaryLabel": "Frequently asked questions about MyHelper.me",
+    "ctaSecondaryHref": "/faq"
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "items": [
+      {
+        "question": "Where can I find an Alltagsbegleitung?",
+        "answer": "There are several routes: advice centres such as Pflegestützpunkte and the Pflegeberatung, everyday support services recognised under state law, welfare organisations, associations and neighbourhood help schemes, your personal network, and digital matching platforms. Which route is an option for you depends on how binding the support should be, how much time you have for the search and what is available where you live."
+      },
+      {
+        "question": "What should I look out for when choosing an Alltagsbegleitung?",
+        "answer": "Look at whether the person wants to take on the tasks that actually matter to you, whether they can commit to reliable times, and how openly they talk about their own limits. Ask to be shown documents about courses, further training or a Führungszeugnis if that matters to you – ask for them actively. How the personal conversation goes and how the person being supported responds to the contact are further important considerations."
+      },
+      {
+        "question": "Which questions should I ask in the first conversation?",
+        "answer": "Questions in three areas are useful: about previous experience; about the specific tasks, including those that expressly will not be taken on; and about day-to-day reliability – that is, times, cancellations, cover and contactability. It also helps to ask how the person would react if they noticed something that ought to be checked by a doctor or a nursing professional."
+      },
+      {
+        "question": "What should be discussed and put in writing before the support begins?",
+        "answer": "Tasks and expressly excluded tasks, times and duration, cancellation rules, payment and invoicing, how travel costs and out-of-pocket expenses are handled, keys and access to the home, contactability and the procedure in an emergency, cover in the event of absence, and the notice period for ending the arrangement. Also clarify the insurance and tax questions in advance and seek professional advice on them."
+      },
+      {
+        "question": "Can I organise an Alltagsbegleitung for a relative?",
+        "answer": "Yes. Involve the person who is to be accompanied as far as possible and discuss with them what support they would like. Also clarify who makes which decisions and whether a Vorsorgevollmacht or a rechtliche Betreuung is in place."
+      },
+      {
+        "question": "What can I do if the Alltagsbegleitung is not right for us?",
+        "answer": "Name your observations early and concretely – times, tasks, tone – so that the arrangements can be adjusted. If nothing changes after that, you can end the arrangement within the agreed terms and start looking again. For that reason, set down right at the start what notice period either side needs to end it."
+      }
+    ]
+  },
+  "related": {
+    "heading": "Further reading",
+    "links": [
+      {
+        "href": "/en/alltagsbegleitung-oder-pflegedienst",
+        "label": "Alltagsbegleitung or Pflegedienst: what is the difference?"
+      },
+      {
+        "href": "/faq",
+        "label": "Frequently asked questions about MyHelper.me"
+      },
+      {
+        "href": "/registrieren",
+        "label": "Create a profile"
+      },
+      {
+        "href": "/agb",
+        "label": "Terms and conditions (AGB)"
+      },
+      {
+        "href": "/impressum",
+        "label": "Impressum (legal notice)"
+      },
+      {
+        "href": "/datenschutz",
+        "label": "Privacy policy"
+      }
+    ]
+  }
+}

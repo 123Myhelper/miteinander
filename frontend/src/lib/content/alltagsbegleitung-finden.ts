@@ -1,4 +1,7 @@
+import type { AuthorityLocale } from "@/lib/i18n/authority-pages";
 import de from "@/locales/de/alltagsbegleitung-finden.json";
+import en from "@/locales/en/alltagsbegleitung-finden.json";
+import fr from "@/locales/fr/alltagsbegleitung-finden.json";
 
 /**
  * Server-side content accessor for the /alltagsbegleitung-finden page.
@@ -10,12 +13,20 @@ import de from "@/locales/de/alltagsbegleitung-finden.json";
  * reads the same `src/locales/<locale>/<namespace>.json` structure the rest of
  * the app uses, so page components stay free of hardcoded user-facing strings.
  *
- * Scope: German only, by decision for the German-first milestone. To add a
- * locale later, drop the same namespace file into `src/locales/<locale>/` and
- * give this function a locale parameter — no component change required.
+ * German is the source of truth: `AlltagsbegleitungFindenContent` is derived from
+ * the German namespace, so a translated file that drifts from its shape fails the
+ * type check rather than rendering a half-translated page.
  */
 export type AlltagsbegleitungFindenContent = typeof de;
 
-export function getAlltagsbegleitungFindenContent(): AlltagsbegleitungFindenContent {
-  return de;
+const content: Record<AuthorityLocale, AlltagsbegleitungFindenContent> = {
+  de,
+  en,
+  fr,
+};
+
+export function getAlltagsbegleitungFindenContent(
+  locale: AuthorityLocale,
+): AlltagsbegleitungFindenContent {
+  return content[locale];
 }

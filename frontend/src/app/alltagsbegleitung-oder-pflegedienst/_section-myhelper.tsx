@@ -1,15 +1,21 @@
 import { getAlltagsbegleitungPflegedienstContent } from "@/lib/content/alltagsbegleitung-pflegedienst";
+import type { AuthorityLocale } from "@/lib/i18n/authority-pages";
 import { SectionHeading, SubHeading } from "./_ui";
 
 /**
  * Separation rule for this section: the general statutory explanation and the
  * MyHelper.me-specific paragraph are kept structurally apart. The page informs
  * about § 45a / § 45b SGB XI without claiming — or denying — recognition or
- * reimbursement for MyHelper.me or for any individual helper.
+ * reimbursement for MyHelper.me or for any individual helper. The translations
+ * carry that same separation and the same absence of any recognition claim.
  */
-export default function SectionMyHelper() {
+export default function SectionMyHelper({
+  locale,
+}: {
+  locale: AuthorityLocale;
+}) {
   const { entlastungsbetrag, positioning } =
-    getAlltagsbegleitungPflegedienstContent();
+    getAlltagsbegleitungPflegedienstContent(locale);
 
   return (
     <>
