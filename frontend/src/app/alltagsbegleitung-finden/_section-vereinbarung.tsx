@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAlltagsbegleitungFindenContent } from "@/lib/content/alltagsbegleitung-finden";
+import { localizedPath, type AuthorityLocale } from "@/lib/i18n/authority-pages";
 import { BulletList, InlineLink, SectionHeading, SubHeading } from "./_ui";
 
 /**
@@ -9,9 +10,13 @@ import { BulletList, InlineLink, SectionHeading, SubHeading } from "./_ui";
  * statements are never read as part of the general guidance, and it describes
  * only verified product behaviour.
  */
-export default function SectionVereinbarung() {
+export default function SectionVereinbarung({
+  locale,
+}: {
+  locale: AuthorityLocale;
+}) {
   const { vereinbarung, wochen, beratung, myhelper } =
-    getAlltagsbegleitungFindenContent();
+    getAlltagsbegleitungFindenContent(locale);
 
   return (
     <>
@@ -35,7 +40,7 @@ export default function SectionVereinbarung() {
       <SectionHeading>{beratung.heading}</SectionHeading>
       <p>
         {beratung.textBefore}
-        <InlineLink href="/alltagsbegleitung-oder-pflegedienst">
+        <InlineLink href={localizedPath(locale, "/alltagsbegleitung-oder-pflegedienst")}>
           {beratung.linkLabel}
         </InlineLink>
         {beratung.textAfter}

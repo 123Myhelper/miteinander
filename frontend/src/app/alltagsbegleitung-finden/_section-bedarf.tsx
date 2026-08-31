@@ -1,8 +1,9 @@
 import { getAlltagsbegleitungFindenContent } from "@/lib/content/alltagsbegleitung-finden";
+import { localizedPath, type AuthorityLocale } from "@/lib/i18n/authority-pages";
 import { BulletList, InlineLink, SectionHeading, SubHeading } from "./_ui";
 
-export default function SectionBedarf() {
-  const { intro, bedarf } = getAlltagsbegleitungFindenContent();
+export default function SectionBedarf({ locale }: { locale: AuthorityLocale }) {
+  const { intro, bedarf } = getAlltagsbegleitungFindenContent(locale);
 
   return (
     <>
@@ -24,7 +25,7 @@ export default function SectionBedarf() {
       <SubHeading>{bedarf.grenzeHeading}</SubHeading>
       <p>
         {bedarf.grenzeTextBefore}
-        <InlineLink href="/alltagsbegleitung-oder-pflegedienst">
+        <InlineLink href={localizedPath(locale, "/alltagsbegleitung-oder-pflegedienst")}>
           {bedarf.grenzeLinkLabel}
         </InlineLink>
         {bedarf.grenzeTextAfter}

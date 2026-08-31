@@ -18,6 +18,17 @@ interface PublicMetadataOptions {
   description: string;
   path: `/${string}` | "/";
   index?: boolean;
+  /**
+   * Open Graph locale of this page's content. Defaults to German, which is what
+   * every page served from an unprefixed path is written in.
+   */
+  ogLocale?: string;
+  /**
+   * hreflang map for pages that exist in more than one language. Absolute URLs,
+   * keyed by language code plus `x-default`. Omitted for single-language pages,
+   * which must not advertise alternates they do not have.
+   */
+  languages?: Record<string, string>;
 }
 
 export function createPublicMetadata({
@@ -25,6 +36,8 @@ export function createPublicMetadata({
   description,
   path,
   index = true,
+  ogLocale = "de_DE",
+  languages,
 }: PublicMetadataOptions): Metadata {
   const brandedTitle = `${title} | ${SITE_NAME}`;
 
@@ -33,6 +46,7 @@ export function createPublicMetadata({
     description,
     alternates: {
       canonical: path,
+      ...(languages ? { languages } : {}),
     },
     robots: {
       index,
@@ -48,7 +62,7 @@ export function createPublicMetadata({
       description,
       url: path,
       siteName: SITE_NAME,
-      locale: "de_DE",
+      locale: ogLocale,
       type: "website",
       images: [SOCIAL_IMAGE],
     },

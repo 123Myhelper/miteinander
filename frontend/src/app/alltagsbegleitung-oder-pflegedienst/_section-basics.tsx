@@ -1,9 +1,14 @@
 import { getAlltagsbegleitungPflegedienstContent } from "@/lib/content/alltagsbegleitung-pflegedienst";
+import type { AuthorityLocale } from "@/lib/i18n/authority-pages";
 import { BulletList, SectionHeading, SubHeading } from "./_ui";
 
-export default function SectionBasics() {
+export default function SectionBasics({
+  locale,
+}: {
+  locale: AuthorityLocale;
+}) {
   const { intro, alltagsbegleitung, pflegedienst } =
-    getAlltagsbegleitungPflegedienstContent();
+    getAlltagsbegleitungPflegedienstContent(locale);
 
   return (
     <>

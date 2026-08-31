@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Alltagsbegleitung or Pflegedienst: the difference",
+    "description": "Alltagsbegleitung supports people with everyday life; a Pflegedienst provides nursing and medical services. The difference, typical tasks and limits at a glance.",
+    "heading": "Alltagsbegleitung or Pflegedienst: what is the difference?",
+    "breadcrumbLabel": "Breadcrumb navigation",
+    "breadcrumbHome": "Home",
+    "breadcrumbCurrent": "Alltagsbegleitung or Pflegedienst",
+    "languageNavLabel": "Language selection",
+    "aboutAlltagsbegleitung": "Alltagsbegleitung",
+    "aboutSupport": "Everyday support"
+  },
+  "intro": {
+    "label": "In brief",
+    "text": "Alltagsbegleitung supports people with the things that make up the day: keeping them company, going with them to appointments, doing the shopping, lending a hand with light household tasks. An ambulanter Pflegedienst (outpatient care service), by contrast, is geared towards nursing care and, where this is provided for, also delivers Behandlungspflege (medically prescribed nursing care). Alltagsbegleitung therefore starts with everyday life, a Pflegedienst with nursing care."
+  },
+  "alltagsbegleitung": {
+    "heading": "What is Alltagsbegleitung?",
+    "paragraph1": "Alltagsbegleitung – often also called Alltagshilfe or Unterstützung im Alltag (everyday support) – means accompanying people with everyday tasks and errands. The focus is on relief, company and participation: everyday life should become easier, more reliable and less lonely.",
+    "paragraph2": "Alltagsbegleitung is aimed at people who need support in everyday life, and equally at relatives looking for relief. It does not replace nursing care; it complements it where the issue is not care but everyday life.",
+    "tasksHeading": "Typical tasks of an Alltagsbegleitung",
+    "tasks": [
+      "Keeping company and spending time together",
+      "Going along to appointments",
+      "Support with mobility",
+      "Shopping and errands",
+      "Light help around the house",
+      "Accompaniment on trips outside the home",
+      "Support with everyday activities"
+    ],
+    "qualificationHeading": "What qualifications does an Alltagsbegleitung have?",
+    "qualificationText": "There is no blanket answer to this. Which qualification is required depends on the specific activity, on the particular service and, where applicable, on the recognition requirements that apply. Nursing services are subject to their own professional requirements, which differ from those for general Alltagsbegleitung."
+  },
+  "pflegedienst": {
+    "heading": "What is an ambulanter Pflegedienst?",
+    "text": "An ambulanter Pflegedienst (outpatient care service) provides nursing care to people in their own homes. The focus is on nursing care and – where this is provided for – on Behandlungspflege, which is delivered by appropriately qualified staff. Services provided in relation to Pflegekassen (long-term care insurance funds) or health insurers are subject to specific approval and contractual requirements.",
+    "tasksHeading": "Typical services of a Pflegedienst",
+    "tasks": [
+      "Nursing care in the home environment",
+      "Behandlungspflege, in so far as it is provided for and delivered by appropriately qualified staff",
+      "Advice and guidance for relatives",
+      "Cooperation with doctors and other bodies involved"
+    ]
+  },
+  "comparison": {
+    "heading": "The difference at a glance",
+    "columnFeature": "Feature",
+    "columnBegleitung": "Alltagsbegleitung",
+    "columnPflegedienst": "Ambulanter Pflegedienst",
+    "rows": [
+      {
+        "label": "Focus",
+        "begleitung": "Support, companionship and relief in everyday life",
+        "pflegedienst": "Nursing care and – where provided for – Behandlungspflege"
+      },
+      {
+        "label": "Typical tasks",
+        "begleitung": "Company, going along to appointments, shopping, light help around the house, mobility",
+        "pflegedienst": "Nursing care, Behandlungspflege within the framework provided for it, advice"
+      },
+      {
+        "label": "Behandlungspflege",
+        "begleitung": "Not part of general Alltagsbegleitung.",
+        "pflegedienst": "Can be delivered by appropriately qualified staff within the framework provided for it."
+      },
+      {
+        "label": "Qualification",
+        "begleitung": "Depends on the activity, the service and, where applicable, the recognition requirements that apply.",
+        "pflegedienst": "Depends on the particular nursing service and the professional requirements that apply to it."
+      },
+      {
+        "label": "Legal framework",
+        "begleitung": "Varies according to the service and the legal framework.",
+        "pflegedienst": "Services provided in relation to Pflegekassen or health insurers are subject to specific approval and contractual requirements."
+      },
+      {
+        "label": "Aim",
+        "begleitung": "Participation, relief and quality of life in everyday life",
+        "pflegedienst": "Nursing care and safety"
+      }
+    ]
+  },
+  "boundaries": {
+    "heading": "What Alltagsbegleitung does not cover",
+    "text": "Behandlungspflege is not part of general Alltagsbegleitung. Nursing and medical services are delivered by appropriately qualified staff within the framework provided for them. Anyone who needs regular nursing care is therefore not sufficiently supported by an Alltagsbegleitung alone."
+  },
+  "escalation": {
+    "heading": "When is a Pflegedienst the right choice?",
+    "text": "A Pflegedienst comes into consideration when the need goes beyond accompaniment in everyday life and nursing care is required. Exactly where that line runs cannot be determined in general terms – it depends on the individual situation.",
+    "adviceHeading": "Where you can get independent advice",
+    "adviceText": "A binding assessment comes from the bodies that know the individual case: the treating GP, the Pflegeberatung (statutory care advice service), local Pflegestützpunkte (care support centres) and the responsible Pflegekasse.",
+    "disclaimer": "This article provides general information and does not replace medical, nursing or legal advice."
+  },
+  "combination": {
+    "heading": "Alltagsbegleitung and Pflegedienst are not mutually exclusive",
+    "text": "In practice the question is rarely an “either/or”. Alltagsbegleitung and nursing care cover different needs and are often used side by side: the Pflegedienst takes on the nursing care, while the Alltagsbegleitung provides company, accompaniment and relief in the rest of everyday life.",
+    "findingLead": "If you have concluded that Alltagsbegleitung is the right fit, you will find the individual steps here: ",
+    "findingLinkLabel": "How to find and organise an Alltagsbegleitung"
+  },
+  "entlastungsbetrag": {
+    "heading": "Alltagsbegleitung and the Entlastungsbetrag: general context",
+    "infoLabel": "General information",
+    "infoText": "People in need of care who are cared for at home are entitled to an Entlastungsbetrag (relief amount) under § 45b SGB XI. Among other things, it can be used for what are known as Angebote zur Unterstützung im Alltag (everyday support services) under § 45a SGB XI. To that end, such services must be recognised under the law of the respective federal state. The recognition requirements differ from federal state to federal state. Binding information is provided by the responsible Pflegekasse and the relevant state authority.",
+    "myhelperHeading": "What this means for MyHelper.me",
+    "myhelperText": "MyHelper.me makes no general assurance that support services found through the platform are recognised as an Angebot zur Unterstützung im Alltag under § 45a SGB XI or are reimbursable through the Entlastungsbetrag under § 45b SGB XI. Whether a specific service can be taken into account in an individual case depends on the requirements that apply in each instance and should be clarified in advance with the responsible Pflegekasse or authority."
+  },
+  "positioning": {
+    "heading": "Where does MyHelper.me fit in?",
+    "paragraph1": "MyHelper.me is a digital matching platform (Vermittlungsplattform). It brings together people who are looking for support in everyday life and people who offer Alltagsbegleitung.",
+    "paragraph2": "MyHelper.me is not a Pflegedienst and does not itself provide any nursing, medical or treatment services. The support services are agreed directly between users; MyHelper.me does not become a contracting party to these individual service agreements.",
+    "paragraph3": "Anyone looking for an Alltagsbegleitung creates a profile, describes their own support needs and can then find matching profiles and make contact directly.",
+    "paragraph4": "If nursing or medical care is needed beyond this, a Pflegedienst or an appropriately qualified body is responsible for it."
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "items": [
+      {
+        "question": "What is the difference between Alltagsbegleitung and a Pflegedienst?",
+        "answer": "Alltagsbegleitung starts with everyday life: keeping company, going along to appointments, doing the shopping or lending a hand with light household tasks. An ambulanter Pflegedienst is geared towards nursing care and, where this is provided for, also delivers Behandlungspflege. Services provided in relation to Pflegekassen or health insurers are subject to specific approval and contractual requirements."
+      },
+      {
+        "question": "Is Alltagsbegleitung nursing care?",
+        "answer": "Alltagsbegleitung is geared towards accompaniment, relief and participation in everyday life. Behandlungspflege is not part of general Alltagsbegleitung. Where the line runs in an individual case depends on the specific activity and on the framework that applies to it."
+      },
+      {
+        "question": "May an Alltagsbegleitung take on nursing or medical tasks?",
+        "answer": "Behandlungspflege is not part of general Alltagsbegleitung. Nursing and medical services are delivered by appropriately qualified staff within the framework provided for them. Which requirements apply to a specific activity is determined by the service itself and by the professional prerequisites that apply to it."
+      },
+      {
+        "question": "Does an Alltagsbegleitung need nursing training?",
+        "answer": "This cannot be answered across the board. Which qualification is required depends on the specific activity, on the particular service and, where applicable, on the recognition requirements that apply. Nursing services are subject to their own professional requirements."
+      },
+      {
+        "question": "Can Alltagsbegleitung and a Pflegedienst be used together?",
+        "answer": "The two are not mutually exclusive. Alltagsbegleitung and nursing care cover different needs and are often used side by side in practice. How best the two complement each other in an individual case is something those affected and their relatives are best advised to clarify with the bodies involved."
+      },
+      {
+        "question": "Is MyHelper.me a Pflegedienst?",
+        "answer": "No. MyHelper.me is a matching platform. It connects users with one another but does not itself provide any nursing, treatment or medical services."
+      }
+    ]
+  },
+  "related": {
+    "heading": "Further reading",
+    "links": [
+      {
+        "href": "/en/alltagsbegleitung-finden",
+        "label": "Finding an Alltagsbegleitung: how to go about it"
+      },
+      { "href": "/faq", "label": "Frequently asked questions about MyHelper.me" },
+      { "href": "/registrieren", "label": "Create a profile" },
+      { "href": "/agb", "label": "Terms and conditions (AGB)" },
+      { "href": "/impressum", "label": "Impressum (legal notice)" },
+      { "href": "/datenschutz", "label": "Privacy policy" }
+    ]
+  }
+}

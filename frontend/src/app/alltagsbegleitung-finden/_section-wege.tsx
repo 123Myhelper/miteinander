@@ -1,8 +1,9 @@
 import { getAlltagsbegleitungFindenContent } from "@/lib/content/alltagsbegleitung-finden";
+import { localizedPath, type AuthorityLocale } from "@/lib/i18n/authority-pages";
 import { BulletList, InlineLink, SectionHeading, SubHeading } from "./_ui";
 
-export default function SectionWege() {
-  const { wege, gespraech } = getAlltagsbegleitungFindenContent();
+export default function SectionWege({ locale }: { locale: AuthorityLocale }) {
+  const { wege, gespraech } = getAlltagsbegleitungFindenContent(locale);
 
   return (
     <>
@@ -15,7 +16,7 @@ export default function SectionWege() {
       <SubHeading>{wege.landesrechtHeading}</SubHeading>
       <p>
         {wege.landesrechtTextBefore}
-        <InlineLink href="/alltagsbegleitung-oder-pflegedienst">
+        <InlineLink href={localizedPath(locale, "/alltagsbegleitung-oder-pflegedienst")}>
           {wege.landesrechtLinkLabel}
         </InlineLink>
         {wege.landesrechtTextAfter}
