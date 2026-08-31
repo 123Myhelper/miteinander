@@ -29,7 +29,7 @@ const homeStructuredData = {
       url: SITE_URL,
       logo: `${SITE_URL}/logo.svg`,
       email: "info@myhelper.me",
-      telephone: "+49 152 09465369",
+      telephone: "+49 7542 9530149",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Im Hof 16",

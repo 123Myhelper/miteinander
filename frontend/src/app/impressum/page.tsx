@@ -39,7 +39,7 @@ export default function Impressum() {
             {t('imprint.contact')}
           </h2>
           <p>
-            {t('imprint.phone')}: +49 152/09465369
+            {t('imprint.phone')}: 07542 95 301 49
             <br />
             {t('imprint.email')}: info@myhelper.me
           </p>
