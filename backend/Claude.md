@@ -167,6 +167,8 @@ On every `npm start`:
 4. Execute any pending migrations in order
 5. Start the server
 
+With `NODE_ENV=production` (or `MIGRATE_ON_START=false`) step 4 only lists the pending migrations; run them deliberately with `npm run migrate` after a fresh backup. `MIGRATE_ON_START=true` forces startup migrations.
+
 ---
 
 ## API Response Format

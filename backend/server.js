@@ -27,7 +27,16 @@ const startServer = async () => {
     console.log('📋 Checking for pending migrations...');
     const pendingMigrations = await getPendingMigrations();
     
-    if (pendingMigrations.length > 0) {
+    // Production runs migrations deliberately (npm run migrate), never as a side effect of a restart
+    const migrateOnStart = process.env.MIGRATE_ON_START
+      ? process.env.MIGRATE_ON_START === 'true'
+      : config.server.env !== 'production';
+
+    if (pendingMigrations.length > 0 && !migrateOnStart) {
+      console.warn(`  ⚠️  ${pendingMigrations.length} pending migration(s) NOT run on startup (run them with: npm run migrate):`);
+      pendingMigrations.forEach((name) => console.warn(`     - ${name}`));
+      console.log('');
+    } else if (pendingMigrations.length > 0) {
       console.log(`  Found ${pendingMigrations.length} pending migration(s). Running...`);
       await migrate();
     } else {
