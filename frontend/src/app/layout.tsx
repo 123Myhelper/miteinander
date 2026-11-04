@@ -7,6 +7,7 @@ import { SocketProvider } from "@/context/SocketContext";
 import { QueryProvider } from "@/providers/QueryProvider";
 import { Toaster } from "sonner";
 import CookieConsent from "@/components/CookieConsent";
+import TranslationGuard from "@/components/TranslationGuard";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_TITLE,
@@ -84,6 +85,7 @@ export default function RootLayout({
       <body
         className={`${dmSans.variable} ${playfair.variable} antialiased`}
       >
+        <TranslationGuard />
         <QueryProvider>
           <AuthProvider>
             <SocketProvider>
