@@ -1,5 +1,6 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
 // Import translations
@@ -31,11 +32,23 @@ const STORAGE_KEY = 'myhelper-locale';
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>('de');
 
+  const pathname = usePathname();
+  const [, prefix, slug] = pathname.split('/');
+  const articleSlug = slug ?? prefix;
+  const articleLocale = articleSlug === 'alltagsbegleitung-finden' ||
+    articleSlug === 'alltagsbegleitung-oder-pflegedienst'
+    ? prefix === 'en' || prefix === 'fr' ? prefix : 'de'
+    : undefined;
+  const documentLocale = articleLocale ?? locale;
+
+  useEffect(() => {
+    document.documentElement.lang = documentLocale;
+  }, [documentLocale]);
+
   // Load locale from localStorage on mount
   useEffect(() => {
     const savedLocale = localStorage.getItem(STORAGE_KEY) as Locale | null;
     if (savedLocale && ['en', 'de', 'fr'].includes(savedLocale)) {
-      document.documentElement.lang = savedLocale;
       const timeoutId = window.setTimeout(() => setLocaleState(savedLocale), 0);
       return () => window.clearTimeout(timeoutId);
     }
@@ -44,7 +57,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale);
     localStorage.setItem(STORAGE_KEY, newLocale);
-    document.documentElement.lang = newLocale;
   };
 
   // Translation function - supports nested keys like "nav.howItWorks"

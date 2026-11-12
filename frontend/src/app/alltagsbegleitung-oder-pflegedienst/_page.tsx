@@ -126,9 +126,6 @@ export default function AlltagsbegleitungOderPflegedienstPage({
     <>
       <JsonLd data={buildStructuredData(locale)} />
 
-      {/* The root layout owns <html lang="de">. Marking the content language on
-          <main> keeps assistive technology and search engines correct for the
-          translated versions without making the root layout dynamic. */}
       <main
         lang={locale}
         className="min-h-screen overflow-x-hidden bg-background py-12 sm:py-16 md:py-20"

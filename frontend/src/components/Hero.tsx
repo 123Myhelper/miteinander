@@ -187,7 +187,7 @@ export default function Hero() {
                   ease: [0.25, 0.1, 0.25, 1],
                 }}
               >
-                {word}
+                {word}{index < words.length - 1 ? " " : ""}
               </motion.span>
             ))}
           </h1>
