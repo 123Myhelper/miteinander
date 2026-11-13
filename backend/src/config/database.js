@@ -1,23 +1,5 @@
 const { Sequelize } = require('sequelize');
 const config = require('./config');
-const fs = require('fs');
-const path = require('path');
-
-// Use SSL for any remote database (not localhost)
-const isRemoteDB = config.db.host && config.db.host !== 'localhost' && config.db.host !== '127.0.0.1';
-
-let sslDialectOptions = {};
-if (isRemoteDB) {
-  const caPath = path.join(__dirname, 'ca-certificate.crt');
-  const caExists = fs.existsSync(caPath);
-
-  sslDialectOptions = {
-    ssl: {
-      rejectUnauthorized: caExists,
-      ...(caExists && { ca: fs.readFileSync(caPath) }),
-    },
-  };
-}
 
 const sequelize = new Sequelize(
   config.db.name,
@@ -28,7 +10,6 @@ const sequelize = new Sequelize(
     port: config.db.port,
     dialect: config.db.dialect,
     logging: config.server.env === 'development' ? console.log : false,
-    dialectOptions: sslDialectOptions,
     pool: {
       max: 10,
       min: 0,
@@ -65,7 +46,6 @@ const initializeDatabase = async () => {
       port: config.db.port,
       dialect: config.db.dialect,
       logging: false,
-      dialectOptions: sslDialectOptions,
     }
   );
 
