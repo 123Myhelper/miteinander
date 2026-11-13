@@ -112,7 +112,7 @@ Every migration is:
    npm run migration:create -- --name=create_admins_table
    ```
 
-2. **Run Pending Migrations** (automatic on `npm start`):
+2. **Run Pending Migrations** (automatic on `npm start` in development; on deploy in production, see below):
    ```bash
    npm run migrate
    ```
@@ -167,7 +167,20 @@ On every `npm start`:
 4. Execute any pending migrations in order
 5. Start the server
 
-With `NODE_ENV=production` (or `MIGRATE_ON_START=false`) step 4 only lists the pending migrations; run them deliberately with `npm run migrate` after a fresh backup. `MIGRATE_ON_START=true` forces startup migrations.
+With `NODE_ENV=production` (or `MIGRATE_ON_START=false`) step 4 only lists the pending migrations. `MIGRATE_ON_START=true` forces startup migrations.
+
+### Migrations in Production
+Production deploys from `main` automatically. When a deploy contains migration files the production database hasn't run yet, the deploy:
+1. takes a fresh database backup,
+2. runs `npm run migrate`,
+3. only then switches the live site to the new code.
+
+If the backup or a migration fails, the deploy stops, the previous version stays live and the failure is emailed to the maintainer.
+
+What this means:
+- **A migration merged into `main` runs on the production database within minutes.** Review migration files in PRs as carefully as code: check `up`, check that `down` really reverses it, and check what existing rows it touches.
+- Never run migrations against production from a local machine. Push them to `main` and let the deploy run them.
+- Prefer migrations that are safe to re-run, and target rows by stable keys, not numeric ids.
 
 ---
 
