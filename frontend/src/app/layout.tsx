@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { DM_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
@@ -75,13 +76,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = (await headers()).get("x-myhelper-page-locale");
+  const lang = locale === "en" || locale === "fr" ? locale : "de";
+
   return (
-    <html lang="de" suppressHydrationWarning>
+    <html lang={lang} suppressHydrationWarning>
       <body
         className={`${dmSans.variable} ${playfair.variable} antialiased`}
       >
