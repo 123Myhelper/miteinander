@@ -1,6 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import { authorityPageLocale } from '@/lib/i18n/authority-pages';
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
 // Import translations
@@ -32,14 +33,10 @@ const STORAGE_KEY = 'myhelper-locale';
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>('de');
 
+  // Guide pages have their own per-URL language; everywhere else the document
+  // language follows the site-wide switcher.
   const pathname = usePathname();
-  const [, prefix, slug] = pathname.split('/');
-  const articleSlug = slug ?? prefix;
-  const articleLocale = articleSlug === 'alltagsbegleitung-finden' ||
-    articleSlug === 'alltagsbegleitung-oder-pflegedienst'
-    ? prefix === 'en' || prefix === 'fr' ? prefix : 'de'
-    : undefined;
-  const documentLocale = articleLocale ?? locale;
+  const documentLocale = authorityPageLocale(pathname) ?? locale;
 
   useEffect(() => {
     document.documentElement.lang = documentLocale;

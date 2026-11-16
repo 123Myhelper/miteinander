@@ -1,14 +1,14 @@
 'use client';
 
 import Link from "next/link";
-import { localizedPath, type BasePath } from "@/lib/i18n/authority-pages";
+import { localizedPath, type AuthorityPagePath } from "@/lib/i18n/authority-pages";
 import { useTranslation } from "@/context/LanguageContext";
 import LegalPageLayout from "@/components/legal/LegalPageLayout";
 import JsonLd from "@/components/JsonLd";
 
 const questionNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] as const;
 
-const guidePaths: Partial<Record<number, BasePath>> = {
+const guidePaths: Partial<Record<number, AuthorityPagePath>> = {
   3: "/alltagsbegleitung-finden",
   7: "/alltagsbegleitung-oder-pflegedienst",
 };
@@ -44,7 +44,7 @@ export default function FAQPage() {
                 </h2>
                 <p>{t(`faq.answer${number}`)}</p>
                 {guidePath && (
-                  <Link className="text-accent underline" href={localizedPath(locale, guidePath)} hrefLang={locale}>
+                  <Link className="mt-2 inline-block text-accent underline" href={localizedPath(locale, guidePath)} hrefLang={locale}>
                     {t(`faq.guide${number}`)}
                   </Link>
                 )}
