@@ -62,7 +62,7 @@
     "findenTitle": "Comment trouver un accompagnement au quotidien",
     "findenDesc": "Clarifier les besoins, connaître les pistes de recherche et bien préparer le premier entretien.",
     "findenCta": "Lire le guide",
-    "pflegedienstTitle": "Accompagnement au quotidien ou service de soins ?",
+    "pflegedienstTitle": "Accompagnement au quotidien ou service de soins\u00a0?",
     "pflegedienstDesc": "Ce que couvre l'accompagnement au quotidien, ce qui relève d'un service de soins – et où se situent les limites.",
     "pflegedienstCta": "Comprendre la différence"
   },
@@ -78,13 +78,13 @@
     "card3Desc": "Négociations de prix selon vos conditions.",
     "bannerBadge": "Près de chez vous",
     "bannerTitle": "Trouvez des accompagnatrices et accompagnateurs du quotidien adaptés près de chez vous",
-    "tagDailyLiving": "Activités Quotidiennes",
-    "tagMobility": "Aide À La Mobilité",
-    "tagMedication": "Accompagnement Aux Rendez-vous",
+    "tagDailyLiving": "Activités quotidiennes",
+    "tagMobility": "Aide à la mobilité",
+    "tagMedication": "Accompagnement aux rendez-vous",
     "tagCompanionship": "Compagnie",
     "tagShopping": "Courses",
     "tagTransportation": "Transport",
-    "tagHygiene": "Aide Ménagère Légère"
+    "tagHygiene": "Aide ménagère légère"
   },
   "app": {
     "badge": "Bientôt disponible",
@@ -121,8 +121,8 @@
     "privacy": "Politique de confidentialité",
     "terms": "Conditions générales",
     "faq": "FAQ",
-    "guideAlltagsbegleitung": "Alltagsbegleitung oder Pflegedienst",
-    "guideFinden": "Alltagsbegleitung finden",
+    "guideAlltagsbegleitung": "Accompagnement au quotidien ou service de soins\u00a0?",
+    "guideFinden": "Comment trouver un accompagnement au quotidien",
     "copyright": "© 2026 MyHelper.me. Tous droits réservés."
   },
   "faq": {
@@ -131,7 +131,7 @@
     "question1": "Qu’est-ce que MyHelper.me ?",
     "answer1": "MyHelper.me est une plateforme qui met en relation des personnes ayant besoin d’un soutien au quotidien avec des accompagnatrices et accompagnateurs du quotidien adaptés. MyHelper.me n’est pas un service de soins et ne fournit elle-même aucune prestation médicale ou de soins.",
     "question2": "À qui MyHelper.me est-elle destinée ?",
-    "answer2": "La plateforme s’adresse aux personnes ayant besoin de soins, à leurs proches et aux autres personnes qui recherchent du soutien, de l’accompagnement ou du répit au quotidien, ainsi qu’aux accompagnatrices et accompagnateurs du quotidien et aux indépendants qui souhaitent proposer leur soutien.",
+    "answer2": "La plateforme s’adresse aux bénéficiaires d’un accompagnement au quotidien, à leurs proches et aux autres personnes qui recherchent du soutien, de l’accompagnement ou du répit au quotidien, ainsi qu’aux accompagnatrices et accompagnateurs du quotidien et aux indépendants qui souhaitent proposer leur soutien.",
     "question3": "Quel soutien puis-je trouver ?",
     "answer3": "Sur MyHelper.me, les utilisateurs peuvent notamment trouver un accompagnement au quotidien, une aide dans la vie quotidienne, de la présence, du répit et une aide ménagère légère.",
     "guide3": "Comment trouver un accompagnement au quotidien",
@@ -143,7 +143,7 @@
     "answer6": "Oui. Les accompagnatrices et accompagnateurs du quotidien et les indépendants peuvent en principe décider eux-mêmes quand et où ils souhaitent proposer leur soutien.",
     "question7": "MyHelper.me est-elle un service de soins ?",
     "answer7": "Non. MyHelper.me est une plateforme de mise en relation. La plateforme met les utilisateurs en relation, mais ne fournit elle-même aucune prestation de soins, de traitement ou de nature médicale.",
-    "guide7": "Accompagnement au quotidien ou service de soins ?",
+    "guide7": "Accompagnement au quotidien ou service de soins\u00a0?",
     "question8": "Comment fonctionne la mise en relation ?",
     "answer8": "Les utilisateurs s’inscrivent, indiquent leurs besoins de soutien ou leur offre, puis peuvent trouver des profils et des contacts adaptés sur la plateforme.",
     "question9": "Dans quelles langues MyHelper.me est-elle disponible ?",
