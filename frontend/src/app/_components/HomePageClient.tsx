@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ConceptSection from "@/components/ConceptSection";
 import TargetGroupsSection from "@/components/TargetGroupsSection";
+import RatgeberSection from "@/components/RatgeberSection";
 import DifferenceSection from "@/components/DifferenceSection";
 import AppSection from "@/components/AppSection";
 import GetStartedSection from "@/components/GetStartedSection";
@@ -24,6 +25,7 @@ export default function HomePageClient() {
         <DifferenceSection />
         <ConceptSection />
         <TargetGroupsSection />
+        <RatgeberSection />
         <AppSection />
         <GetStartedSection />
         <Footer />

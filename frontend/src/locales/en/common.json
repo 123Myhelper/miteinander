@@ -55,6 +55,17 @@
     "recommendation1": "First-aid course",
     "recommendation2": "Police clearance certificate"
   },
+  "ratgeber": {
+    "badge": "Guides",
+    "title": "Guides to everyday support",
+    "intro": "Organising everyday support: two guides for the first steps – how to find suitable everyday support and when a nursing service is needed instead.",
+    "findenTitle": "How to find everyday support",
+    "findenDesc": "Clarify what is needed, know where to look and prepare well for the first conversation.",
+    "findenCta": "Read the guide",
+    "pflegedienstTitle": "Everyday support or a nursing service?",
+    "pflegedienstDesc": "What everyday support covers, what a nursing service is responsible for – and where the limits lie.",
+    "pflegedienstCta": "See the difference"
+  },
   "difference": {
     "badge": "Our difference",
     "title": "Why MyHelper.me?",
