@@ -33,6 +33,34 @@ export const LANGUAGE_ENDONYM: Record<AuthorityLocale, string> = {
 
 export type BasePath = `/${string}`;
 
+/**
+ * Base (German, unprefixed) paths of every translated guide page. Anything that
+ * needs to know which routes have EN/FR versions — the sitemap, the client-side
+ * document language, FAQ links — reads this list, so a new guide only has to be
+ * added here.
+ */
+export const AUTHORITY_PAGE_PATHS = [
+  "/alltagsbegleitung-oder-pflegedienst",
+  "/alltagsbegleitung-finden",
+] as const satisfies readonly BasePath[];
+
+export type AuthorityPagePath = (typeof AUTHORITY_PAGE_PATHS)[number];
+
+/**
+ * Locale of a translated guide page from its pathname, or `undefined` when the
+ * pathname is not one of the guide pages.
+ */
+export function authorityPageLocale(
+  pathname: string,
+): AuthorityLocale | undefined {
+  for (const basePath of AUTHORITY_PAGE_PATHS) {
+    for (const locale of AUTHORITY_LOCALES) {
+      if (pathname === localizedPath(locale, basePath)) return locale;
+    }
+  }
+  return undefined;
+}
+
 export function localizedPath(
   locale: AuthorityLocale,
   basePath: BasePath,

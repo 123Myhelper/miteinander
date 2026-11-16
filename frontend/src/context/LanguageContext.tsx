@@ -1,5 +1,7 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
+import { authorityPageLocale } from '@/lib/i18n/authority-pages';
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
 // Import translations
@@ -31,11 +33,19 @@ const STORAGE_KEY = 'myhelper-locale';
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>('de');
 
+  // Guide pages have their own per-URL language; everywhere else the document
+  // language follows the site-wide switcher.
+  const pathname = usePathname();
+  const documentLocale = authorityPageLocale(pathname) ?? locale;
+
+  useEffect(() => {
+    document.documentElement.lang = documentLocale;
+  }, [documentLocale]);
+
   // Load locale from localStorage on mount
   useEffect(() => {
     const savedLocale = localStorage.getItem(STORAGE_KEY) as Locale | null;
     if (savedLocale && ['en', 'de', 'fr'].includes(savedLocale)) {
-      document.documentElement.lang = savedLocale;
       const timeoutId = window.setTimeout(() => setLocaleState(savedLocale), 0);
       return () => window.clearTimeout(timeoutId);
     }
@@ -44,7 +54,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale);
     localStorage.setItem(STORAGE_KEY, newLocale);
-    document.documentElement.lang = newLocale;
   };
 
   // Translation function - supports nested keys like "nav.howItWorks"
