@@ -22,7 +22,7 @@ interface PublicRoute {
 
 const publicRoutes: PublicRoute[] = [
   { path: "", lastModified: "2026-08-28" },
-  { path: "/faq", lastModified: "2026-08-27" },
+  { path: "/faq", lastModified: "2026-11-12" },
   { path: "/impressum", lastModified: "2026-08-27" },
   { path: "/datenschutz", lastModified: "2026-08-27" },
   { path: "/agb", lastModified: "2026-08-27" },

@@ -6,11 +6,17 @@ export const DEFAULT_TITLE = "Alltagsbegleitung & Unterstützung im Alltag";
 export const DEFAULT_DESCRIPTION =
   "MyHelper.me ist die deutsche Vermittlungsplattform für Alltagsbegleitung und Unterstützung im Alltag. Finden Sie passende Alltagsbegleiter:innen direkt und persönlich.";
 
-const SOCIAL_IMAGE = {
-  url: "/logo.svg",
-  width: 512,
-  height: 512,
-  alt: "MyHelper.me Logo",
+/**
+ * Link-preview image for Open Graph and X/Twitter. A raster PNG at the
+ * 1200 × 630 (1.91:1) size the large preview cards expect; Facebook, LinkedIn,
+ * WhatsApp and X do not render SVG previews.
+ */
+export const SOCIAL_IMAGE = {
+  url: "/og-image.png",
+  width: 1200,
+  height: 630,
+  alt: "MyHelper.me – Die Plattform, die verbindet.",
+  type: "image/png",
 };
 
 interface PublicMetadataOptions {
@@ -67,10 +73,10 @@ export function createPublicMetadata({
       images: [SOCIAL_IMAGE],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: brandedTitle,
       description,
-      images: [SOCIAL_IMAGE.url],
+      images: [SOCIAL_IMAGE],
     },
   };
 }
