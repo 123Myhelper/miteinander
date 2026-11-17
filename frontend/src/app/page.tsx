@@ -27,7 +27,10 @@ const homeStructuredData = {
       "@id": `${SITE_URL}/#organization`,
       name: SITE_NAME,
       url: SITE_URL,
-      logo: `${SITE_URL}/logo.svg`,
+      // Raster logo on the brand background: the SVG mark is drawn in light
+      // strokes and would be near-invisible on the white surfaces where search
+      // engines display an organisation logo.
+      logo: `${SITE_URL}/logo-512.png`,
       email: "info@myhelper.me",
       telephone: "+49 7542 9530149",
       address: {

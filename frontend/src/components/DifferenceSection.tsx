@@ -14,7 +14,7 @@ export default function DifferenceSection() {
       description: t("difference.card1Desc"),
       icon: Users,
       size: "large",
-      image: "https://images.unsplash.com/photo-1609131257008-a5436a6238da?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1609131257008-a5436a6238da?q=80&w=1200&h=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ export default function DifferenceSection() {
       description: t("difference.card2Desc"),
       icon: MessageSquare,
       size: "medium",
-      image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=2070",
+      image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=1000&h=700&auto=format&fit=crop",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ export default function DifferenceSection() {
       description: t("difference.card3Desc"),
       icon: Shield,
       size: "medium",
-      image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070",
+      image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1000&h=700&auto=format&fit=crop",
     },
   ];
 
@@ -93,6 +93,8 @@ export default function DifferenceSection() {
               <img
                 src={bentoItems[0].image}
                 alt={bentoItems[0].title}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent" />
@@ -127,6 +129,8 @@ export default function DifferenceSection() {
                   <img
                     src={item.image}
                     alt={item.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-primary/30" />

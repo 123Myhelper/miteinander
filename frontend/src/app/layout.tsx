@@ -13,6 +13,7 @@ import {
   DEFAULT_TITLE,
   SITE_NAME,
   SITE_URL,
+  SOCIAL_IMAGE,
 } from "@/lib/seo";
 
 const dmSans = DM_Sans({
@@ -58,20 +59,13 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: "de_DE",
     type: "website",
-    images: [
-      {
-        url: "/logo.svg",
-        width: 512,
-        height: 512,
-        alt: "MyHelper.me Logo",
-      },
-    ],
+    images: [SOCIAL_IMAGE],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: `${DEFAULT_TITLE} | ${SITE_NAME}`,
     description: DEFAULT_DESCRIPTION,
-    images: ["/logo.svg"],
+    images: [SOCIAL_IMAGE],
   },
 };
 

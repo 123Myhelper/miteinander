@@ -13,21 +13,21 @@ export default function ConceptSection() {
       title: t("concept.step1Title"),
       description: t("concept.step1Desc"),
       icon: Search,
-      image: "https://images.unsplash.com/photo-1758612898258-398a43e7fd65?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1758612898258-398a43e7fd65?q=80&w=1000&h=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       number: "02",
       title: t("concept.step2Title"),
       description: t("concept.step2Desc"),
       icon: MessageCircle,
-      image: "https://images.unsplash.com/flagged/photo-1577973371814-78b04a45ce5e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://images.unsplash.com/flagged/photo-1577973371814-78b04a45ce5e?q=80&w=1000&h=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       number: "03",
       title: t("concept.step3Title"),
       description: t("concept.step3Desc"),
       icon: CalendarCheck,
-      image: "https://images.unsplash.com/photo-1619658535018-5a55d32e4628?q=80&w=1001&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1619658535018-5a55d32e4628?q=80&w=1000&h=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
 
@@ -80,6 +80,8 @@ export default function ConceptSection() {
                   <img
                     src={step.image}
                     alt={step.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent" />
