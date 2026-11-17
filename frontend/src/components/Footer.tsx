@@ -5,10 +5,11 @@ import { Phone, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "@/context/LanguageContext";
+import { localizedPath } from "@/lib/i18n/authority-pages";
 import { socialLinks } from "@/config/social";
 
 export default function Footer() {
-  const { t } = useTranslation();
+  const { locale, t } = useTranslation();
 
   const footerLinks = [
     { name: t("footer.imprint"), href: "/impressum" },
@@ -131,7 +132,8 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/alltagsbegleitung-oder-pflegedienst"
+                  href={localizedPath(locale, "/alltagsbegleitung-oder-pflegedienst")}
+                  hrefLang={locale}
                   className="text-white/70 hover:text-white transition-colors text-sm"
                 >
                   {t("footer.guideAlltagsbegleitung")}
@@ -139,7 +141,8 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/alltagsbegleitung-finden"
+                  href={localizedPath(locale, "/alltagsbegleitung-finden")}
+                  hrefLang={locale}
                   className="text-white/70 hover:text-white transition-colors text-sm"
                 >
                   {t("footer.guideFinden")}
