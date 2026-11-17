@@ -55,6 +55,17 @@
     "recommendation1": "Erste-Hilfe-Kurs",
     "recommendation2": "Polizeiliches Führungszeugnis"
   },
+  "ratgeber": {
+    "badge": "Ratgeber",
+    "title": "Ratgeber zur Alltagsbegleitung",
+    "intro": "Unterstützung im Alltag gut organisieren: Zwei Ratgeber für die ersten Schritte – wie Sie eine passende Alltagsbegleitung finden und wann eher ein Pflegedienst gefragt ist.",
+    "findenTitle": "Alltagsbegleitung finden",
+    "findenDesc": "Bedarf klären, Wege zur Suche kennen und das erste Gespräch gut vorbereiten.",
+    "findenCta": "Ratgeber lesen",
+    "pflegedienstTitle": "Alltagsbegleitung oder Pflegedienst?",
+    "pflegedienstDesc": "Was Alltagsbegleitung übernimmt, wofür ein Pflegedienst zuständig ist – und wo die Grenzen liegen.",
+    "pflegedienstCta": "Unterschied verstehen"
+  },
   "difference": {
     "badge": "Unser Unterschied",
     "title": "Warum MyHelper.me?",

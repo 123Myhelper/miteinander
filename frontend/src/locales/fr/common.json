@@ -55,6 +55,17 @@
     "recommendation1": "Cours de premiers secours",
     "recommendation2": "Extrait de casier judiciaire"
   },
+  "ratgeber": {
+    "badge": "Guides",
+    "title": "Guides sur l'accompagnement au quotidien",
+    "intro": "Bien organiser l'aide au quotidien : deux guides pour les premiers pas – comment trouver un accompagnement au quotidien adapté et quand un service de soins est plutôt nécessaire.",
+    "findenTitle": "Comment trouver un accompagnement au quotidien",
+    "findenDesc": "Clarifier les besoins, connaître les pistes de recherche et bien préparer le premier entretien.",
+    "findenCta": "Lire le guide",
+    "pflegedienstTitle": "Accompagnement au quotidien ou service de soins ?",
+    "pflegedienstDesc": "Ce que couvre l'accompagnement au quotidien, ce qui relève d'un service de soins – et où se situent les limites.",
+    "pflegedienstCta": "Comprendre la différence"
+  },
   "difference": {
     "badge": "Notre différence",
     "title": "Pourquoi MyHelper.me?",
