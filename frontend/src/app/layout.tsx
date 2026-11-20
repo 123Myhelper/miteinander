@@ -7,6 +7,7 @@ import { SocketProvider } from "@/context/SocketContext";
 import { QueryProvider } from "@/providers/QueryProvider";
 import { Toaster } from "sonner";
 import CookieConsent from "@/components/CookieConsent";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import TranslationGuard from "@/components/TranslationGuard";
 import {
   DEFAULT_DESCRIPTION,
@@ -86,6 +87,7 @@ export default function RootLayout({
               <LanguageProvider>
                 {children}
                 <Toaster position="top-right" richColors closeButton />
+                <GoogleAnalytics />
                 <CookieConsent />
                 <div id="datepicker-portal" />
               </LanguageProvider>
