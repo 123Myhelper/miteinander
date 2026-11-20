@@ -748,7 +748,7 @@
   "recipient": {
     "role": "Begleitete Person",
     "welcome": "Willkommen zurück",
-    "welcomeMessage": "Hier ist eine Übersicht über Ihre Alltagsbegleiter:innen.",
+    "welcomeMessage": "Hier ist eine Übersicht über Ihren Unterstützungsbedarf, Ihre Nachrichten und Ihr Profil.",
     "nav": {
       "dashboard": "Dashboard",
       "findCaregivers": "Alltagsbegleiter:innen finden",

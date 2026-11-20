@@ -748,7 +748,7 @@
   "recipient": {
     "role": "Bénéficiaire",
     "welcome": "Bon retour",
-    "welcomeMessage": "Voici un aperçu de vos accompagnateurs du quotidien.",
+    "welcomeMessage": "Voici un aperçu de vos besoins d'accompagnement, de vos messages et de votre profil.",
     "nav": {
       "dashboard": "Tableau de bord",
       "findCaregivers": "Trouver un accompagnement",
