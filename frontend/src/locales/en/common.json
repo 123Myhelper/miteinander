@@ -748,7 +748,7 @@
   "recipient": {
     "role": "Person receiving support",
     "welcome": "Welcome back",
-    "welcomeMessage": "Here's an overview of your schedule and your everyday companions.",
+    "welcomeMessage": "Here's an overview of your everyday companions.",
     "nav": {
       "dashboard": "Dashboard",
       "findCaregivers": "Find everyday companions",
