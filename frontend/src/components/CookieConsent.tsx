@@ -5,15 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from '@/context/LanguageContext';
 import { Cookie, Shield, ChevronDown, ChevronUp } from 'lucide-react';
 import Link from 'next/link';
-
-const CONSENT_KEY = 'myhelper_cookie_consent';
-
-interface ConsentState {
-  necessary: boolean; // always true
-  analytics: boolean;
-  marketing: boolean;
-  timestamp: string;
-}
+import {
+  readConsent,
+  saveConsent,
+  type ConsentState,
+} from '@/lib/cookie-consent';
 
 export default function CookieConsent() {
   const { t } = useTranslation();
@@ -21,23 +17,40 @@ export default function CookieConsent() {
   const [showDetails, setShowDetails] = useState(false);
   const [analytics, setAnalytics] = useState(false);
   const [marketing, setMarketing] = useState(false);
+  const [hasSavedConsent, setHasSavedConsent] = useState(false);
 
   useEffect(() => {
-    const stored = localStorage.getItem(CONSENT_KEY);
+    const stored = readConsent();
     if (!stored) {
       // Small delay so the page loads first
       const timer = setTimeout(() => setVisible(true), 800);
       return () => clearTimeout(timer);
     }
+
+    const timer = setTimeout(() => {
+      setAnalytics(stored.analytics);
+      setMarketing(stored.marketing);
+      setHasSavedConsent(true);
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
-  const saveConsent = (consent: ConsentState) => {
-    localStorage.setItem(CONSENT_KEY, JSON.stringify(consent));
+  const persistConsent = (consent: ConsentState) => {
+    saveConsent(consent);
+    setHasSavedConsent(true);
     setVisible(false);
   };
 
+  const openSettings = () => {
+    const stored = readConsent();
+    setAnalytics(stored?.analytics ?? false);
+    setMarketing(stored?.marketing ?? false);
+    setShowDetails(true);
+    setVisible(true);
+  };
+
   const handleAcceptAll = () => {
-    saveConsent({
+    persistConsent({
       necessary: true,
       analytics: true,
       marketing: true,
@@ -46,7 +59,7 @@ export default function CookieConsent() {
   };
 
   const handleAcceptSelected = () => {
-    saveConsent({
+    persistConsent({
       necessary: true,
       analytics,
       marketing,
@@ -55,7 +68,7 @@ export default function CookieConsent() {
   };
 
   const handleRejectAll = () => {
-    saveConsent({
+    persistConsent({
       necessary: true,
       analytics: false,
       marketing: false,
@@ -63,11 +76,19 @@ export default function CookieConsent() {
     });
   };
 
-  if (!visible) return null;
-
   return (
-    <AnimatePresence>
-      <div className="fixed inset-0 z-[9999] flex items-end justify-center sm:items-end sm:justify-center pointer-events-none">
+    <>
+      {hasSavedConsent && !visible && (
+        <button
+          type="button"
+          onClick={openSettings}
+          className="fixed bottom-4 left-4 z-[9998] rounded-full bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-lg ring-1 ring-black/10 transition-colors hover:bg-gray-50"
+        >
+          {t('cookie.manage')}
+        </button>
+      )}
+      <AnimatePresence>
+        {visible && <div className="fixed inset-0 z-[9999] flex items-end justify-center sm:items-end sm:justify-center pointer-events-none">
         {/* Backdrop */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -214,7 +235,8 @@ export default function CookieConsent() {
             </div>
           </div>
         </motion.div>
-      </div>
-    </AnimatePresence>
+        </div>}
+      </AnimatePresence>
+    </>
   );
 }
